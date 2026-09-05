@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>감사 선례 도우미</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="app-head">
+  <div class="wrap">
+    <h1>감사 선례 도우미 <span class="tag">PoC</span></h1>
+    <p class="sub">업무 상황을 검색하면 유사 지적사례와 적극행정 면책사례를 함께 보여줍니다. 판단은 담당자·결재권자의 몫입니다.</p>
+    <p class="warn" id="synthetic-note" hidden>⚠ 현재 표시되는 데이터는 <b>합성 예시</b>입니다(실제 감사기록 아님).</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls">
+    <input id="q" type="search" placeholder="예: 수의계약 견적, 보조금 정산, 여비…" autocomplete="off">
+    <div class="filters">
+      <select id="f-work"><option value="">업무유형 전체</option></select>
+      <select id="f-org"><option value="">기관유형 전체</option></select>
+      <select id="f-year"><option value="">연도 전체</option></select>
+      <select id="f-law"><option value="">법령 전체</option></select>
+      <select id="f-type">
+        <option value="">유형 전체</option>
+        <option value="finding">지적</option>
+        <option value="immunity">면책</option>
+        <option value="consult">사전컨설팅</option>
+      </select>
+    </div>
+    <div class="meta"><span id="count">0</span>건 · <button id="reset" class="link">필터 초기화</button></div>
+  </section>
+
+  <section id="results" class="results" aria-live="polite"></section>
+</main>
+
+<footer class="app-foot"><div class="wrap">
+  감사 선례 도우미 PoC · 결과에는 항상 출처·처분·근거 상태가 표시됩니다. 위법 판정은 하지 않습니다.
+</div></footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

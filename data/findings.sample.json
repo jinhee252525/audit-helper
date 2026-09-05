@@ -1,0 +1,86 @@
+[
+  {
+    "id": "SAMPLE-001", "record_type": "finding", "source": "감사원", "org_type": "기초",
+    "work_type": "계약", "finding_type": "수의계약 부당",
+    "summary": "단일 견적만으로 수의계약을 체결하고 2인 이상 견적 비교를 누락함.",
+    "legal_basis": [{ "law": "지방자치단체를 당사자로 하는 계약에 관한 법률 시행령", "article": "제30조", "law_type": "법령" }],
+    "disposition": "주의", "binding_level": "중", "immunity": null, "budget_link": null,
+    "year": 2025, "source_url": "https://www.bai.go.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-20", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-002", "record_type": "finding", "source": "감사원", "org_type": "광역",
+    "work_type": "보조금", "finding_type": "정산 소홀",
+    "summary": "보조사업 정산 시 증빙서류 확인을 소홀히 하여 집행잔액 회수를 누락함.",
+    "legal_basis": [{ "law": "지방재정법", "article": "제32조의8", "law_type": "법령" }],
+    "disposition": "시정", "binding_level": "중", "immunity": null,
+    "budget_link": { "program": "복지-노인-노인일자리지원", "budget_ref": "노인일자리 및 사회활동 지원", "confidence": 0.62 },
+    "year": 2024, "source_url": "https://www.bai.go.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-20", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-003", "record_type": "finding", "source": "국회결산", "org_type": "중앙",
+    "work_type": "재무회계", "finding_type": "예산 목적외 사용",
+    "summary": "결산심사 결과 특정 사업 예산을 당초 목적과 다른 용도로 집행한 사실이 지적됨.",
+    "legal_basis": [{ "law": "국가재정법", "article": "제45조", "law_type": "법령" }],
+    "disposition": null, "binding_level": null, "immunity": null, "budget_link": null,
+    "year": 2024, "source_url": "https://www.assembly.go.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-21", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-004", "record_type": "finding", "source": "ALIO", "org_type": "공공기관",
+    "work_type": "물품", "finding_type": "분할 수의계약",
+    "summary": "동일 물품 구매를 분할하여 수의계약 한도 이내로 나누어 체결함.",
+    "legal_basis": [{ "law": "공공기관 계약사무 규칙", "article": null, "law_type": "행정규칙" }],
+    "disposition": "통보", "binding_level": "약", "immunity": null, "budget_link": null,
+    "year": 2023, "source_url": "https://www.alio.go.kr/occasional/auditPointList.do", "basis_status": "확인필요",
+    "added_at": "2026-08-21", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-005", "record_type": "finding", "source": "지자체", "org_type": "기초",
+    "work_type": "여비", "finding_type": "여비 부당 수령",
+    "summary": "실제 출장하지 않은 일정에 대해 여비를 청구·수령함.",
+    "legal_basis": [{ "law": "○○시 공무원 여비 조례", "article": "제15조", "law_type": "자치법규" }],
+    "disposition": "변상", "binding_level": "강", "immunity": null, "budget_link": null,
+    "year": 2025, "source_url": "https://www.example-gov.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-22", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-006", "record_type": "immunity", "source": "감사원", "org_type": "기초",
+    "work_type": "보조금", "finding_type": "적극행정 면책(인정)",
+    "summary": "재난 상황에서 신속 집행을 위해 절차를 간소화했으나 공익성·긴급성이 인정되어 면책됨.",
+    "legal_basis": [{ "law": "감사원 적극행정 면책제도 운영규정", "article": null, "law_type": "행정규칙" }],
+    "disposition": null, "binding_level": null,
+    "immunity": { "outcome": "인정", "requirements": ["고의·중과실 없음", "공익성", "긴급성", "절차 기록 유지"] },
+    "budget_link": null, "year": 2024, "source_url": "https://www.bai.go.kr/proactive/", "basis_status": "확인필요",
+    "added_at": "2026-08-23", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-007", "record_type": "immunity", "source": "감사원", "org_type": "광역",
+    "work_type": "계약", "finding_type": "적극행정 면책(불인정)",
+    "summary": "긴급성을 이유로 수의계약을 했으나 사전 검토·기록이 없어 면책이 인정되지 않음.",
+    "legal_basis": [{ "law": "감사원 적극행정 면책제도 운영규정", "article": null, "law_type": "행정규칙" }],
+    "disposition": null, "binding_level": null,
+    "immunity": { "outcome": "불인정", "requirements": ["사전 검토 부재", "판단 근거 미기록"] },
+    "budget_link": null, "year": 2024, "source_url": "https://www.bai.go.kr/proactive/", "basis_status": "확인필요",
+    "added_at": "2026-08-23", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-008", "record_type": "consult", "source": "지자체", "org_type": "광역",
+    "work_type": "시설공사", "finding_type": "사전컨설팅 감사",
+    "summary": "신규 방식 공사 발주 전 사전컨설팅을 신청, 검토 의견에 따라 절차를 보완해 진행함.",
+    "legal_basis": [{ "law": "공공감사에 관한 법률", "article": null, "law_type": "법령" }],
+    "disposition": null, "binding_level": null, "immunity": null, "budget_link": null,
+    "year": 2025, "source_url": "https://www.example-gov.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-24", "_synthetic": true
+  },
+  {
+    "id": "SAMPLE-009", "record_type": "finding", "source": "중앙부처", "org_type": "중앙",
+    "work_type": "행사", "finding_type": "행사성 경비 과다",
+    "summary": "자체감사 결과 행사 운영비를 기준을 초과하여 집행한 사실이 확인됨.",
+    "legal_basis": [{ "law": "예산 및 기금운용계획 집행지침", "article": null, "law_type": "행정규칙" }],
+    "disposition": "개선요구", "binding_level": null, "immunity": null, "budget_link": null,
+    "year": 2023, "source_url": "https://www.example-gov.kr/", "basis_status": "확인필요",
+    "added_at": "2026-08-24", "_synthetic": true
+  }
+]

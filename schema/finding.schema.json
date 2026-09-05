@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://acrc.go.kr/schema/finding.schema.json",
+  "title": "감사 선례 통합 레코드 (지적·면책·사전컨설팅)",
+  "type": "object",
+  "required": ["id", "record_type", "source", "org_type", "org_name", "work_type", "summary", "year", "source_url"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "description": "고유 식별자 (출처+연도+일련)" },
+    "record_type": {
+      "type": "string",
+      "enum": ["finding", "immunity", "consult"],
+      "description": "finding=지적, immunity=적극행정 면책, consult=사전컨설팅"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["감사원", "국회결산", "중앙부처", "지자체", "ALIO", "인사혁신처", "기타"]
+    },
+    "org_type": {
+      "type": "string",
+      "enum": ["중앙", "광역", "기초", "교육", "공공기관", "기타"],
+      "description": "기관유형(필수)"
+    },
+    "org_name": {
+      "type": "string",
+      "description": "피감기관명(필수) — 감사를 받은 기관. 예: 한국농어촌공사, ○○시"
+    },
+    "audit_org": {
+      "type": ["string", "null"],
+      "description": "감사기관 — 감사를 수행한 주체(감사원·주무부처·자체감사 등). 피감기관(org_name)과 구분"
+    },
+    "work_type": {
+      "type": "string",
+      "description": "관련기능(행정행위) — 권익위 부패공직자 서식 관련기능 19종(계약·인사·공사·인허가·예산회계 등). 코드 저장 권장(01~19)"
+    },
+    "sector": {
+      "type": ["string", "null"],
+      "description": "발생분야(대상 분야) — 권익위 서식 발생분야 28종(인사·재정경제·정보통신·환경 등). work_type과 직교. 없으면 null(미상)"
+    },
+    "audit_type": {
+      "type": ["string", "null"],
+      "description": "감사종류(감사원 감사사무 처리규칙) — 종합·특정·재무·성과·복무감사 등. 문서파싱으로 채움"
+    },
+    "finding_type": { "type": "string", "description": "관련세부기능(2차) — 예: 용역계약(02d), 수의계약 부당, 정산 소홀" },
+    "document_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "원문 문서 링크(감사결과 HWP/PDF 등). 있으면 반드시 기재"
+    },
+    "summary": { "type": "string", "description": "지적/사례 요지 1~2문장" },
+    "source_excerpt": { "type": ["string", "null"], "description": "원문 발췌 — 요약의 근거가 된 원문 문장 그대로. 무근거 생성 차단·검증용(자동수집 건 필수 권장)" },
+    "legal_basis": {
+      "type": "array",
+      "description": "근거 법령·조항 (법령 필터 축)",
+      "items": {
+        "type": "object",
+        "required": ["law"],
+        "properties": {
+          "law": { "type": "string" },
+          "article": { "type": ["string", "null"] },
+          "law_type": { "type": "string", "enum": ["법령", "행정규칙", "자치법규"], "default": "법령" },
+          "field": { "type": ["string", "null"], "description": "법령 분야(국가법령정보센터 편별 44). 법제처 F4로 채움" }
+        }
+      }
+    },
+    "disposition": {
+      "type": ["string", "null"],
+      "enum": ["변상", "징계", "문책", "시정", "주의", "주의요구", "통보", "개선", "개선요구", "권고", "경고", "회수", "환수", "고발", "수사요청", "해임", "정직", "감봉", "견책", null],
+      "description": "처분·조치 종류(근거: 감사원법 처분 + 자체감사·기타 조치). 원문에 없으면 null(미부과·해당없음). 임의 추정 금지"
+    },
+    "binding_level": {
+      "type": ["string", "null"],
+      "enum": ["강", "중", "약", null],
+      "description": "구속력. 없으면 null(추정 금지)"
+    },
+    "immunity": {
+      "type": ["object", "null"],
+      "description": "record_type=immunity일 때만",
+      "properties": {
+        "outcome": { "type": "string", "enum": ["인정", "불인정"] },
+        "requirements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "budget_link": {
+      "type": ["object", "null"],
+      "description": "예산·사업 연결(있을 때만)",
+      "properties": {
+        "program": { "type": "string", "description": "분야-부문-프로그램-단위/세부사업" },
+        "budget_ref": { "type": "string", "description": "세부사업명/코드" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "year": { "type": "integer", "minimum": 2000, "maximum": 2100 },
+    "source_url": { "type": "string", "format": "uri" },
+    "basis_status": {
+      "type": ["string", "null"],
+      "enum": ["현행", "개정", "폐지", "확인필요", null],
+      "description": "(선택) 현행성 판정은 하지 않음. 대신 legal_basis의 법제처 조회 링크로 담당자가 직접 확인. 추후 F4가 자동 채울 때만 사용"
+    },
+    "added_at": { "type": "string", "format": "date", "description": "축적 시점(신규 피드 기준)" },
+    "embedding": { "type": "array", "items": { "type": "number" }, "description": "오프라인 사전 계산" },
+    "_synthetic": { "type": "boolean", "description": "true면 합성 예시(실제 기록 아님)" }
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+data/raw_docs/
+# 대용량 산출물은 정책에 따라 관리
+# data/embeddings.json
