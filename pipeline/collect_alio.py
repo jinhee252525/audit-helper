@@ -16,11 +16,11 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import ssl
 import sys
 import time
-import urllib.request
 from pathlib import Path
+
+import requests  # 고정 공개 엔드포인트 호출(키 없음). file:// 등 위험 스킴 미지원으로 안전.
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -29,17 +29,23 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw_docs" / "alio"
-BASE = "https://www.alio.go.kr/occasional/findPointList.json"
-LIST_PAGE = "https://www.alio.go.kr/occasional/auditPointList.do"
+ALLOWED_HOST = "https://www.alio.go.kr"
+BASE = ALLOWED_HOST + "/occasional/findPointList.json"
+LIST_PAGE = ALLOWED_HOST + "/occasional/auditPointList.do"
 HEADERS = {"User-Agent": "Mozilla/5.0", "Referer": LIST_PAGE}
-CTX = ssl.create_default_context()
 
 
 def fetch_page(page_no: int, per_page: int) -> dict:
-    q = f"?type=title&word=&sortType=&reportFormNo=B1220&countPerPage={per_page}&pageNo={page_no}"
-    req = urllib.request.Request(BASE + q, headers=HEADERS)
-    with urllib.request.urlopen(req, context=CTX, timeout=30) as r:
-        return json.load(r)["data"]
+    # 파라미터는 정수만 사용하고, 호출 URL은 고정 공개 엔드포인트(ALLOWED_HOST)로 한정.
+    assert BASE.startswith(ALLOWED_HOST), "허용된 공개 호스트만 호출"
+    params = {
+        "type": "title", "word": "", "sortType": "",
+        "reportFormNo": "B1220",
+        "countPerPage": int(per_page), "pageNo": int(page_no),
+    }
+    r = requests.get(BASE, params=params, headers=HEADERS, timeout=30)
+    r.raise_for_status()
+    return r.json()["data"]
 
 
 # 법령 추출용 정규식: 「...법/령/규칙/규정/조례/지침/기준」 및 따옴표 없는 ○○법 시행령 등
