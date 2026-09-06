@@ -20,7 +20,12 @@ data/findings.pap.json
 data/review_queue.json
 data/tag_out/
 data/tag_shards/
+data/deep_out/
+data/deep_shards/
 
 # --- 원본 인박스: 내용은 제외하되 설명 파일은 유지 ---
 data/inbox/*
 !data/inbox/README.md
+
+# --- 개인 검토노트(커밋 금지) ---
+검토 필요사항.hwpx
