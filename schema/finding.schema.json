@@ -3,7 +3,7 @@
   "$id": "https://acrc.go.kr/schema/finding.schema.json",
   "title": "감사 선례 통합 레코드 (지적·면책·사전컨설팅)",
   "type": "object",
-  "required": ["id", "record_type", "source", "org_type", "org_name", "work_type", "summary", "year", "source_url"],
+  "required": ["id", "record_type", "source", "org_type", "org_name", "work_type", "source_excerpt", "year", "source_url"],
   "additionalProperties": true,
   "properties": {
     "id": { "type": "string", "description": "고유 식별자 (출처+연도+일련)" },
@@ -14,7 +14,7 @@
     },
     "source": {
       "type": "string",
-      "enum": ["감사원", "국회결산", "중앙부처", "지자체", "ALIO", "인사혁신처", "기타"]
+      "enum": ["감사원", "국회결산", "중앙부처", "지자체", "ALIO", "인사혁신처", "자체감사", "기타"]
     },
     "org_type": {
       "type": "string",
@@ -47,8 +47,8 @@
       "format": "uri",
       "description": "원문 문서 링크(감사결과 HWP/PDF 등). 있으면 반드시 기재"
     },
-    "summary": { "type": "string", "description": "지적/사례 요지 1~2문장" },
-    "source_excerpt": { "type": ["string", "null"], "description": "원문 발췌 — 요약의 근거가 된 원문 문장 그대로. 무근거 생성 차단·검증용(자동수집 건 필수 권장)" },
+    "summary": { "type": ["string", "null"], "description": "(선택·최소) 우리 창작 요약. 공공누리 변경금지 대응으로 최소화 — 원문 발췌를 주로 노출" },
+    "source_excerpt": { "type": "string", "description": "(필수) 원문 발췌 — 원문 문장 그대로. 카드의 주 표시. 무근거 차단·검증·저작권(무변경) 동시 충족" },
     "legal_basis": {
       "type": "array",
       "description": "근거 법령·조항 (법령 필터 축)",
@@ -91,13 +91,15 @@
       }
     },
     "year": { "type": "integer", "minimum": 2000, "maximum": 2100 },
-    "source_url": { "type": "string", "format": "uri" },
+    "source_url": { "type": "string", "format": "uri", "description": "원문 출처 링크 — 가능하면 '해당 게시글/보고서' URL(기관 일반 홈이 아니라)" },
+    "source_title": { "type": ["string", "null"], "description": "원문 게시글/보고서 제목 (출처 표기용)" },
+    "posted_date": { "type": ["string", "null"], "format": "date", "description": "원문 게시일(원 게시판 등록일) — 표시·정렬용" },
     "basis_status": {
       "type": ["string", "null"],
       "enum": ["현행", "개정", "폐지", "확인필요", null],
       "description": "(선택) 현행성 판정은 하지 않음. 대신 legal_basis의 법제처 조회 링크로 담당자가 직접 확인. 추후 F4가 자동 채울 때만 사용"
     },
-    "added_at": { "type": "string", "format": "date", "description": "축적 시점(신규 피드 기준)" },
+    "added_at": { "type": "string", "format": "date", "description": "수집일(우리가 가져온 날) — 증분 판단 내부용, 화면 비표시. 표시용 날짜는 posted_date" },
     "embedding": { "type": "array", "items": { "type": "number" }, "description": "오프라인 사전 계산" },
     "_synthetic": { "type": "boolean", "description": "true면 합성 예시(실제 기록 아님)" }
   }
