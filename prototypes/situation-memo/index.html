@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>감사 선례 도우미 — 상황 메모 히어로</title>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1 id="appTitle">감사 선례 도우미</h1>
+        <p id="tagline" class="tagline">업무를 적으면, 결재 직전 자료까지</p>
+      </div>
+      <nav class="nav-chips" aria-label="주요 메뉴">
+        <button type="button" class="chip chip-active">검색</button>
+        <button type="button" class="chip">인사이트</button>
+        <button type="button" class="chip">가이드</button>
+      </nav>
+    </header>
+
+    <section class="situation-hero" aria-labelledby="situationLabel">
+      <div class="situation-copy">
+        <p id="situationLabel" class="eyebrow">지금 하려는 일</p>
+        <h2 id="situationText">기존 용역의 과업 범위를 변경하려 한다.</h2>
+        <div class="situation-meta">
+          <span id="situationDomain" class="meta-pill">계약</span>
+          <span id="situationWorkType" class="meta-pill soft">계약·용역</span>
+        </div>
+      </div>
+      <button type="button" id="ctaConnect" class="cta-primary">
+        선례 연결하기
+      </button>
+    </section>
+
+    <main class="lanes" id="lanes">
+      <section class="lane" aria-labelledby="laneEvidenceTitle">
+        <header class="lane-head">
+          <h3 id="laneEvidenceTitle">확보된 근거</h3>
+          <p class="lane-sub">본문이 있는 것만 인용</p>
+        </header>
+        <div id="evidenceList" class="card-stack empty-hint">
+          <p class="placeholder">「선례 연결하기」를 누르면 근거 카드가 채워집니다.</p>
+        </div>
+      </section>
+
+      <section class="lane" aria-labelledby="laneDistanceTitle">
+        <header class="lane-head">
+          <h3 id="laneDistanceTitle">내 업무와의 거리</h3>
+          <p class="lane-sub">같은 점 / 다른 점</p>
+        </header>
+        <div id="distancePanel" class="distance-panel empty-hint">
+          <p class="placeholder">연결 후 같음·다름·확인 포인트가 표시됩니다.</p>
+        </div>
+      </section>
+
+      <section class="lane lane-memo" aria-labelledby="laneMemoTitle">
+        <div class="memo-ribbon" aria-hidden="true"></div>
+        <header class="lane-head">
+          <h3 id="laneMemoTitle">결재용 검토메모</h3>
+          <p class="lane-sub">초안 · 복사 가능</p>
+        </header>
+        <form id="memoForm" class="memo-form" autocomplete="off"></form>
+        <div class="memo-actions">
+          <button type="button" id="btnCopyMemo" class="btn-secondary" disabled>메모 복사</button>
+          <span id="copyStatus" class="copy-status" aria-live="polite"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="disclaimer">
+      유사 선례·근거만 제시합니다. 위법·부당을 단정하지 않으며, 최종 판단은 담당자·결재권자에게 있습니다.
+      본문 미확보(목록만) 건은 검토메모 근거로 쓸 수 없습니다.
+    </footer>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
