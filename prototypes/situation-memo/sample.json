@@ -1,0 +1,72 @@
+{
+  "appTitle": "감사 선례 도우미",
+  "tagline": "업무를 적으면, 결재 직전 자료까지",
+  "situation": {
+    "label": "지금 하려는 일",
+    "text": "기존 용역의 과업 범위를 변경하려 한다.",
+    "domain": "계약",
+    "workType": "계약·용역"
+  },
+  "evidence": [
+    {
+      "id": "ev-001",
+      "title": "용역 과업범위 변경 지적",
+      "source": "자체감사 · 2024",
+      "org": "○○광역시",
+      "quality": "secured",
+      "excerpt": "변경계약 체결 시 과업지시서 변경 근거와 대가 산정 내역을 문서화하지 않은 사례.",
+      "highlightSpans": [
+        { "start": 0, "end": 8 },
+        { "start": 12, "end": 28 }
+      ],
+      "canAddToMemo": true
+    },
+    {
+      "id": "ev-002",
+      "title": "메타만 있어 인용 보류",
+      "source": "국회결산 · 2023",
+      "org": "△△공사",
+      "quality": "list-only",
+      "excerpt": "목록 메타데이터만 확보됨. 본문 미확보로 검토메모 근거 생성 불가.",
+      "highlightSpans": [],
+      "canAddToMemo": false
+    },
+    {
+      "id": "ev-003",
+      "title": "보호받는 길 — 사전컨설팅",
+      "source": "사전컨설팅 · 2025",
+      "org": "권익위 사례집",
+      "quality": "matched",
+      "excerpt": "과업 신설·확대 시 사전 컨설팅으로 면책 경로를 확보한 사례.",
+      "highlightSpans": [
+        { "start": 0, "end": 14 }
+      ],
+      "canAddToMemo": true,
+      "kind": "immunity"
+    }
+  ],
+  "distance": {
+    "same": "변경계약 · 용역 · 지자체",
+    "diff": "금액 규모 · 행위 시점",
+    "check": "위임전결 · 산출내역",
+    "summary": "비슷해 보이지만 과업 신설 비중이 크면 신규 계약 검토가 필요합니다."
+  },
+  "memo": {
+    "fields": [
+      { "id": "overview", "label": "업무 개요", "placeholder": "하려는 업무를 한 줄로" },
+      { "id": "refs", "label": "참고 선례", "placeholder": "인용할 선례 제목·출처" },
+      { "id": "diff", "label": "적용상 차이", "placeholder": "같음/다름 요약" },
+      { "id": "grounds", "label": "근거 발췌", "placeholder": "본문 확보된 근거만" },
+      { "id": "open", "label": "미확인 사항", "placeholder": "법령 현행성 등 확인 필요" },
+      { "id": "decision", "label": "담당자 판단", "placeholder": "결재권자 판단용 메모" }
+    ],
+    "draft": {
+      "overview": "기존 용역의 과업 범위를 변경하여 추가 업무를 포함하려는 건.",
+      "refs": "① 용역 과업범위 변경 지적 (자체감사·2024) ② 사전컨설팅 사례 (권익위·2025)",
+      "diff": "같음: 변경계약·용역·지자체 / 다름: 금액 규모·행위 시점. 과업 신설 비중 확인 필요.",
+      "grounds": "「변경계약 체결 시 과업지시서 변경 근거와 대가 산정 내역을 문서화하지 않은 사례.」",
+      "open": "관련 법령·지침 현행성 확인 필요. 위임전결 범위 및 산출내역 재검토.",
+      "decision": "단정하지 않음. 본문 확보·근거 대조 완료 건만 인용. 담당자·결재권자 최종 판단."
+    }
+  }
+}
