@@ -5,3 +5,22 @@ __pycache__/
 data/raw_docs/
 # 대용량 산출물은 정책에 따라 관리
 # data/embeddings.json
+
+# --- 로컬 도구 상태 ---
+.omc/
+
+# --- 스크래치/실험 파일 (커밋 금지) ---
+scratch*
+scratchpad*
+
+# --- 대용량·파생 산출물 (필요 시 정책 결정 후 개별 해제) ---
+data/findings.json
+data/findings.all.json
+data/findings.pap.json
+data/review_queue.json
+data/tag_out/
+data/tag_shards/
+
+# --- 원본 인박스: 내용은 제외하되 설명 파일은 유지 ---
+data/inbox/*
+!data/inbox/README.md
