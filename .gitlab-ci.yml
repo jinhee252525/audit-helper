@@ -6,6 +6,16 @@
 # 만 수행한다. 실데이터(data/findings.json)는 커밋되지 않으므로
 # 게이트는 커밋된 합성 픽스처(data/findings.sample.json)를 검사한다.
 
+# 실행할 러너(runner)가 없으면 파이프라인이 '대기중(pending/stalled)'으로 계속 남는다.
+# 이 저장소(aigov)는 기록·수집 작업용이라 상시 CI가 필요 없으므로,
+# 기본적으로 파이프라인을 생성하지 않는다(→ 노란불 안 생김).
+# CI를 돌리고 싶을 땐(러너가 준비된 뒤) 파이프라인 실행 시 변수 RUN_CI=true 를 주면 된다.
+#   예: CI/CD → Run pipeline → Variable  RUN_CI = true
+workflow:
+  rules:
+    - if: '$RUN_CI == "true"'
+    - when: never
+
 default:
   image: python:3.12-slim
 
