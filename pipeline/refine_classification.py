@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+"""골든 측정에서 도출된 체계적 오류 교정 규칙(구코드→신설/정코드 이관).
+정확도 69.9%→95% 목표. 규칙은 특이도 높은 것부터 first-match. 학교맥락 우선.
+적용 후 골든(gold_work_type) 대조로 즉시 재측정 가능.
+"""
+from __future__ import annotations
+import json, re, sys
+from pathlib import Path
+if sys.stdout.encoding and sys.stdout.encoding.lower()!="utf-8":
+    try: sys.stdout.reconfigure(encoding="utf-8")
+    except Exception: pass
+ROOT=Path(__file__).resolve().parents[1]
+
+def _has(t, *kws): return any(k in t for k in kws)
+
+def refine(x: str, t: str, cur: str) -> str:
+    """x=지적, t=감사사항명, cur=현재코드 → 교정코드(바뀌면 새 코드, 아니면 cur)."""
+    school = _has(t, "학교종합감사","유치원","교육지원청","학교주도형","초등학교","중학교","고등학교","특수학교") or _has(x,"생활기록부","학교운영위","방과후","현장체험")
+    # 1) 학사기록/평가 → 25
+    if _has(x,"생활기록부","학교생활기록부","학적","출결","수행평가","지필평가","정기고사","학업성적","성적처리","성적관리","평가계획"):
+        return "25"
+    # 2) 학교운영·프로그램 → 25 (학교맥락)
+    if _has(x,"학교운영위","운영위원회 운영","현장체험학습","교외체험","학교스포츠클럽","학칙","학교규칙","봉사활동","교육과정","방과후","돌봄","급식") and (school or _has(x,"학교","학생","교육과정","급식")):
+        return "25"
+    # 5) 회계/여비/카드/수당 → 17 (가장 흔한 회귀)
+    if _has(x,"구매카드","클린카드","법인카드","여비","출장비","업무추진비","연가보상비","시간외근무수당","성과상여금","수당 지급","보수 지급","전표","지출원인행위","예산 전용","예산전용","집행과목","세출","급량비"):
+        return "17"
+    # 4) 채권·세입 → 20 / 신규 여신 → 09
+    if _has(x,"구상채권","구상금","담보채권","담보부채권","경매","공매","미수금","미수액","체납","세입금 관리","수입금 관리","선금채권","과오납"):
+        return "20"
+    if _has(x,"신규 대부","대부 취급","보증 심사","인수심사","여신취급","대출 실행"):
+        return "09"
+    # 6) 자산·물품 → 21
+    if _has(x,"재물조사","불용품","불용재산","물품 관리","물품관리","비품","공용차량","관용차량","차량 운행","차량운행","운행일지","상품권 보관","저장품","재고 관리"):
+        return "21"
+    # 7) 시설·안전 → 22
+    if _has(x,"민방위","소방","화재","재난","방호","방재","시설물","시설 관리","안전점검","안전관리","산업재해","산업안전","작업안전","석면","내진","승강기","놀이시설","전기안전"):
+        return "22"
+    # 8) 정보화·데이터 → 23
+    if _has(x,"개인정보","정보보안","보안점검","cctv","CCTV","영상정보","정보시스템","전산","정보화","소프트웨어","데이터베이스","홈페이지","전자문서시스템","정보자산","usb","USB"):
+        return "23"
+    # 3) 인사·복무 → 11
+    if _has(x,"겸직","복무","근무성적","근무평정","채용","임용","정원 관리","시험응시","외부강의") and not _has(x,"여비","수당"):
+        # 외부강의 '신고'는 05, '미신고/복무'는 11 — 신고 발급성은 아래 10에서
+        if _has(x,"외부강의") and _has(x,"신고"): pass
+        else: return "11"
+    # 10) 신고·등록·발급 → 05
+    if _has(x,"외부강의 신고","인감","위임장","자격증명 발급","등록증 발급","발급 부적정","신고 수리"):
+        return "05"
+    # 11) 쟁송·재결 → 12
+    if _has(x,"소송","송무","변호사 보수","변호사보수","행정심판","재결","분쟁조정","시효"):
+        return "12"
+    # 9) 통관(16) 오용 교정 — 실제 통관 아니면 위 규칙 미해당 시 기타로
+    if cur=="16" and not _has(x,"수출입","통관 절차","보세","관세 부과"):
+        # 위 규칙에서 안 걸렸으면 시설/물류 맥락 추정 어려워 19로
+        return "19"
+    return cur
+
+def main()->int:
+    total=0
+    for path in ["data/findings.pap.json","data/findings.json"]:
+        d=json.loads((ROOT/path).read_text(encoding="utf-8")); ch=0
+        for r in d:
+            if r.get("record_type") in ("consult","immunity"): continue
+            x=r.get("source_excerpt") or ""; t=r.get("source_title") or ""; cur=r.get("work_type") or "19"
+            new=refine(x,t,cur)
+            if new!=cur:
+                r["work_type"]=new; r["finding_type"]=new+"z"; r["tag_method"]="refine"; ch+=1
+        (ROOT/path).write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding="utf-8")
+        print(f"{path}: {ch}건 교정"); total+=ch
+    print("총 교정:",total)
+    return 0
+
+if __name__=="__main__":
+    raise SystemExit(main())

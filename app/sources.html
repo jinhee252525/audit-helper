@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>데이터 출처·수집 현황 — 감사 선례 도우미</title>
+<style>
+  :root{ --line:#e5e7eb; --ink:#1f2937; --sub:#6b7280; --ok:#0a7f42; --no:#b91c1c; --wait:#b45309; --bg:#f8fafc; --card:#fff; }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.6 -apple-system,"Segoe UI","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg)}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:22px;margin:0 0 4px} .updated{color:var(--sub);font-size:12px;margin-bottom:16px}
+  .lead{color:#374151;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:20px}
+  h2{font-size:15px;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card h3{font-size:14px;margin:0 0 8px;display:flex;align-items:center;gap:6px}
+  .badge{font-size:11px;padding:2px 7px;border-radius:999px;font-weight:600}
+  .b-ok{background:#e7f6ec;color:var(--ok)} .b-no{background:#fdeaea;color:var(--no)} .b-wait{background:#fef3e2;color:var(--wait)} .b-mix{background:#eef2ff;color:#3730a3}
+  .row{display:flex;gap:6px;margin:3px 0} .row .k{color:var(--sub);min-width:64px;flex:none;font-size:12px} .row .v{font-size:13px}
+  .reason{margin-top:8px;font-size:12px;color:#7c2d12;background:#fff7ed;border-left:3px solid var(--wait);padding:6px 8px;border-radius:4px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;font-size:13px} th{background:#f1f5f9;font-size:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px} .chip{background:#eef2f7;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:12px}
+  .foot{margin-top:26px;color:var(--sub);font-size:12px}
+  a{color:#1d4ed8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>데이터 출처·수집 현황</h1>
+  <div class="updated" id="updated"></div>
+  <div class="lead" id="lead"></div>
+
+  <h2>소스별 현황</h2>
+  <div class="cards" id="cards"></div>
+
+  <h2>자동수집 불가 기관 (사유·대안)</h2>
+  <table id="blocked"><thead><tr><th>기관</th><th>유형</th><th>사유</th><th>대안</th></tr></thead><tbody></tbody></table>
+
+  <h2>자동수집(크롤) 허용 기관 예시 <span style="font-weight:400;color:var(--sub);font-size:12px">— robots 허용, 사전정보공표 감사정보 대상</span></h2>
+  <div id="allowed"></div>
+
+  <div class="foot">robots.txt·저작권(공공누리)을 준수합니다. 금지 소스는 자동수집하지 않고 오픈API·수동 등 정당한 경로로만 확보하며, 그 사유를 위와 같이 공개합니다. · 출처: 각 카드의 접근 방식 참조</div>
+</div>
+<script>
+const ROBO = { "허용":"b-ok", "금지 (Disallow: /)":"b-no" };
+function statusBadge(s){ if(/완료|PASS|확보/.test(s)) return "b-ok"; if(/예정|구축/.test(s)) return "b-wait"; if(/처리 중/.test(s)) return "b-mix"; return "b-mix"; }
+function robotsBadge(r){ if(r.startsWith("허용")) return ["b-ok",r]; if(r.startsWith("금지")) return ["b-no",r]; return ["b-mix",r]; }
+(async function(){
+  const d = await fetch("../data/coverage.json").then(r=>r.json());
+  document.getElementById("updated").textContent = "기준일 " + d.updated;
+  document.getElementById("lead").textContent = d.note;
+  const cw = document.getElementById("cards");
+  d.sources.forEach(s=>{
+    const [rb,rt] = robotsBadge(s.robots);
+    const el = document.createElement("div"); el.className="card";
+    el.innerHTML = `<h3>${s.name} <span class="badge ${statusBadge(s.status)}">${s.status}</span></h3>
+      <div class="row"><span class="k">대상</span><span class="v">${s.target}</span></div>
+      <div class="row"><span class="k">기간</span><span class="v">${s.period_used||s.period_available}</span></div>
+      <div class="row"><span class="k">접근</span><span class="v">${s.access}</span></div>
+      <div class="row"><span class="k">robots</span><span class="v"><span class="badge ${rb}">${rt}</span></span></div>
+      <div class="row"><span class="k">저작권</span><span class="v">${s.license||"-"}</span></div>
+      <div class="row"><span class="k">갱신</span><span class="v">${s.update||"-"}</span></div>
+      ${s.blocked_reason?`<div class="reason">⚠ ${s.blocked_reason}</div>`:""}`;
+    cw.appendChild(el);
+  });
+  const tb = document.querySelector("#blocked tbody");
+  d.blocked_institutions.forEach(b=>{
+    const tr=document.createElement("tr");
+    tr.innerHTML=`<td><b>${b.기관}</b></td><td>${b.유형}</td><td>${b.사유}</td><td>${b.대안}</td>`;
+    tb.appendChild(tr);
+  });
+  const aw=document.getElementById("allowed");
+  Object.entries(d.allowed_examples).forEach(([grp,list])=>{
+    const h=document.createElement("div"); h.style.margin="8px 0";
+    h.innerHTML=`<div style="font-size:12px;color:var(--sub);margin-bottom:4px">${grp}</div><div class="chips">${list.map(x=>`<span class="chip">${x}</span>`).join("")}</div>`;
+    aw.appendChild(h);
+  });
+})();
+</script>
+</body>
+</html>

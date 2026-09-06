@@ -29,3 +29,12 @@ data/inbox/*
 
 # --- 개인 검토노트(커밋 금지) ---
 검토 필요사항.hwpx
+
+# --- 진행 중 재태깅 (Claude) — 커밋/푸시 금지 ---
+data/retag_shards/
+data/retag_out/
+data/retag_work/
+
+# --- 기타 대용량·로컬 ---
+data/review_queue.json
+nul

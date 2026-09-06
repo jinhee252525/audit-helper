@@ -86,13 +86,29 @@ def to_meta(it: dict, page: int) -> dict:
     }
 
 
+def _load_seen_ids() -> set[str]:
+    """state.json 의 seen_ids(=이미 수집한 submissionNo) 로드. 없으면 빈 집합."""
+    state = ROOT / "data" / "state.json"
+    if not state.exists():
+        return set()
+    try:
+        s = json.loads(state.read_text(encoding="utf-8"))
+        return set(s.get("seen_ids", []))
+    except (json.JSONDecodeError, OSError):
+        return set()
+
+
 def collect(limit: int, per_page: int = 100, min_year: int | None = None,
-            combined_out: Path | None = None) -> list[dict]:
+            combined_out: Path | None = None, incremental: bool = False) -> list[dict]:
     RAW.mkdir(parents=True, exist_ok=True)
     collected: list[dict] = []
+    seen_ids = _load_seen_ids() if incremental else set()
+    if incremental:
+        print(f"  증분 모드: 기존 seen_ids {len(seen_ids)}건 — 최신순 목록에서 기존 id 만나면 중단")
     page = 1
     total = None
-    while len(collected) < limit:
+    stop = False
+    while len(collected) < limit and not stop:
         d = fetch_page(page, per_page)
         total = d.get("totalCnt", total)
         rows = d.get("result", [])
@@ -102,6 +118,11 @@ def collect(limit: int, per_page: int = 100, min_year: int | None = None,
             if len(collected) >= limit:
                 break
             meta = to_meta(it, page)
+            # 증분: 최신순 목록에서 이미 본 submissionNo 를 만나면 그 지점부터 전부 기존분 → 중단
+            if incremental and str(meta["submission_no"]) in seen_ids:
+                print(f"  증분 중단: 기존 id {meta['submission_no']} 도달 (누적 {len(collected)})")
+                stop = True
+                break
             if min_year and (meta["year"] or 0) < min_year:
                 continue  # 5년 필터
             collected.append(meta)
@@ -120,12 +141,14 @@ def main() -> int:
     ap.add_argument("--all", action="store_true", help="전량 수집(전체 건수만큼)")
     ap.add_argument("--min-year", type=int, default=None, help="이 연도 이상만(예: 2021)")
     ap.add_argument("--per-page", type=int, default=100)
+    ap.add_argument("--incremental", action="store_true",
+                    help="증분 수집: state.json seen_ids 로 기존분 만나면 중단(매일 배치용)")
     ap.add_argument("--out", type=str, default="data/raw_docs/alio_5yr.json")
     args = ap.parse_args()
     limit = 10_000 if args.all else args.limit
     out = (ROOT / args.out) if args.out else None
-    print(f"ALIO 지적사항 수집 시작 (키 없음) — limit={limit} min_year={args.min_year}")
-    recs = collect(limit, args.per_page, args.min_year, out)
+    print(f"ALIO 지적사항 수집 시작 (키 없음) — limit={limit} min_year={args.min_year} incremental={args.incremental}")
+    recs = collect(limit, args.per_page, args.min_year, out, incremental=args.incremental)
     print(f"완료: {len(recs)}건")
     return 0
 
