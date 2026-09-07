@@ -68,6 +68,39 @@
 
 ---
 
+
+## E. 출장·폰 완성 플랜 (2026-09-07) — 내일부터
+
+목표: 출장 중 **MVP를 거의 완성**. 노트북의 19만 건 findings·인덱스 샤드는 Git에 없음 → 폰에서는 **코드·UI·배포·문서**로 완성도를 올리고, 대용량 정확도/인덱스는 복귀 후(또는 Pro 클라우드)에.
+
+### E-1. 폰에서 바로 (우선순위 · 거의 전부 [무료])
+1. **히어로 합치기**: `prototypes/situation-memo/` → 살아 있는 `app/` 1화면 (상황→유사선례→같음/다름→원문 온디맨드→증빙→결재용 검토메모). demo/sample로 동작 확인.
+2. **sage 녹색 디자인**을 `app/`에 반영 (프로토·palette-lock 기준).
+3. **F8 UI**: 지적 카드 옆 면책/컨설팅 나란히 (샘플 데이터로).
+4. **F10 UI**: 신규 피드 / `added_at`·`review` 큐 셸.
+5. **GitHub Pages**(또는 정적 미리보기): demo 기준으로 폰 브라우저에서 열어보기.
+6. **도메인팩 골격**: 계약 → 보조금 (MASTER-PLAN).
+7. **대시보드**: `dashboard-agg.json` 소비(소량 커밋 가능) / AXIS B 인사이트 자리.
+8. 문서 동기화: 이 파일 + `HANDOFF-accuracy.md` + `MASTER-PLAN.md`를 작업 기준으로 유지.
+
+### E-2. 폰에서 가능하나 조건 있음
+- **Cloud Agents(Pro)**: 저장소 직접 수정·PR에 가장 편함. 현재 플랜에선 Cloud Agents 불가 → Pro 업그레이드 또는 채팅으로 파일 단위 반영(GitHub) 경로.
+- **thin LLM / 임베딩(C-4.8–9)**: 골든·저신뢰 샘플은 레포에 있음(`data/golden/`). 전체 findings·인덱스 재빌드는 노트북 또는 데이터 동기화 후에.
+- **정확도 ~78–80%**: 출장 중엔 샘플·프롬프트·검수큐 UX까지. 전량 careful은 복귀 후.
+
+### E-3. 복귀 후(노트북) 한 번에
+- `python pipeline/build_index.py --input data/findings.all.json --out app/data/index` 재빌드 확인
+- 앱을 실인덱스에 붙여 스모크
+- (선택) 골든∩저신뢰 thin LLM → 골든 재측정
+- 매일배치·헤드리스는 네트워크·로그인 여유 있을 때
+
+### E-4. 출장 중 "완성" 정의 (체크)
+- [ ] 히어로 1화면이 `app/`에서 demo로 끝까지 흐름
+- [ ] 품질·신뢰 배지 + 개별학교 기본 숨김 유지
+- [ ] F8·F10 UI 자리 동작(샘플)
+- [ ] Pages(또는 동등)로 폰에서 URL 오픈
+- [ ] STATUS에 남은 C-4만 명확히 남김
+
 ## D. 핵심 파일 지도
 - 데이터: `data/findings.all.json`(최종 통합) · `findings.pap.json`·`findings.json`(소스본) · `data/codebook.json`
 - 인덱스: `app/data/index/manifest.json` · `app/data/index/shards/shard-XXXX.json`
