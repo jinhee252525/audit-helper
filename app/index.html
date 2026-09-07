@@ -11,7 +11,8 @@
   <div class="wrap">
     <h1>감사 선례 도우미 <span class="tag">PoC</span></h1>
     <p class="sub">업무 상황을 검색하면 유사 지적사례와 적극행정 면책사례를 함께 보여줍니다. 판단은 담당자·결재권자의 몫입니다.</p>
-    <p class="warn" id="synthetic-note" hidden>⚠ 현재 표시되는 데이터는 <b>합성 예시</b>입니다(실제 감사기록 아님).</p>
+    <p class="warn" id="synthetic-note" hidden>⚠ 현재 표시되는 데이터는 <b>합성 예시</b>이거나 샘플 폴백입니다(전체 인덱스 아님).</p>
+    <p class="load-status" id="load-status" aria-live="polite"></p>
   </div>
 </header>
 
@@ -22,22 +23,27 @@
       <select id="f-work"><option value="">업무유형 전체</option></select>
       <select id="f-org"><option value="">기관유형 전체</option></select>
       <select id="f-year"><option value="">연도 전체</option></select>
-      <select id="f-law"><option value="">법령 전체</option></select>
       <select id="f-type">
         <option value="">유형 전체</option>
         <option value="finding">지적</option>
         <option value="immunity">면책</option>
         <option value="consult">사전컨설팅</option>
       </select>
+      <label class="chk"><input type="checkbox" id="f-edu"> 개별학교 포함</label>
     </div>
-    <div class="meta"><span id="count">0</span>건 · <button id="reset" class="link">필터 초기화</button></div>
+    <div class="meta">
+      <span id="count">0</span>건 표시
+      <span id="loaded-meta" class="faint"></span>
+      · <button id="reset" class="link" type="button">필터 초기화</button>
+    </div>
   </section>
 
   <section id="results" class="results" aria-live="polite"></section>
 </main>
 
 <footer class="app-foot"><div class="wrap">
-  감사 선례 도우미 PoC · 결과에는 항상 출처·처분·근거 상태가 표시됩니다. 위법 판정은 하지 않습니다.
+  감사 선례 도우미 PoC · 결과에는 항상 출처·처분·품질·신뢰 상태가 표시됩니다. 위법 판정은 하지 않습니다.
+  <!-- 인덱스 재빌드: python pipeline/build_index.py --input data/findings.all.json --out app/data/index -->
 </div></footer>
 
 <script src="./app.js"></script>

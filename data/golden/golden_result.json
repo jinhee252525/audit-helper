@@ -1,0 +1,4321 @@
+[
+ {
+  "id": "자체감사-pap-public-11f0d4b6-12887",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "재검정=검정"
+ },
+ {
+  "id": "자체감사-pap-public-11f036ac-27934",
+  "current_work_type": "14",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "구상채권 사후관리"
+ },
+ {
+  "id": "자체감사-pap-central-11f07297-1950",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "이행능력심사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2abb-104754",
+  "current_work_type": "19",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "공무직 업무부여"
+ },
+ {
+  "id": "자체감사-pap-public-11f00922-31475",
+  "current_work_type": "12",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "출장신청=복무(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f107e7-8638",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송비용회수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12ccd-3099",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "직불금=지원"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c85d-11210",
+  "current_work_type": "10",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "업무협약체결(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f1445d-8778",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "공사비"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0f4f7-22723",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "회계세입지출"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8f7c-108160",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원처리"
+ },
+ {
+  "id": "자체감사-pap-public-11efb2e2-15478",
+  "current_work_type": "08",
+  "gold_work_type": "09",
+  "agree": false,
+  "reason": "여신업무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f073f8-28764",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "안전교육계획수립(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f133d9-1662",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "현장체험학습"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f014d6-24219",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원업무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04668-65331",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "카드포인트세입"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05fc5-52290",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검사·점검"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c5b0-13131",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "재난상황실"
+ },
+ {
+  "id": "자체감사-pap-public-11f120fe-7896",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "실태조사"
+ },
+ {
+  "id": "자체감사-pap-public-11f03f8a-26025",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "보험인수심사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04ccc-33871",
+  "current_work_type": "11",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "보수지급=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f13229-7775",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "시설기준준수"
+ },
+ {
+  "id": "자체감사-pap-public-11f01bfa-29846",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "정보망품질"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0d57f-47147",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "기술지도계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe8fa-16077",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "채용서류"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0321a-59556",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "위탁운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05e25-30753",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "상품권구매배부(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f08d73-47365",
+  "current_work_type": "11",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "연가보상비=회계"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ca8e-22046",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "업무추진비"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fd6e-19913",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "수수료미징수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef342c-86296",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "선금채권확보"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeeb52-83917",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "급식운영계획"
+ },
+ {
+  "id": "자체감사-pap-central-11eec0a6-4863",
+  "current_work_type": "10",
+  "gold_work_type": "24",
+  "agree": false,
+  "reason": "기록물관리"
+ },
+ {
+  "id": "자체감사-pap-public-11f10e23-9535",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "인턴지원금"
+ },
+ {
+  "id": "자체감사-pap-central-11eeea60-4970",
+  "current_work_type": "09",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "계정재분류=회계"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f00163-70797",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "수의계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f02f20-55162",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "계약이행"
+ },
+ {
+  "id": "자체감사-pap-public-11ef248b-52382",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "공사정산"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ce3e-51507",
+  "current_work_type": "19",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "차량관리=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeea39-131458",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "교과평가=학사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f01a9a-31469",
+  "current_work_type": "17",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "급여부과성격(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f057e8-19337",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "교육비환수"
+ },
+ {
+  "id": "자체감사-pap-public-11f044ec-19096",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "안전관리대행"
+ },
+ {
+  "id": "자체감사-pap-public-11f02ae8-29924",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "법률구조사례"
+ },
+ {
+  "id": "자체감사-pap-public-11f13c95-6133",
+  "current_work_type": "16",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "CCTV비번=보안"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eec19d-114757",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "출장여비"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef0083-82505",
+  "current_work_type": "19",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "취학유예=학사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1638-49059",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "사업계획변경"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c999-28046",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금집행"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6e3e-108381",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "세외수입징수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef5eb5-95958",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사후모니터링"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cb2a-30207",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "차량운행일지"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef4406-99173",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "취득세부과"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efff0e-25805",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "보안관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef429d-99204",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품선정평가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f13c56-12503",
+  "current_work_type": "21",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "구매카드=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef660d-46126",
+  "current_work_type": "04",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "SW용역과업설계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eff026-34827",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "위임전결"
+ },
+ {
+  "id": "자체감사-pap-public-11f1061f-9309",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "권한위임"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef4e55-79385",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "수입금관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f02712-69804",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "부담금부과"
+ },
+ {
+  "id": "자체감사-pap-public-11ef223f-51914",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "신용보증"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eedf88-134446",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "양곡지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efc648-73993",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금정산"
+ },
+ {
+  "id": "자체감사-pap-public-11eecfa6-44100",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "허가증재교부(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efa889-39960",
+  "current_work_type": "19",
+  "gold_work_type": "19",
+  "agree": true,
+  "reason": "ESG우수사례"
+ },
+ {
+  "id": "자체감사-pap-public-11ef7f0b-41987",
+  "current_work_type": "10",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "출장승인=복무(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f01ffa-14663",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "여신취급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eebe47-130979",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "채용정원"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c8d6-16708",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "출장숙박여비"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0f279-21056",
+  "current_work_type": "24",
+  "gold_work_type": "18",
+  "agree": false,
+  "reason": "전결규칙(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f02f98-33283",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "수도미터=시설"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11370-16309",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "구매카드"
+ },
+ {
+  "id": "자체감사-pap-public-11f044ec-19083",
+  "current_work_type": "13",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "재검수수료(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef604d-46882",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "담보채권경매"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f00e8d-69189",
+  "current_work_type": "08",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "민방위=안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f15d94-10358",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "안전관리비정산"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed6ca-107709",
+  "current_work_type": "13",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "재물조사=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07327-21134",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "버스임차계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eef8a7-122351",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "수입증지계기(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11f11828-144",
+  "current_work_type": "14",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "채용결격확인"
+ },
+ {
+  "id": "자체감사-pap-public-11f071e1-20814",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "휴직교육"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eebe45-115031",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금정산"
+ },
+ {
+  "id": "자체감사-pap-central-11f08932-1971",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "승진서열명부"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2179-121585",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "교육과정운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed52e-108774",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "사용신고"
+ },
+ {
+  "id": "국회결산-2023-1025788",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금형평"
+ },
+ {
+  "id": "자체감사-pap-public-11f03f8a-26041",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "매출채권보험"
+ },
+ {
+  "id": "자체감사-pap-public-11eeec15-55288",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "의료장비신고"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ce86-25101",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "복지관위탁"
+ },
+ {
+  "id": "자체감사-pap-public-11ef497c-50048",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "유량계하자"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeec26-124158",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "민간위탁운영"
+ },
+ {
+  "id": "자체감사-pap-public-11f0cf21-15271",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "의료분쟁소송"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f00edd-30009",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학교스포츠클럽"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11effa59-74722",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "수의계약"
+ },
+ {
+  "id": "국회결산-2024-1026622",
+  "current_work_type": "04",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "예산전용=회계"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee19c-126869",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "계약대가지급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef794a-80119",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "CCTV개인정보"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef32c6-89888",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "평가계획=학사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe070-75383",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "위기가구지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ec61-13471",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학운위=학교운영"
+ },
+ {
+  "id": "자체감사-pap-public-11f01050-32420",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "정기검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11effb27-46890",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원접수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f136d4-21005",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "전입신고"
+ },
+ {
+  "id": "국회결산-2022-1023491",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사업실적점검"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cc2a-32850",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "평가계획=학사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11381-16934",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "작업안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0110b-5861",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "기록물관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11ddb-16442",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원처리기한"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f010e7-73062",
+  "current_work_type": "15",
+  "gold_work_type": "05",
+  "agree": false,
+  "reason": "장애인표지=발급(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f086fb-24614",
+  "current_work_type": "01",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "수입금납입=수입"
+ },
+ {
+  "id": "자체감사-pap-public-11f03c25-25201",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "점용허가"
+ },
+ {
+  "id": "ALIO-2024-2026012210319901-8",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "기자재구입"
+ },
+ {
+  "id": "자체감사-pap-public-11f13a28-3032",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검교정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efac54-110217",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "재판정통보"
+ },
+ {
+  "id": "국회결산-2024-1027253",
+  "current_work_type": "17",
+  "gold_work_type": "03",
+  "agree": false,
+  "reason": "사업기획성과(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef772c-115959",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "공사감독정산"
+ },
+ {
+  "id": "자체감사-pap-central-11ef171a-4416",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "도서관자료=기록"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeeca3-86896",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "평가계획=학사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f087c8-41967",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "주차장설치기준"
+ },
+ {
+  "id": "자체감사-pap-public-11f14a86-4212",
+  "current_work_type": "01",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "평가비용회수(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f107f1-8210",
+  "current_work_type": "13",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "불용계측기=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f142e3-10148",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "등초본교부"
+ },
+ {
+  "id": "자체감사-pap-public-11f07d91-22260",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "채권보전"
+ },
+ {
+  "id": "자체감사-pap-public-11f00631-30313",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금관리"
+ },
+ {
+  "id": "자체감사-pap-public-11eefd50-53901",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송채권=소송사무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f13176-10919",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "시설공사계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f009d9-70026",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "점검계획"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee7e6-88960",
+  "current_work_type": "19",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학칙=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f00242-69035",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "사례관리대상(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeefc0-128150",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "기록물관리"
+ },
+ {
+  "id": "자체감사-pap-public-11eefc8e-55505",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사후관리"
+ },
+ {
+  "id": "자체감사-pap-public-11f099a9-23230",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전관리=안전"
+ },
+ {
+  "id": "자체감사-pap-public-11f099a9-23232",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전관리=안전"
+ },
+ {
+  "id": "자체감사-pap-public-11f128cc-5060",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "피해시설복구"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07e21-51080",
+  "current_work_type": "04",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "폐기물처리계약(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef52c9-40158",
+  "current_work_type": "19",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "일과후행위=복무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef3291-100620",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "건립민원"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efee56-67629",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "구매내역공개"
+ },
+ {
+  "id": "자체감사-pap-public-11efb29f-42246",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "악성민원대응"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef59d8-103202",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "응시서류파기"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11c50-20167",
+  "current_work_type": "10",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "교외체험=학사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c5ed-26432",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "자치회심의"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04c0d-56375",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "수의계약"
+ },
+ {
+  "id": "자체감사-pap-public-11f1108e-8916",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "분할연금처리"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c673-14457",
+  "current_work_type": "07",
+  "gold_work_type": "09",
+  "agree": false,
+  "reason": "융자금=여신"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee50b-97823",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "공용차량"
+ },
+ {
+  "id": "자체감사-pap-public-11f1232e-8323",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "상속재산국세(amb)"
+ },
+ {
+  "id": "국회결산-2023-1026092",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "예산과목계약(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecb09-131697",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "계약업무"
+ },
+ {
+  "id": "ALIO-2024-2025020510124597-9",
+  "current_work_type": "01",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전조직=안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f13c56-12530",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "등록재판정통보"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efec5a-79558",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "소방안전"
+ },
+ {
+  "id": "자체감사-pap-public-11f15293-449",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "공사규정개정(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f133e6-5172",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "공사용역물품계약"
+ },
+ {
+  "id": "자체감사-pap-central-11efd878-3354",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "돌봄대상관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efab8d-80473",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "민간위탁"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe29b-43793",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "소방인허가회신"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed05e-100919",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "선금채권확보"
+ },
+ {
+  "id": "국회결산-2023-1024351",
+  "current_work_type": "02",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "연구비집행=회계"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efa717-97394",
+  "current_work_type": "08",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "급식소위=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eef30f-125446",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학업성적평가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeef45-116357",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "계약보증금"
+ },
+ {
+  "id": "자체감사-pap-public-11f13238-4006",
+  "current_work_type": "19",
+  "gold_work_type": "19",
+  "agree": true,
+  "reason": "엽탄사용(amb)"
+ },
+ {
+  "id": "국회결산-2022-1023360",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "사업재편승인"
+ },
+ {
+  "id": "자체감사-pap-public-11f044c3-29419",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "근무성적평정"
+ },
+ {
+  "id": "자체감사-pap-public-11ef3812-50695",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "급부금지급심사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eff368-44417",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보"
+ },
+ {
+  "id": "자체감사-pap-public-11f15421-572",
+  "current_work_type": "20",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "과납보험료환급(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1a3c-115570",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "구매카드"
+ },
+ {
+  "id": "자체감사-pap-public-11efb90f-39085",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "종결채권회수"
+ },
+ {
+  "id": "자체감사-pap-public-11effcb5-29520",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "휴게소점검(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef02d1-91196",
+  "current_work_type": "20",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "인지세=부과"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef86c8-77890",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "용역안전의무(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f02bc1-56608",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "건축허가동의"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0e09c-10674",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "기부채납=재산"
+ },
+ {
+  "id": "자체감사-pap-public-11f0fda8-11131",
+  "current_work_type": "16",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "의약품유통=감독"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecd57-132509",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "수강료=수입"
+ },
+ {
+  "id": "자체감사-pap-public-11f11929-8366",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "거래처등록"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed6c9-109841",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학교교육계획(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef69bf-47340",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "교육재인증"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03f58-45473",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "농지전용허가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef4292-104684",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "센터위탁"
+ },
+ {
+  "id": "자체감사-pap-public-11efee7b-33015",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "수용재결"
+ },
+ {
+  "id": "ALIO-2024-2025010210107934-3",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "승진임용"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c52f-17466",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "시험기디지털(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f01348-67106",
+  "current_work_type": "19",
+  "gold_work_type": "19",
+  "agree": true,
+  "reason": "우수사례"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef432f-99462",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "조리실무사채용"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03d32-59104",
+  "current_work_type": "19",
+  "gold_work_type": "19",
+  "agree": true,
+  "reason": "산림사업(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6b51-100100",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "교원인사위"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef3b54-99451",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03a0e-30570",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "급식계획=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f15975-3323",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "행위허가협의"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f136da-7048",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "지필평가성적"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1638-49079",
+  "current_work_type": "03",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "시설청소계획(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11efaa25-3158",
+  "current_work_type": "01",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "감정평가법인선정(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f128d3-9144",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "의료기관지정(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef5560-46052",
+  "current_work_type": "07",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "거주자금미상환(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef086f-94393",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "지필평가운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efb37a-92696",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "정보공시(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f06084-21275",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "분석시스템"
+ },
+ {
+  "id": "자체감사-pap-public-11efa894-42264",
+  "current_work_type": "19",
+  "gold_work_type": "19",
+  "agree": true,
+  "reason": "우수사례"
+ },
+ {
+  "id": "ALIO-2025-2025111410285285-3",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "대행용역수의계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eebe52-116588",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "교내상시상"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeece0-90794",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "여비지급"
+ },
+ {
+  "id": "자체감사-pap-public-11eee056-59298",
+  "current_work_type": "10",
+  "gold_work_type": "08",
+  "agree": false,
+  "reason": "안전규정심사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f03167-25614",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원처리대장"
+ },
+ {
+  "id": "국회결산-2022-1023244",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "건축사업집행"
+ },
+ {
+  "id": "자체감사-pap-central-11ef1809-4221",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "인원배정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1354-79058",
+  "current_work_type": "21",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "봉투지급대상=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eefaf1-90456",
+  "current_work_type": "10",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "재산사용허가(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecfb4-78136",
+  "current_work_type": "08",
+  "gold_work_type": "13",
+  "agree": false,
+  "reason": "일상감사=검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f02bd4-28082",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검사사후관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07c99-57831",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품관리"
+ },
+ {
+  "id": "자체감사-pap-public-11f04c12-31799",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "겸직위반"
+ },
+ {
+  "id": "국회결산-2024-1026874",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "전문기관지정(amb)"
+ },
+ {
+  "id": "국회결산-2023-1026224",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "재무건전성(amb)"
+ },
+ {
+  "id": "국회결산-2023-1026188",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "적성검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04a7c-69324",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "수탁자모집"
+ },
+ {
+  "id": "자체감사-pap-central-11f0ec69-1479",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "대부지원"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1e40-53169",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "시스템권한"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeebd8-82023",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품선정위"
+ },
+ {
+  "id": "자체감사-pap-public-11f17a6e-4819",
+  "current_work_type": "05",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "구매제도=계약(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef5450-112533",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "봉투공급관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efff0e-25819",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "PC정보보안"
+ },
+ {
+  "id": "자체감사-pap-public-11ef9b07-38444",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "압류배분계산서"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03439-47221",
+  "current_work_type": "07",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "시설안전계획=안전"
+ },
+ {
+  "id": "자체감사-pap-public-11f010f5-30442",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "창업보증사정"
+ },
+ {
+  "id": "자체감사-pap-public-11ef4595-49460",
+  "current_work_type": "01",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "취약개소=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1c9b-52963",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "검사증빙입력(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef0dda-91431",
+  "current_work_type": "10",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "교외체험출석=학사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2471-120713",
+  "current_work_type": "24",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "출결=학사"
+ },
+ {
+  "id": "자체감사-pap-public-11f163d9-1001",
+  "current_work_type": "08",
+  "gold_work_type": "09",
+  "agree": false,
+  "reason": "팩토링=여신(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11eebc05-3784",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "민원대행"
+ },
+ {
+  "id": "자체감사-pap-public-11eed140-59888",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "보안점검"
+ },
+ {
+  "id": "자체감사-pap-public-11ef3dc9-50490",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "금리고시(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef666f-45856",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "품질인증"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0660d-58970",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "위원회운영"
+ },
+ {
+  "id": "자체감사-pap-public-11f116bc-5986",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송예납금"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f030a2-59621",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "유치원규칙"
+ },
+ {
+  "id": "자체감사-pap-central-11eebe46-4168",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "유연근무복무"
+ },
+ {
+  "id": "자체감사-pap-public-11eebfce-60762",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "화재예방"
+ },
+ {
+  "id": "자체감사-pap-public-11f136d6-6170",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "설계변경"
+ },
+ {
+  "id": "자체감사-pap-public-11f00923-31442",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "제소종결입력"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f13c55-6263",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "세출예산집행"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eedf88-134436",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "기간제채용"
+ },
+ {
+  "id": "자체감사-pap-public-11ef06ad-54340",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "공매배분계산서"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f011bb-34194",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "차량정비관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eff892-73536",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "카드포인트세입"
+ },
+ {
+  "id": "자체감사-pap-public-11eef0b1-56433",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송종결구분"
+ },
+ {
+  "id": "자체감사-pap-public-11f163d9-999",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "연계보증요건"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecef3-128630",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보위탁"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07805-48542",
+  "current_work_type": "11",
+  "gold_work_type": "05",
+  "agree": false,
+  "reason": "외부강의신고=신고"
+ },
+ {
+  "id": "자체감사-pap-public-11f16945-491",
+  "current_work_type": "09",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "연금수급권변경=결정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eff57e-63107",
+  "current_work_type": "06",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "세외수입세입=수입(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f096b2-34963",
+  "current_work_type": "03",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "소방계획=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef0545-48592",
+  "current_work_type": "23",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "CCTV설치지원=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f000a3-32077",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "AED점검(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef312f-29834",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학교급식운영"
+ },
+ {
+  "id": "자체감사-pap-public-11f0ce99-12997",
+  "current_work_type": "10",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "원상회복채권=채권"
+ },
+ {
+  "id": "자체감사-pap-central-11eff315-1333",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "연장심의"
+ },
+ {
+  "id": "자체감사-pap-public-11effa30-13878",
+  "current_work_type": "07",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "전표작성=회계"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeebcf-88588",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학운위=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f10227-20889",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "인감대리발급"
+ },
+ {
+  "id": "자체감사-pap-public-11f02585-27432",
+  "current_work_type": "12",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "매칭지원=지원"
+ },
+ {
+  "id": "자체감사-pap-public-11f08959-20060",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "우수시설인증"
+ },
+ {
+  "id": "자체감사-pap-central-11efbb75-3145",
+  "current_work_type": "16",
+  "gold_work_type": "16",
+  "agree": true,
+  "reason": "자유무역지역(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f158b9-5278",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "검사증서기재(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cb65-24558",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "물품검수"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6f15-47731",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검사일정보고"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed2d4-112068",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "교직원복무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecbcd-61360",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "운행정지=검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f00922-31474",
+  "current_work_type": "12",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "민원처리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef007d-82467",
+  "current_work_type": "24",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학운위=학교운영(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2dd7-119032",
+  "current_work_type": "17",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학교발전기금학운위(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f03487-27403",
+  "current_work_type": "18",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "위탁교육인력=인사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eed528-59722",
+  "current_work_type": "06",
+  "gold_work_type": "12",
+  "agree": false,
+  "reason": "변호사보수=소송"
+ },
+ {
+  "id": "자체감사-pap-public-11ef5066-48488",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "복무처리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f16e16-3489",
+  "current_work_type": "21",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "영업행정처분=단속"
+ },
+ {
+  "id": "자체감사-pap-public-11ef7b00-45436",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "제어장치개발(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef7a4b-111277",
+  "current_work_type": "14",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "보안점검부=보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07cb9-32432",
+  "current_work_type": "16",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "회계공무원지정=회계"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c85d-11200",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "배전선로진단(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05631-42190",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "증지수입금"
+ },
+ {
+  "id": "자체감사-pap-public-11efb787-37045",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "재생재료매각(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f08715-19575",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "부동산담보"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeece0-90795",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "장학금대상(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef8d07-39774",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "네트워크보안"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f02ef8-58467",
+  "current_work_type": "19",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "장애인복지=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07cb9-32434",
+  "current_work_type": "16",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "예산집행품의=회계"
+ },
+ {
+  "id": "자체감사-pap-public-11f0f2bd-9862",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보안전성"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fcd3-16700",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품관리"
+ },
+ {
+  "id": "자체감사-pap-public-11eecc64-59769",
+  "current_work_type": "06",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "주민세납부=회계(amb)"
+ },
+ {
+  "id": "ALIO-2024-2025010310109410-1",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송비용회수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eecc81-128082",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "집행내역공개(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eff595-35117",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송기록디지털(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11f03475-2873",
+  "current_work_type": "16",
+  "gold_work_type": "16",
+  "agree": true,
+  "reason": "FTZ사무실운영(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef3782-112400",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "밀폐공간안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eebe80-123450",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "선금채권관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe29b-43773",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "건축허가동의"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f086fb-24615",
+  "current_work_type": "05",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "등기배송수수료(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f06208-23999",
+  "current_work_type": "19",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전교육=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fced-17420",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "아동급식지원"
+ },
+ {
+  "id": "국회결산-2022-1023802",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "예산목적외지출"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ffed-6461",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "활동계획수립"
+ },
+ {
+  "id": "자체감사-pap-public-11ef7a4a-42516",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "시스템미표출(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f01f0f-28905",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "대출조건변경"
+ },
+ {
+  "id": "자체감사-pap-public-11f0166c-26286",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "초과부과금절감"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee743-87284",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보파기"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f06ce1-53841",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "청소년증발급"
+ },
+ {
+  "id": "자체감사-pap-public-11f056fd-25532",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "방재안전점검(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f06611-55572",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "여비지급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f099cb-52906",
+  "current_work_type": "15",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "장애결정통보=결정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed32a-84667",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "재정정보공개"
+ },
+ {
+  "id": "자체감사-pap-public-11f099a9-23231",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전관리=안전"
+ },
+ {
+  "id": "자체감사-pap-public-11efe1f1-35897",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "기한연장여신"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2140-93618",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "도서관기록물"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efb6c3-79429",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "하자검사"
+ },
+ {
+  "id": "자체감사-pap-public-11eed05e-59244",
+  "current_work_type": "09",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "실태조사=조사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0f4d2-11700",
+  "current_work_type": "24",
+  "gold_work_type": "19",
+  "agree": false,
+  "reason": "지적조치미흡(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef9c2a-76132",
+  "current_work_type": "14",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "봉투수불=물품"
+ },
+ {
+  "id": "자체감사-pap-public-11ef8d07-39630",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "정기검사판정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe8dc-76020",
+  "current_work_type": "18",
+  "gold_work_type": "05",
+  "agree": false,
+  "reason": "인감위임장=발급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef637d-94993",
+  "current_work_type": "01",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "매점사용허가=재산(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fbe4-15615",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "공가복무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2ebd-89619",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "카드인센티브세입"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07bd2-57846",
+  "current_work_type": "15",
+  "gold_work_type": "19",
+  "agree": false,
+  "reason": "복지관홍보(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eedaa8-124201",
+  "current_work_type": "08",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "체육소위=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f18a79-5313",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "수급자관리"
+ },
+ {
+  "id": "자체감사-pap-public-11f13238-4084",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "상업시설관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efabb6-110241",
+  "current_work_type": "19",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "봉투관리=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8f7c-108024",
+  "current_work_type": "03",
+  "gold_work_type": "24",
+  "agree": false,
+  "reason": "강의계획서징구(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eedb8d-55996",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "사해행위소송"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f02710-55083",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "학교회계추경"
+ },
+ {
+  "id": "자체감사-pap-central-11efc67f-3519",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금통지"
+ },
+ {
+  "id": "자체감사-pap-public-11f107e9-9776",
+  "current_work_type": "16",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "유통관리단(amb)"
+ },
+ {
+  "id": "국회결산-2024-1027638",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "펀드출자(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f01c13-69292",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "시설공사"
+ },
+ {
+  "id": "자체감사-pap-public-11f1414d-5630",
+  "current_work_type": "11",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "PC불용=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef89bf-105929",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학생봉사활동"
+ },
+ {
+  "id": "국회결산-2022-1023715",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "정산금국고반납(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef02a0-119481",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "개별화교육계획"
+ },
+ {
+  "id": "자체감사-pap-public-11f09452-20700",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보보호"
+ },
+ {
+  "id": "자체감사-pap-public-11effa54-31190",
+  "current_work_type": "16",
+  "gold_work_type": "09",
+  "agree": false,
+  "reason": "재산보험청구(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ec47-27968",
+  "current_work_type": "19",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "화재예방=안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee5b3-130357",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeaaba-134335",
+  "current_work_type": "20",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "청사방호=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efaae6-38522",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "가요제보조금"
+ },
+ {
+  "id": "ALIO-2025-2026072710450897-3",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "심사위원회운영"
+ },
+ {
+  "id": "자체감사-pap-public-11ef7ece-39601",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "감정평가의뢰(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef9b63-77757",
+  "current_work_type": "18",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "후원금관리=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efc68d-36483",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "현금거래보고(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef44e5-111639",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사례관리사후"
+ },
+ {
+  "id": "자체감사-pap-public-11f10575-10249",
+  "current_work_type": "01",
+  "gold_work_type": "13",
+  "agree": false,
+  "reason": "검사증서차기(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f158d2-965",
+  "current_work_type": "14",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "차량운행=물품"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1713-128652",
+  "current_work_type": "24",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학적=학사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f05708-24357",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "후취담보"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c5ab-17917",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "보조공학사후(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f1065f-8527",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "평가위원회운영(amb)"
+ },
+ {
+  "id": "국회결산-2022-1023937",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "시험장위탁"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eef21c-91044",
+  "current_work_type": "11",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "학교안전연수=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efce1b-77100",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "농지자격증명발급"
+ },
+ {
+  "id": "자체감사-pap-public-11ef9b07-38435",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "시효소송"
+ },
+ {
+  "id": "자체감사-pap-public-11f0465e-25142",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검교정"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef11b1-110298",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "점용료부과"
+ },
+ {
+  "id": "자체감사-pap-public-11efe9ad-34117",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사고유보사후"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12197-1819",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "비밀문서관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07cb9-32437",
+  "current_work_type": "16",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "회계증빙=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eed518-58164",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "외부강의신고"
+ },
+ {
+  "id": "자체감사-pap-public-11f1525c-6534",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "시험위원정보"
+ },
+ {
+  "id": "자체감사-pap-central-11f0c8dc-767",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "EMR인증(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1bfa-115666",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "복지사업비집행(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2212-126666",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학생평가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c521-42919",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "운동부경비게시(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f065f0-64521",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "여비집행"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ce7c-6745",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "복지민원처리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03aba-61922",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "안전보건비미계상"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07cb9-32433",
+  "current_work_type": "16",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "세출집행과목=회계"
+ },
+ {
+  "id": "자체감사-pap-public-11f08ef0-16160",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "전자기록물"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeeb57-89310",
+  "current_work_type": "19",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "인권규정=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efbe9e-102079",
+  "current_work_type": "08",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "유치원운영위=학교운영"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11b88-16634",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "생활기록부"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed062-99973",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원처리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12f02-6110",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "부가세환급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef604a-113037",
+  "current_work_type": "05",
+  "gold_work_type": "19",
+  "agree": false,
+  "reason": "조례개정(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efad38-37293",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "검사기관인증"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11c1f-22527",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "국민신청처리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8f7c-108055",
+  "current_work_type": "18",
+  "gold_work_type": "05",
+  "agree": false,
+  "reason": "인감위임장=발급"
+ },
+ {
+  "id": "자체감사-pap-public-11eeb909-59553",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "결정유예심사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f000ae-32632",
+  "current_work_type": "10",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "국외출장=복무(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f06059-43501",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "민방위"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6059-113986",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "농지자격증명발급"
+ },
+ {
+  "id": "자체감사-pap-public-11f11c46-6507",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "산업재해예방"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efeccb-41231",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "주민등록증관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f057a8-42691",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "공사계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe9a1-62888",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "민방위교육면제"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef3391-81342",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학대예방교육(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f1018f-27462",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "폐기물수수료(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6524-44886",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "정보관리보안"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0526b-57353",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "통학차량=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eec624-106919",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "정보공개"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04a7c-69312",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "도서관위탁"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cce7-25499",
+  "current_work_type": "19",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "의사무능력자=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11245-20026",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "사회보험신고(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef0212-123526",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "평가계획심의=학사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05e34-62985",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "복지센터위탁"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eec197-122135",
+  "current_work_type": "03",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "평가계획=학사"
+ },
+ {
+  "id": "자체감사-pap-public-11f0093f-32930",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "법률구조사례"
+ },
+ {
+  "id": "자체감사-pap-public-11f099a9-23233",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전관리=안전"
+ },
+ {
+  "id": "자체감사-pap-central-11f07b42-2049",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "연말정산위탁(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11f10662-908",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "교통행정처분(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eef8a7-122333",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "동아리보조금"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef0e75-119203",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "보조금정산"
+ },
+ {
+  "id": "자체감사-pap-public-11effaf3-34136",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "사고유보사후"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee4d0-131613",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "재발급수수료징수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0428f-24911",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "공사계약면허"
+ },
+ {
+  "id": "자체감사-pap-public-11eff296-29149",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "검사수수료환불"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c8ed-38562",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "인감대리발급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0ce5e-34904",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "학교회계세입(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef547d-48187",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "위험평가내규(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef9fc0-38411",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보지침"
+ },
+ {
+  "id": "자체감사-pap-public-11eec646-56890",
+  "current_work_type": "14",
+  "gold_work_type": "13",
+  "agree": false,
+  "reason": "일상감사=검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeeb12-80979",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "시설공사계약"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef306d-119661",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "시공정산"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef9040-113917",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "공익직불금"
+ },
+ {
+  "id": "감사원-2025-공개문전문13371cf940-6",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "조림사후관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04ce1-47545",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학업성적평가"
+ },
+ {
+  "id": "자체감사-pap-public-11eebf31-61117",
+  "current_work_type": "03",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "통신보안=보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f100c6-377",
+  "current_work_type": "13",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "적성검사개인정보(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f04d81-57656",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "행위허가협의"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef5e9e-116137",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "시간외수당중복"
+ },
+ {
+  "id": "자체감사-pap-public-11f14d1e-2783",
+  "current_work_type": "16",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "배전설비=시설(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1966-51416",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "구상권행사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeeca3-86743",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "안전교육=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f1557b-6569",
+  "current_work_type": "03",
+  "gold_work_type": "24",
+  "agree": false,
+  "reason": "자료방치=문서(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f1392d-11042",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "공시송달(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07f0c-58217",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "기록물관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef083e-127072",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "당직청사보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8955-110310",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "민간위탁절차"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef132c-114961",
+  "current_work_type": "05",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학칙공시=학교운영(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0166d-27102",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "사건번호부여"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2c4c-95994",
+  "current_work_type": "04",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "폐기물대장=물품(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef69ab-43269",
+  "current_work_type": "03",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "게스트룸관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8088-107425",
+  "current_work_type": "19",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "비소모품=물품"
+ },
+ {
+  "id": "자체감사-pap-public-11ef06ad-54334",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "담보채권경매열람"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0d3db-33494",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "여성가족원위원회"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0554b-29624",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품선정위"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6fe3-92243",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "공유재산사용허가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11effe46-71239",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "이용료규정계약"
+ },
+ {
+  "id": "자체감사-pap-public-11eef304-59388",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "주차장안내판"
+ },
+ {
+  "id": "자체감사-pap-public-11eedb8b-57417",
+  "current_work_type": "14",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "보안점검기록=보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f11929-8364",
+  "current_work_type": "16",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "유통관리단(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f17462-116",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "사무편람"
+ },
+ {
+  "id": "자체감사-pap-public-11f08219-24627",
+  "current_work_type": "13",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "검사수수료=부과(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f14795-3181",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "바우처사업배정(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f100ab-11752",
+  "current_work_type": "18",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "개인정보위탁공개"
+ },
+ {
+  "id": "자체감사-pap-public-11ef2f94-50225",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "인증전산구축"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eef21c-91109",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보업무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efab87-109010",
+  "current_work_type": "04",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "폭염대응=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef5eb5-95974",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "세외수입체납관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03b54-63473",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "환경보전비준공검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c75c-40626",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "계약정산"
+ },
+ {
+  "id": "자체감사-pap-public-11f04a9d-25756",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "복무관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8df8-104835",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "유치원세입금(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f002d3-71688",
+  "current_work_type": "21",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "양곡지원=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eebf64-107151",
+  "current_work_type": "25",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "유치원시설변경(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f15a59-1520",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "국고지원안내"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1a3c-115600",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "재발급수수료징수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f176b2-5875",
+  "current_work_type": "15",
+  "gold_work_type": "15",
+  "agree": true,
+  "reason": "방범보조금"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8f7c-108163",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "종교협의회사업(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0cb28-21447",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "위임전결"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eefc5f-101406",
+  "current_work_type": "24",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "운영위회의록=학교운영(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f01a68-31688",
+  "current_work_type": "04",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "건설용역계약변경(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f13ed0-8037",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "모니터링DB"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1e61-121544",
+  "current_work_type": "18",
+  "gold_work_type": "03",
+  "agree": false,
+  "reason": "클러스터육성사업(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f06690-45805",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "민원이송"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed21e-130857",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "보안교육(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f17df5-4431",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "출장위임전결(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0fcde-11751",
+  "current_work_type": "09",
+  "gold_work_type": "09",
+  "agree": true,
+  "reason": "보증사고처리"
+ },
+ {
+  "id": "자체감사-pap-public-11f0f7ee-13001",
+  "current_work_type": "20",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "동의서징구(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f04750-29443",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "여비부당수령"
+ },
+ {
+  "id": "자체감사-pap-public-11f05d4e-23718",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "외부강의신고점검"
+ },
+ {
+  "id": "국회결산-2024-1027884",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "안전체험관설치(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f166f0-2328",
+  "current_work_type": "14",
+  "gold_work_type": "14",
+  "agree": true,
+  "reason": "인권점검(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef5563-46242",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "SW직접구매검토(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c99e-53430",
+  "current_work_type": "10",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "재산사용허가=재산"
+ },
+ {
+  "id": "자체감사-pap-public-11ef06ca-54366",
+  "current_work_type": "19",
+  "gold_work_type": "09",
+  "agree": false,
+  "reason": "가치투자=여신(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efff9a-73272",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "하자검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efa6df-68209",
+  "current_work_type": "22",
+  "gold_work_type": "08",
+  "agree": false,
+  "reason": "이사회운영=심의(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efd214-74770",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "외부강의신고"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11e7a-7711",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "체납압류해제(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eee743-87418",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "학교안전계획(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1354-79065",
+  "current_work_type": "06",
+  "gold_work_type": "19",
+  "agree": false,
+  "reason": "등산로정비(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f121a5-15092",
+  "current_work_type": "05",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "재판정안내=통지(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f160a3-11913",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "공사계약이행"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f06dd1-45783",
+  "current_work_type": "10",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "겸직=인사"
+ },
+ {
+  "id": "자체감사-pap-public-11eeea76-58848",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "완성검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed698-131966",
+  "current_work_type": "08",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "인사위원회=인사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6677-46206",
+  "current_work_type": "18",
+  "gold_work_type": "18",
+  "agree": true,
+  "reason": "위탁수수료"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f176b3-1506",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "인성교육"
+ },
+ {
+  "id": "자체감사-pap-public-11efe9fb-33386",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "제안제도평가(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef4b21-49608",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "배관계획(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eec497-61261",
+  "current_work_type": "17",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "상품권보관=물품(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eff353-29573",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "차량운영관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0f58a-13458",
+  "current_work_type": "08",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "사례관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efa0c2-34917",
+  "current_work_type": "14",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "직원관리감독(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6e3e-108382",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "점용료부과"
+ },
+ {
+  "id": "자체감사-pap-public-11f12ca3-3252",
+  "current_work_type": "19",
+  "gold_work_type": "24",
+  "agree": false,
+  "reason": "인계인수=문서(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f08d39-54979",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "안전보건비요율"
+ },
+ {
+  "id": "자체감사-pap-public-11ef904b-42381",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "지정폐기물처리(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f08d21-14965",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "공사감독"
+ },
+ {
+  "id": "자체감사-pap-public-11eee66e-56130",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송비용회수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05878-33939",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "상품권관리"
+ },
+ {
+  "id": "자체감사-pap-public-11f078b5-22873",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "보증금관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeab63-133975",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "장애인표지발급"
+ },
+ {
+  "id": "자체감사-pap-public-11ef7169-44955",
+  "current_work_type": "19",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "안전컨설팅=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8466-115041",
+  "current_work_type": "03",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "학교보건안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0e7b9-12757",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "국제인증"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efccbd-77353",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "학교회계결산"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef846c-79185",
+  "current_work_type": "20",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "결제대금지출=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11f07297-1954",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "입찰참가자격"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eed9c9-125334",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품구매(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efcd77-35767",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "인증지침개정"
+ },
+ {
+  "id": "자체감사-pap-public-11efbd2c-38341",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "복무행동강령"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eeca08-129175",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "물품관리대장"
+ },
+ {
+  "id": "자체감사-pap-public-11ef170c-50191",
+  "current_work_type": "24",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "차량관리대장=물품(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef0299-131465",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "카드포인트세입"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03b58-42813",
+  "current_work_type": "19",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "농업기계임대(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0c91b-22647",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "USB정보보안"
+ },
+ {
+  "id": "국회결산-2024-1026697",
+  "current_work_type": "09",
+  "gold_work_type": "12",
+  "agree": false,
+  "reason": "전자심판=쟁송(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f046af-24845",
+  "current_work_type": "15",
+  "gold_work_type": "02",
+  "agree": false,
+  "reason": "PQ평가=계약(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef1768-99875",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학교법인(amb)"
+ },
+ {
+  "id": "국회결산-2024-1026735",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "검진지연(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef2ebd-49971",
+  "current_work_type": "01",
+  "gold_work_type": "01",
+  "agree": true,
+  "reason": "사업평가재분류(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef5f99-115362",
+  "current_work_type": "19",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "복지상담=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efda28-34940",
+  "current_work_type": "14",
+  "gold_work_type": "13",
+  "agree": false,
+  "reason": "일상감사=검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0ce99-12960",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "건설안전교육"
+ },
+ {
+  "id": "자체감사-pap-public-11eefbb5-57047",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "개인정보보호"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f00163-70791",
+  "current_work_type": "13",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "검진비지원=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef021e-133141",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "정관개정심의(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f08ba3-51629",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학운위"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe74e-76590",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "수입증지입금=수입"
+ },
+ {
+  "id": "자체감사-pap-public-11f0d0f3-14173",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송불변기간"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fc44-25234",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "시설공사집행"
+ },
+ {
+  "id": "자체감사-pap-public-11f12cc3-8257",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "유족연금지급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f11245-20020",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "등록공장관리"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef2882-85950",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "금궤검사"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f10259-16916",
+  "current_work_type": "08",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "인사위=인사(amb)"
+ },
+ {
+  "id": "자체감사-pap-central-11f0031d-2429",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "소송사무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe465-67482",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "발급기수입금"
+ },
+ {
+  "id": "자체감사-pap-central-11eeefbf-4821",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "인지세미납(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f149a6-4248",
+  "current_work_type": "19",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "분전함시건=안전(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f14a96-16834",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "주민번호부여대장(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f080ae-36986",
+  "current_work_type": "25",
+  "gold_work_type": "25",
+  "agree": true,
+  "reason": "학업중단숙려"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef60d9-61006",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "방염성능검사"
+ },
+ {
+  "id": "자체감사-pap-public-11ef1cc5-54430",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "경비예산집행"
+ },
+ {
+  "id": "자체감사-pap-public-11eee104-58826",
+  "current_work_type": "08",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "청사안전=안전"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6f2c-45880",
+  "current_work_type": "24",
+  "gold_work_type": "24",
+  "agree": true,
+  "reason": "연구관리규칙(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6111-99713",
+  "current_work_type": "14",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "여권보안점검=보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f0167d-30104",
+  "current_work_type": "03",
+  "gold_work_type": "03",
+  "agree": true,
+  "reason": "정비계획(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efc9b3-98829",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "개발행위허가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f07cb9-32503",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "물품검수조서"
+ },
+ {
+  "id": "자체감사-pap-public-11ef68c7-47347",
+  "current_work_type": "19",
+  "gold_work_type": "23",
+  "agree": false,
+  "reason": "OTP=보안(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef972c-61225",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "취득세부과"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c676-36901",
+  "current_work_type": "17",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "노인일자리급여=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0502c-45399",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "하자검사조서"
+ },
+ {
+  "id": "자체감사-pap-public-11ef8c63-42180",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "정보화사전협의"
+ },
+ {
+  "id": "자체감사-pap-public-11f0166c-26287",
+  "current_work_type": "10",
+  "gold_work_type": "13",
+  "agree": false,
+  "reason": "환경정기검사=검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0fb23-27220",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "복무규정"
+ },
+ {
+  "id": "자체감사-pap-public-11f02ae9-29951",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "제소종결입력"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef8080-107543",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "관급자재검수"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f037b3-63893",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "민방위"
+ },
+ {
+  "id": "자체감사-pap-public-11f0143b-33001",
+  "current_work_type": "22",
+  "gold_work_type": "04",
+  "agree": false,
+  "reason": "공사보험미징구=공사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f02ae8-29942",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "송무업무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f136bf-7506",
+  "current_work_type": "07",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "처우개선비=지원(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef2788-38642",
+  "current_work_type": "09",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "사적금전거래=복무(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c5c9-32048",
+  "current_work_type": "06",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "자치회관회계=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12e69-15378",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "대체휴무복무"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef038a-83441",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "민방위"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f058b1-26186",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "전기차충전허가"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f01a5a-66537",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "반복민원"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f03518-49828",
+  "current_work_type": "10",
+  "gold_work_type": "10",
+  "agree": true,
+  "reason": "지하수개발허가"
+ },
+ {
+  "id": "자체감사-pap-public-11f0159b-28168",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "보증료환급(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f151d0-2544",
+  "current_work_type": "12",
+  "gold_work_type": "12",
+  "agree": true,
+  "reason": "변호사보수소송"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11efe8fb-68339",
+  "current_work_type": "08",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "의무교육위=학교운영(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f1662b-5685",
+  "current_work_type": "05",
+  "gold_work_type": "05",
+  "agree": true,
+  "reason": "축조신고"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cb6f-33827",
+  "current_work_type": "20",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "차입금운용=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f036ac-27936",
+  "current_work_type": "20",
+  "gold_work_type": "20",
+  "agree": true,
+  "reason": "공탁금관리(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eee264-58035",
+  "current_work_type": "19",
+  "gold_work_type": "15",
+  "agree": false,
+  "reason": "고용장려금=지원"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f009da-66859",
+  "current_work_type": "08",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "학운위구성"
+ },
+ {
+  "id": "국회결산-2023-1025124",
+  "current_work_type": "11",
+  "gold_work_type": "11",
+  "agree": true,
+  "reason": "한시조직정비(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12d8c-13578",
+  "current_work_type": "17",
+  "gold_work_type": "17",
+  "agree": true,
+  "reason": "이장수당지급"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6ff8-44242",
+  "current_work_type": "03",
+  "gold_work_type": "12",
+  "agree": false,
+  "reason": "구상권행사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f10711-9053",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "고객헌장이행"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef86e2-98663",
+  "current_work_type": "24",
+  "gold_work_type": "25",
+  "agree": false,
+  "reason": "생활기록=학사"
+ },
+ {
+  "id": "국회결산-2023-1024458",
+  "current_work_type": "02",
+  "gold_work_type": "17",
+  "agree": false,
+  "reason": "지출원인행위=회계(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6c25-68148",
+  "current_work_type": "18",
+  "gold_work_type": "05",
+  "agree": false,
+  "reason": "인감위임장=발급"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f12cbd-14028",
+  "current_work_type": "02",
+  "gold_work_type": "02",
+  "agree": true,
+  "reason": "물품매각입찰(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11efac7f-38087",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "구상채권회수=채권(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f003d0-35396",
+  "current_work_type": "22",
+  "gold_work_type": "22",
+  "agree": true,
+  "reason": "작업환경안전"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef6e43-107305",
+  "current_work_type": "05",
+  "gold_work_type": "07",
+  "agree": false,
+  "reason": "등록결과통지=통지(amb)"
+ },
+ {
+  "id": "국회결산-2022-1023057",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "대여료수납=수입(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eff254-34560",
+  "current_work_type": "01",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "직원시험응시=인사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0c8ef-23256",
+  "current_work_type": "21",
+  "gold_work_type": "21",
+  "agree": true,
+  "reason": "재물조사"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6677-46188",
+  "current_work_type": "06",
+  "gold_work_type": "06",
+  "agree": true,
+  "reason": "압류매각취소(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11f11160-8415",
+  "current_work_type": "01",
+  "gold_work_type": "22",
+  "agree": false,
+  "reason": "보안시설재지정(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef08e7-48801",
+  "current_work_type": "13",
+  "gold_work_type": "06",
+  "agree": false,
+  "reason": "검사료환불=환급(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef9bdb-112726",
+  "current_work_type": "07",
+  "gold_work_type": "07",
+  "agree": true,
+  "reason": "현장민원지연"
+ },
+ {
+  "id": "자체감사-pap-public-11ef6f48-45006",
+  "current_work_type": "09",
+  "gold_work_type": "20",
+  "agree": false,
+  "reason": "구상권회수=채권(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11ef471b-93452",
+  "current_work_type": "10",
+  "gold_work_type": "21",
+  "agree": false,
+  "reason": "수영장사용허가=재산(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11eecb11-60395",
+  "current_work_type": "01",
+  "gold_work_type": "11",
+  "agree": false,
+  "reason": "사택입주=인사(amb)"
+ },
+ {
+  "id": "자체감사-pap-public-11ef0d16-52894",
+  "current_work_type": "04",
+  "gold_work_type": "04",
+  "agree": true,
+  "reason": "개보수하자검사"
+ },
+ {
+  "id": "자체감사-pap-public-11ef8496-40355",
+  "current_work_type": "13",
+  "gold_work_type": "13",
+  "agree": true,
+  "reason": "성능평가검사(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f0cfee-13913",
+  "current_work_type": "23",
+  "gold_work_type": "23",
+  "agree": true,
+  "reason": "스마트기기(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11eedb4e-133655",
+  "current_work_type": "08",
+  "gold_work_type": "08",
+  "agree": true,
+  "reason": "선수단운영위(amb)"
+ },
+ {
+  "id": "자체감사-pap-local_edu-11f05002-65036",
+  "current_work_type": "12",
+  "gold_work_type": "14",
+  "agree": false,
+  "reason": "범죄이송=조사(amb)"
+ },
+ {
+  "id": "국회결산-2023-1026246",
+  "current_work_type": "03",
+  "gold_work_type": "12",
+  "agree": false,
+  "reason": "분쟁조정=쟁송(amb)"
+ }
+]

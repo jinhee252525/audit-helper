@@ -3,6 +3,8 @@
   --line:#d9e1ec; --wash:#eaf3fb; --accent:#1c5a94; --accent2:#2f7dc4;
   --ok:#357a51; --ok-bg:#e4f1e9; --no:#b0432c; --no-bg:#f7e7e2;
   --mid:#b9821a; --mid-bg:#f6eed8;
+  --sage:#5f7d6b; --sage-bg:#e7f0ea; --sage2:#6b8f71;
+  --list:#8a7a5c; --list-bg:#f3eee4;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--page);color:var(--ink);
@@ -11,25 +13,30 @@ body{margin:0;background:var(--page);color:var(--ink);
 a{color:var(--accent)}
 .app-head{background:var(--paper);border-bottom:1px solid var(--line);padding:26px 0}
 .app-head h1{margin:0;font-size:24px;letter-spacing:-.02em}
-.app-head .tag{font-size:12px;font-weight:800;color:#fff;background:var(--accent2);border-radius:20px;padding:2px 9px;vertical-align:3px}
+.app-head .tag{font-size:12px;font-weight:800;color:#fff;background:var(--sage2);border-radius:20px;padding:2px 9px;vertical-align:3px}
 .app-head .sub{margin:6px 0 0;color:var(--ink2);font-size:14px}
 .warn{margin:10px 0 0;font-size:13px;color:var(--mid);background:var(--mid-bg);border-radius:6px;padding:8px 12px;display:inline-block}
+.load-status{margin:8px 0 0;font-size:12.5px;color:var(--faint)}
 
 .controls{margin:22px 0 10px}
 #q{width:100%;padding:13px 16px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
-#q:focus{outline:2px solid var(--accent2);outline-offset:1px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+#q:focus{outline:2px solid var(--sage2);outline-offset:1px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
 .filters select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-size:14px}
+.chk{font-size:13.5px;color:var(--ink2);display:inline-flex;align-items:center;gap:6px;padding:6px 10px;background:var(--paper);border:1px solid var(--line);border-radius:8px;user-select:none}
 .meta{margin-top:10px;font-size:13px;color:var(--faint)}
-#count{font-weight:800;color:var(--accent)}
+.meta .faint{color:var(--faint)}
+#count{font-weight:800;color:var(--sage)}
 .link{background:none;border:0;color:var(--accent);cursor:pointer;font-size:13px;text-decoration:underline}
 
 .results{display:flex;flex-direction:column;gap:12px;margin:14px 0 40px}
-.rec{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;border-left:4px solid var(--accent2)}
+.cap-note{font-size:12.5px;color:var(--faint);margin:0 0 4px}
+.rec{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;border-left:4px solid var(--sage2)}
 .rec.rt-immunity{border-left-color:var(--ok)}
 .rec.rt-consult{border-left-color:var(--mid)}
+.rec.rec-list-only{opacity:.92;border-left-style:dashed;background:#fafbfc}
 .rec-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:6px}
-.rtype{font-size:12px;font-weight:800;color:var(--accent)}
+.rtype{font-size:12px;font-weight:800;color:var(--sage)}
 .ftype{font-size:15px;font-weight:700;flex:1;min-width:120px}
 .badge{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:20px;white-space:nowrap}
 .b-disp{background:var(--wash);color:var(--accent)}
@@ -37,7 +44,13 @@ a{color:var(--accent)}
 .b-ok{background:var(--ok-bg);color:var(--ok)}
 .b-no{background:var(--no-bg);color:var(--no)}
 .b-consult{background:var(--mid-bg);color:var(--mid)}
-.summary{margin:4px 0 8px;font-size:15px;color:var(--ink)}
+.b-trust{background:var(--sage-bg);color:var(--sage)}
+.b-review{background:var(--mid-bg);color:var(--mid)}
+.b-q-matched{background:var(--ok-bg);color:var(--ok)}
+.b-q-body{background:var(--sage-bg);color:var(--sage)}
+.b-q-list{background:var(--list-bg);color:var(--list)}
+.summary{margin:4px 0 6px;font-size:15px;color:var(--ink);font-weight:600}
+.excerpt{margin:0 0 8px;font-size:13.5px;color:var(--ink2);white-space:pre-wrap;max-height:4.8em;overflow:hidden}
 .reqs{font-size:13px;color:var(--ink2);margin:2px 0}
 .rec-foot{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin-top:8px;border-top:1px solid #eef1f5;padding-top:8px}
 .rec-foot .status{color:var(--faint)}

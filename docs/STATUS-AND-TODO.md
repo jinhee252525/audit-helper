@@ -1,4 +1,4 @@
-# 진행 기록 & 할 일 (정밀) — 2026-09-06
+# 진행 기록 & 할 일 (정밀) — 2026-09-07
 
 > 어디까지 했는지 + 앞으로 할 것을 정확히 기록. 사용량(LLM 쿼터) 10% 미만이라, 각 할 일에 **[무료]=결정론/내 스크립트, [LLM]=사용량 소모**를 표기.
 
@@ -32,38 +32,46 @@
 
 ---
 
-## B. 지금 진행 중 (두고 결과만 받기)
-- **careful 재태깅 12샤드 중 1완료·11 진행중** (저정밀 코드 01·03·08·09·10·13·14·16·19 = 34,453건 대상, 건별 정독)
-  - 입력 `data/retag_shards/` · 출력 `data/retag_out/` · **아직 findings 미반영**
-  - ⚠️ 사용량<10%라 일부 rate limit로 실패 가능 — 완료된 것만 반영 예정
+## B. 직전에 완료·인계됨 (2026-09-07)
+
+- **careful 재태깅 12샤드 완료·보수적 병합 반영** (저정밀 코드 01·03·08·09·10·13·14·16·19 대상)
+  - 입력 `data/retag_shards/` · 출력 `data/retag_out/` · **apply 보수적 병합으로 pap·json·all에 반영 완료**
+  - 보고서: `data/retag_out/_apply_report.json`
+  - 골든 실측: **findings.all 전체 ~76.0%** · retag-overlap **~54.4%**(보수적 수용 후)
+  - 통계 예: rule_accept 3,008 · rule_hold_cur 23,992 · claude_keep 7,453 · all 갱신 34,278건
+  - `python pipeline/dedup_merge.py`는 **선택/스킵 가능**: all이 이미 pap+json 반영본과 동기화됨(재실행은 대용량·불필요 시 생략)
 
 ---
 
 ## C. 앞으로 할 일 (정확한 순서)
 
-### C-1. 재태깅 마무리 [무료] — 사용량 회복 불필요
-1. retag 11샤드 완료(또는 rate limit 중단) 대기 → **`python pipeline/apply_retag.py`** 로 완료분만 반영
-2. **골든 재측정**(`data/golden/golden_result.json` 대조, 무료) → 정확도 실측치 확인
-3. `python pipeline/dedup_merge.py` 재실행 → `findings.all.json` 갱신
+### C-1. 재태깅 마무리 [무료] — 완료(2026-09-07)
+1. ~~retag 샤드 완료 → apply_retag 보수적 반영~~ 완료
+2. ~~골든 재측정~~ 완료 → full **~76.0%**, retag-overlap **~54.4%**
+3. `python pipeline/dedup_merge.py` — **optional/skip**(all 이미 갱신). 소스본만 따로 고친 뒤에만 재실행
 
-### C-2. 신뢰도 라우팅으로 "노출분 95%" [무료]
-4. `tag_confidence`·`need_deep` 기준으로 **고신뢰=확정노출 / 저신뢰=검토중 배지+검수큐** 분리. → 노출분 정확도 95%+ 보장(순수 exact 95%는 원문정독=LLM 대량 필요, 사용량 회복 후 선택)
+### C-2. 신뢰도 라우팅으로 "노출분 95%" [무료] — 앱 반영(이번 작업)
+4. `tag_confidence`·`review` 기준 **고신뢰=확정노출 / 저신뢰·검토=「검토중」배지**. 정렬 고신뢰 우선.
+   - 힌트: `min_confidence_expose_hint=0.6`(manifest `default_filters`)
+   - 순수 exact 95%는 원문정독=[LLM] 대량 필요 → 사용량 회복 후 선택(C-4)
 
-### C-3. 검색앱(프론트) [무료 대부분]
-5. **FlexSearch 인덱스 빌드 + 샤딩**(연도·기관유형·work_type별 JSON) — `pipeline/build_index.py` 신규
-6. **히어로 UI 프로토타입**(`prototypes/`): 상황입력→유사선례→같음/다름→원문 온디맨드→증빙목록→**결재용 검토메모**(+면책/컨설팅) 1화면. 녹색 디자인
-7. 교육 개별학교 필터 기본 숨김 · 품질 배지(목록만/본문확보/근거대조)
+### C-3. 검색앱(프론트) [무료 대부분] — 인덱스·프로토타입 완료 / 앱 배선(이번 작업)
+5. **FlexSearch 인덱스 빌드 + 샤딩** 완료 — 24샤드 (`app/data/index/manifest.json` + `shards/`)
+   - 재빌드: `python pipeline/build_index.py --input data/findings.all.json --out app/data/index`
+6. **히어로 UI 프로토타입** 완료 — `prototypes/situation-memo`, `prototypes/hero.html`
+7. **앱 배선(이번 작업)**: `app/` → shard 인덱스 lazy-load · 개별학교 기본 숨김 · 품질 배지(목록만/본문확보/근거대조) · 신뢰도 배지
 
-### C-4. 고도화 [LLM 필요 — 사용량 회복 후]
-8. **임베딩(F1 유사검색)** 구축 — 사용량 소모(임베딩은 LLM보다 저렴하나 필요)
-9. 남은 retag(사용량 부족으로 못한 샤드) + 원문정독으로 exact 정확도 향상(선택)
-10. F8 지적↔면책 대조 · F10 신규피드 · 대시보드 인사이트(AXIS B) · GitHub Pages 배포 · 매일배치(헤드리스 로그인)
+### C-4. 고도화 [LLM 필요 — 사용량 회복 후] — 이후
+8. **임베딩(F1 유사검색)** 구축 — [LLM](임베딩은 생성보다 저렴하나 필요)
+9. 골든∩저신뢰 thin LLM 정독으로 exact **~78–80%** 목표(전량 `need_deep` 회피) — [LLM]
+10. F8 지적↔면책 대조 · F10 신규피드 · 대시보드 인사이트(AXIS B) · GitHub Pages 배포 · 매일배치(헤드리스 로그인) — 혼합([무료]/[LLM])
 
 ---
 
 ## D. 핵심 파일 지도
 - 데이터: `data/findings.all.json`(최종 통합) · `findings.pap.json`·`findings.json`(소스본) · `data/codebook.json`
-- 파이프라인: `pipeline/apply_retag.py`·`apply_deep.py`·`reclass_deterministic.py`·`refine_classification.py`·`dedup_merge.py`·`map_pap.py`·`collect_pap_central.py`
-- 검증: `pipeline/validate.py` · 골든 `data/golden/`
+- 인덱스: `app/data/index/manifest.json` · `app/data/index/shards/shard-XXXX.json`
+- 파이프라인: `pipeline/apply_retag.py`·`apply_deep.py`·`reclass_deterministic.py`·`refine_classification.py`·`dedup_merge.py`·`build_index.py`·`map_pap.py`·`collect_pap_central.py`
+- 검증: `pipeline/validate.py` · 골든 `data/golden/` · 재태깅 보고서 `data/retag_out/_apply_report.json`
 - 원본(대조): `data/raw_docs/자체감사/_pap_*/manifest.json` · `data/inbox/감사원|사전컨설팅/*.pdf` · `data/raw_docs/alio_3yr.json`·`nabo_3yr.json`
 - 계획: `docs/MASTER-PLAN.md`(최신) · 이 문서 `docs/STATUS-AND-TODO.md`

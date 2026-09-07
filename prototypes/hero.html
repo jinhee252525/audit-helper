@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>감사 선례 도우미 — 상황→검토메모</title>
+<style>
+:root{
+  --g1:#5B7C73; --g2:#8DA399; --g3:#3F5D50; --bg:#F3F5F2; --card:#fff;
+  --ink:#22302b; --sub:#5f6f68; --line:#dfe6e1; --warn:#b45309; --no:#a13a2f; --ok:#2e6f4e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,"Segoe UI","Malgun Gothic",sans-serif}
+header{background:linear-gradient(135deg,var(--g3),var(--g1));color:#fff;padding:26px 20px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1{margin:0 0 4px;font-size:20px;letter-spacing:-.2px}
+.tag{opacity:.9;font-size:13px}
+.hero{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px;margin-top:16px;display:flex;gap:10px}
+.hero input{flex:1;border:0;border-radius:9px;padding:13px 14px;font-size:15px}
+.hero button{border:0;border-radius:9px;padding:0 20px;background:#fff;color:var(--g3);font-weight:700;cursor:pointer}
+.hint{margin-top:8px;font-size:12px;opacity:.85}
+.hint b{cursor:pointer;text-decoration:underline;margin-right:10px}
+main{display:grid;grid-template-columns:220px 1fr 300px;gap:16px;padding:20px 0}
+@media(max-width:980px){main{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.panel h3{margin:0 0 10px;font-size:13px;color:var(--g3);border-bottom:2px solid var(--g2);padding-bottom:6px}
+.fac{margin-bottom:12px}
+.fac label{display:block;font-size:12px;color:var(--sub);margin:3px 0}
+.fac select{width:100%;padding:7px;border:1px solid var(--line);border-radius:7px;background:#fff}
+.count{color:var(--sub);font-size:13px;margin-bottom:10px}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--g2);border-radius:10px;padding:13px 14px;margin-bottom:11px}
+.card.imm{border-left-color:#3f7d5c}
+.card .ex{font-size:14px;color:var(--ink);margin:2px 0 8px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.b{font-size:11px;padding:2px 8px;border-radius:999px;background:#eef3f0;color:var(--g3);border:1px solid var(--line)}
+.b.disp{background:#fbecea;color:var(--no)} .b.none{background:#eef2f7;color:var(--sub)}
+.b.imm-y{background:#e7f4ec;color:var(--ok)} .b.imm-n{background:#fbecea;color:var(--no)}
+.b.rv{background:#fff7ea;color:var(--warn)}
+.meta{font-size:12px;color:var(--sub);display:flex;gap:10px;flex-wrap:wrap}
+.meta a{color:var(--g1)}
+.pick{float:right;font-size:12px;border:1px solid var(--g2);color:var(--g3);background:#fff;border-radius:7px;padding:3px 8px;cursor:pointer}
+.memo textarea{width:100%;min-height:220px;border:1px solid var(--line);border-radius:9px;padding:10px;font:13px/1.6 inherit;resize:vertical}
+.memo .sm{font-size:12px;color:var(--sub);margin:6px 0}
+.protect{background:#eef6f0;border:1px solid #cfe3d6;border-radius:9px;padding:10px;margin-bottom:11px}
+.protect h4{margin:0 0 6px;color:var(--ok);font-size:13px}
+.empty{color:var(--sub);padding:30px;text-align:center}
+footer{color:var(--sub);font-size:12px;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>감사 선례 도우미</h1>
+  <div class="tag">업무 상황을 넣으면 · 유사 지적선례 · 처분 · <b>보호받는 길(면책·사전컨설팅)</b> · 결재용 검토메모 초안을 한 화면에</div>
+  <div class="hero">
+    <input id="q" placeholder="예: 수의계약으로 물품을 구매하려는데 괜찮을까 / 보조금 정산 / 업무추진비 집행"/>
+    <button onclick="run()">선례 찾기</button>
+  </div>
+  <div class="hint">예시:
+    <b onclick="ex('수의계약 물품 구매')">수의계약 물품 구매</b>
+    <b onclick="ex('보조금 정산')">보조금 정산</b>
+    <b onclick="ex('업무추진비 집행')">업무추진비 집행</b>
+    <b onclick="ex('시간외근무수당')">시간외근무수당</b>
+    <b onclick="ex('개인정보 관리')">개인정보 관리</b>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <aside class="panel">
+    <h3>필터</h3>
+    <div class="fac"><label>업무유형</label><select id="fwt" onchange="render()"></select></div>
+    <div class="fac"><label>소스</label><select id="fsrc" onchange="render()"></select></div>
+    <div class="fac"><label>연도</label><select id="fyr" onchange="render()"></select></div>
+    <div class="fac"><label>처분</label><select id="fdisp" onchange="render()"></select></div>
+    <div style="font-size:12px;color:var(--sub);margin-top:8px">※ 데모 표본(지적 3,500 + 사례집 전량). 실제는 약 20만 건·FlexSearch 인덱스.</div>
+  </aside>
+
+  <section>
+    <div class="count" id="count"></div>
+    <div id="protect"></div>
+    <div id="results"></div>
+  </section>
+
+  <aside class="panel memo">
+    <h3>결재용 검토메모 (초안)</h3>
+    <div class="sm">선례 카드의 <b>담기</b>를 누르면 근거로 들어갑니다. 판단은 담당자·결재권자.</div>
+    <textarea id="memo" placeholder="선례를 담으면 검토메모 초안이 생성됩니다."></textarea>
+    <div class="sm">※ 무근거 생성 금지 — 담은 선례의 출처·처분만 인용합니다.</div>
+  </aside>
+</main>
+<footer>출처·처분·품질배지 표시 · 위법 단정 안 함 · 담당자 평가 목적 사용 금지 — 프로토타입</footer>
+
+<script>
+let DATA=[], picked=[];
+const $=s=>document.querySelector(s);
+fetch('../app/data/demo.json').then(r=>r.json()).then(d=>{DATA=d;initFilters();run();})
+  .catch(()=>{$('#results').innerHTML='<div class="empty">demo.json 로드 실패 — 저장소 루트에서 <code>python3 -m http.server 8000</code> 후 <code>/prototypes/hero.html</code> 로 여세요.</div>';});
+
+function uniq(arr){return [...new Set(arr.filter(Boolean))].sort();}
+function initFilters(){
+  fill('#fwt', uniq(DATA.map(x=>x.wt+' '+x.wtn)),'업무유형');
+  fill('#fsrc', uniq(DATA.map(x=>x.src)),'소스');
+  fill('#fyr', uniq(DATA.map(x=>String(x.yr))).sort().reverse(),'연도');
+  fill('#fdisp', uniq(DATA.map(x=>x.disp||'미부과·해당없음')),'처분');
+}
+function fill(sel,vals,label){$(sel).innerHTML='<option value="">'+label+' 전체</option>'+vals.map(v=>`<option>${v}</option>`).join('');}
+function ex(t){$('#q').value=t;run();}
+
+let cur=[];
+function run(){
+  const q=($('#q').value||'').trim();
+  const toks=q.split(/\s+/).filter(Boolean);
+  cur=DATA.map(x=>{
+    const hay=(x.ex+' '+(x.title||'')+' '+x.wtn+' '+(x.secn||'')+' '+(x.org||''));
+    let s=0; toks.forEach(t=>{ if(hay.includes(t)) s+=2; });
+    return {x,s};
+  }).filter(o=>!q||o.s>0).sort((a,b)=>b.s-a.s).map(o=>o.x);
+  render();
+}
+function render(){
+  const fwt=$('#fwt').value, fsrc=$('#fsrc').value, fyr=$('#fyr').value, fdisp=$('#fdisp').value;
+  let rows=cur.filter(x=>
+    (!fwt||(x.wt+' '+x.wtn)===fwt)&&(!fsrc||x.src===fsrc)&&(!fyr||String(x.yr)===fyr)&&
+    (!fdisp||(x.disp||'미부과·해당없음')===fdisp));
+  const findings=rows.filter(x=>x.rt==='finding');
+  const cases=rows.filter(x=>x.rt!=='finding');
+  $('#count').textContent=`유사 선례 ${findings.length}건` + (cases.length?` · 보호받는 길 ${cases.length}건`:'');
+  // 보호받는 길
+  $('#protect').innerHTML = cases.length? (
+    '<div class="protect"><h4>◆ 보호받는 길 — 면책·사전컨설팅</h4>'+
+    cases.slice(0,3).map(x=>`<div style="margin:4px 0">${badge(x)} ${x.ex} <a href="${x.url}" target="_blank">출처</a></div>`).join('')+
+    '</div>') : '';
+  // 지적 카드
+  $('#results').innerHTML = findings.length? findings.slice(0,60).map(card).join('') :
+    '<div class="empty">해당 선례가 없습니다. 다른 표현으로 검색해 보세요.</div>';
+}
+function badge(x){
+  if(x.rt==='immunity') return `<span class="b ${x.imm==='인정'?'imm-y':'imm-n'}">면책 ${x.imm||''}</span>`;
+  if(x.rt==='consult') return `<span class="b imm-y">사전컨설팅</span>`;
+  return '';
+}
+function card(x){
+  const disp = x.disp? `<span class="b disp">${x.disp}</span>` : `<span class="b none">미부과·해당없음</span>`;
+  const rv = x.rv? `<span class="b rv">분류 검토중</span>`:'';
+  return `<div class="card">
+    <button class="pick" onclick='pick(${JSON.stringify(x).replace(/'/g,"&#39;")})'>담기</button>
+    <div class="badges"><span class="b">${x.wt} ${x.wtn}</span>${x.secn?`<span class="b">${x.secn}</span>`:''}${disp}${rv}</div>
+    <div class="ex">${x.ex}</div>
+    <div class="meta"><span>${x.org||'기관 미상'}</span><span>${x.aud||''}</span><span>${x.yr||''}</span>
+      <a href="${x.url}" target="_blank">원문 출처</a></div>
+  </div>`;
+}
+function pick(x){
+  if(picked.find(p=>p.id===x.id)) return;
+  picked.push(x); buildMemo();
+}
+function buildMemo(){
+  if(!picked.length){$('#memo').value='';return;}
+  let m='【검토메모 (초안) — 판단은 담당자·결재권자】\n\n';
+  m+='○ 유사 지적선례\n';
+  picked.filter(p=>p.rt==='finding').forEach((p,i)=>{
+    m+=`  ${i+1}. (${p.wtn}${p.secn?'/'+p.secn:''}) ${p.ex}\n     - 처분: ${p.disp||'미부과·해당없음'} · 기관: ${p.org||'미상'}(${p.yr||''}) · 출처: ${p.url}\n`;
+  });
+  const cs=picked.filter(p=>p.rt!=='finding');
+  if(cs.length){m+='\n○ 보호받는 길 (면책·사전컨설팅)\n';
+    cs.forEach((p,i)=>{m+=`  ${i+1}. ${p.rt==='immunity'?'[면책 '+(p.imm||'')+'] ':'[사전컨설팅] '}${p.ex}\n     - 출처: ${p.url}\n`;});
+  }
+  m+='\n○ 검토의견(작성): 위 선례를 참고해 본 건의 적정성·보완사항을 기재. 위법·부당 단정 아님.\n';
+  $('#memo').value=m;
+}
+</script>
+</body>
+</html>

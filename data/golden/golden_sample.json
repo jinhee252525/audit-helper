@@ -1,0 +1,4321 @@
+[
+  {
+    "id": "자체감사-pap-public-11f0d4b6-12887",
+    "x": "10. 탱크 용량표 재검정 후 입력 모니터링",
+    "t": "내부통제 운영실태 특정감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f036ac-27934",
+    "x": "(세종지사) 구상채무자의 분할상환약정 사후관리에 관한 사항",
+    "t": "서남권 지역본부 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f07297-1950",
+    "x": "계약이행능력심사 신인도 평가에 관한 사항",
+    "t": "서울지방조달청 종합감사",
+    "current_work_type": "08",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2abb-104754",
+    "x": "국비 전환 공무직 담당 업무 부여 부적정",
+    "t": "2024 농업기술원 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f00922-31475",
+    "x": "출장신청절차 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제1차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f107e7-8638",
+    "x": "소송비용 회수업무처리 미흡",
+    "t": "인천기업구조혁신센터 종합감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12ccd-3099",
+    "x": "기본형 공익직접지불금 지급 부적정",
+    "t": "대산면 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0c85d-11210",
+    "x": "1인가구 안부살핌 서비스 업무협약 체결",
+    "t": "부평전력지사, 남인천지사 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f1445d-8778",
+    "x": "18. 전원케이블 공사비 중복반영 등 부적정",
+    "t": "2026년도 수도권본부 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0f4f7-22723",
+    "x": "유치원회계 세입(수입일계) 처리 소홀 및 지출품의 소급 등록(지연 결재)",
+    "t": "슈비쯔유치원 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8f7c-108160",
+    "x": "외국인 민원처리를 위한 통·번역 서비스 구축",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "07",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11efb2e2-15478",
+    "x": "심사역 직무지침 위반 및 여신업무 취급불철저",
+    "t": "영업점 특별감사(강동강북여신심사센터 등)",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f073f8-28764",
+    "x": "[계수초] 4-1 학교안전교육계획 수립 지연 교직원 연수 운영 부적정",
+    "t": "[시흥] 2025년 시흥교육지원청 학교종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f133d9-1662",
+    "x": "현장체험학습에 관한 사항",
+    "t": "2026년 영종중학교 자율감사(인천남부)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f014d6-24219",
+    "x": "민원업무 처리에 관한 사항",
+    "t": "환경국 종합감사",
+    "current_work_type": "07",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04668-65331",
+    "x": "지방자치단체구매카드 적립포인트 세입조치 소홀",
+    "t": "2025년 귀래면 정기종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05fc5-52290",
+    "x": "전기 검사·점검 항목 누락",
+    "t": "2025년 광신중학교 종합감사",
+    "current_work_type": "13",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f0c5b0-13131",
+    "x": "재난상황실 관리상태 개선 및 정비 필요 등",
+    "t": "공직기강 확립 특별감사 및 직무감찰",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-public-11f120fe-7896",
+    "x": "거주자 실태조사 업무",
+    "t": "종합감사 실시(인천지사 산하 인천연수1 등 9개 관리소)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f03f8a-26025",
+    "x": "매출채권보험 인수심사 시 전결권 위반",
+    "t": "서부신용보험2센터 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04ccc-33871",
+    "x": "보수 지급 부적정",
+    "t": "2025년 인천디자인고등학교 자율감사",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f13229-7775",
+    "x": "의료기관세탁물 자체처리 시설기준 준수 방안 마련",
+    "t": "2026년도 정선병원 종합감사",
+    "current_work_type": "16",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-public-11f01bfa-29846",
+    "x": "국가광물자원지리정보망(KMRGIS) 품질관리 미흡",
+    "t": "탐사지원처 및 개발지원처 종합감사",
+    "current_work_type": "23",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0d57f-47147",
+    "x": "재해예방을 위한 기술지도계약 체결 부적정(지연체결)",
+    "t": "건설공사 특정감사(하반기)",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe8fa-16077",
+    "x": "채용서류 반환 고지 소홀",
+    "t": "문화관광체육교육분야 종합감사",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0321a-59556",
+    "x": "울산광역시 자원봉사센터 운영 부적정",
+    "t": "상반기 위탁사무 감사 ",
+    "current_work_type": "18",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05e25-30753",
+    "x": "(하랑초등학교) 상품권 구매 및 배부에 관한 사항",
+    "t": "[구리남양주]2025년 학교주도형 종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f08d73-47365",
+    "x": "연가보상비 지급 부적정",
+    "t": "2025년 인천광역시교육청북구도서관 종합감사",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ca8e-22046",
+    "x": "업무추진비 집행에 관한 사항",
+    "t": "금서면 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fd6e-19913",
+    "x": "맨손어업 신고 수수료 미징수",
+    "t": "대천5동 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef342c-86296",
+    "x": "선금 채권 확보 기간 미준수에 관한 사항",
+    "t": "경기도포천교육지원청 종합감사",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeeb52-83917",
+    "x": "(백송고) 학교급식 운영계획 수립 부적정",
+    "t": "[고양] 2024년 학교종합감사(주도형 포함)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-central-11eec0a6-4863",
+    "x": "공공기록물 관리 미흡",
+    "t": "한국특허기술진흥원 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f10e23-9535",
+    "x": "장애인 인턴지원금 과오지급",
+    "t": "전남지사 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11eeea60-4970",
+    "x": "임차보증금 계정 재분류",
+    "t": "보험연구원 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f00163-70797",
+    "x": "수의계약 체결 제한 대상 확인 소홀",
+    "t": "상남면 행정복지센터 종합감사",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f02f20-55162",
+    "x": "(복대2동)계약업무이행 소홀",
+    "t": "복대2동, 우암동 종합감사",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef248b-52382",
+    "x": "하도급공사 보험료 정산 부적정",
+    "t": "한전KPS 종합감사(보령사업처)",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ce3e-51507",
+    "x": "업무용 차량 운영⋅관리 부적정",
+    "t": "2025년 공공기관 공용차량 분야 특정감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeea39-131458",
+    "x": "교과평가계획 수립 및 운영 부적정",
+    "t": "상동고등학교 종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f01a9a-31469",
+    "x": "급여약제의 비급여 사용에 관한 사항",
+    "t": "2025년 경기요양병원 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f057e8-19337",
+    "x": "장기위탁교육생 교육비 환수 미흡",
+    "t": "2025년 중앙보훈병원 종합감사",
+    "current_work_type": "06",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-public-11f044ec-19096",
+    "x": "전기안전관리대행 업무처리 명확화",
+    "t": "본사(주요사업군) 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f02ae8-29924",
+    "x": "모야모야병이 아니라 '뇌졸중'이라구요",
+    "t": "법률구조업무 및 기관운영 전반(제4차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f13c95-6133",
+    "x": "통관물류팀 소관 CCTV 접속 비밀번호 변경 필요",
+    "t": "안전･재난 및 정보보안 관리실태 특정감사",
+    "current_work_type": "16",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eec19d-114757",
+    "x": "출장여비 지급 소홀",
+    "t": "(서부)중현초등학교 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef0083-82505",
+    "x": "[군서초] 8-2 유예 및 면제의 절차 미준수",
+    "t": "[시흥] 2024년 학교종합감사",
+    "current_work_type": "19",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef1638-49059",
+    "x": "(25) 지방상수도 위수탁사업 사업계획서 변경 소홀",
+    "t": "금강유역 산하부서 종합감사(3)",
+    "current_work_type": "03",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c999-28046",
+    "x": "‘울산피크닉 페스티벌’ 보조금 집행 부적정",
+    "t": " 하반기 보조금 감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6e3e-108381",
+    "x": "세외수입 징수업무 소홀",
+    "t": "주왕산면 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef5eb5-95958",
+    "x": "통합사례관리 종결 대상자 사후 모니터링 실시 업무 소홀",
+    "t": "유가읍 종합감사",
+    "current_work_type": "14",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cb2a-30207",
+    "x": "공용차량 운행일지 작성 소홀",
+    "t": "진위면 종합감사(4일)",
+    "current_work_type": "21",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef4406-99173",
+    "x": "취득세 직권부과 소홀",
+    "t": "청주시 종합감사",
+    "current_work_type": "06",
+    "current_sector": "03"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efff0e-25805",
+    "x": "보안관리 업무 부적정",
+    "t": "(2팀)부산광역시남부교육지원청 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef429d-99204",
+    "x": "물품선정을 위한 평가 업무 소홀",
+    "t": "2024년 재무감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f13c56-12503",
+    "x": "지방자치단체 구매카드 관리 및 사용 절차 부적정",
+    "t": "2026년 강서동 종합감사",
+    "current_work_type": "21",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-public-11ef660d-46126",
+    "x": "소프트웨어사업 유지관리 용역 설계 미흡",
+    "t": "한국발전인재개발원 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eff026-34827",
+    "x": "위임전결규정 미준수",
+    "t": "양산부산대학교병원 적정관리팀/감염관리팀",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f1061f-9309",
+    "x": "하부조직 권한위임 사항 미준수",
+    "t": "2026년도 대구경북지역본부 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef4e55-79385",
+    "x": "입장권 수입금 관리 소홀",
+    "t": "2024년 사업소 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f02712-69804",
+    "x": "영업 신고 관련(임의변경 대상) 하수도 원인자부담금 부과·징수 개선 계획",
+    "t": "도로관리과, 치수과 종합감사",
+    "current_work_type": "06",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef223f-51914",
+    "x": "수출신용보증(포괄매입) 고객 대상 공사 제도 홍보 필요",
+    "t": "충청권 국내지사 종합감사",
+    "current_work_type": "09",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eedf88-134446",
+    "x": "기초생활수급자정부양곡 관리 소홀",
+    "t": "2024년 합천읍 종합감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efc648-73993",
+    "x": "보조금 정산검사 소홀",
+    "t": "보조금 특정감사(문화체육관광국)",
+    "current_work_type": "15",
+    "current_sector": "10"
+  },
+  {
+    "id": "자체감사-pap-public-11eecfa6-44100",
+    "x": "법인명 변경에 따른 방송국 허가증 재교부 안내",
+    "t": "전북방송 종합행정감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efa889-39960",
+    "x": "기업가치 제고를 위한 노력",
+    "t": "ESG 경영",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef7f0b-41987",
+    "x": "출장 승인 및 결과보고 미흡",
+    "t": "제3차 해외무역관 리스크 내부통제 실태 점검 특정감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f01ffa-14663",
+    "x": "여신취급 불철저",
+    "t": "영업점 특별감사(녹산중앙)",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eebe47-130979",
+    "x": "직원 채용 업무 및 정원 관리 부적정",
+    "t": "2024년 학교안전공제회 종합감사",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f0c8d6-16708",
+    "x": "자택인근 출장 시 숙박비 지급 등 여비 관련 업무 미흡",
+    "t": "한전KPS 종합감사(월성1)",
+    "current_work_type": "17",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0f279-21056",
+    "x": "사무전결처리 규칙 미준수",
+    "t": "민원사무 처리실태 특정감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f02f98-33283",
+    "x": "(03) 지방상수도 운영효율화사업 수도미터 관리 미흡",
+    "t": "영·섬유역(1) 산하부서 종합감사",
+    "current_work_type": "22",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11370-16309",
+    "x": "공공조달 유류구매카드 및 클린카드 미사용",
+    "t": "2026 김해연구원 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f044ec-19083",
+    "x": "재검수수료 면제적용 접수건의 선수건수 반영 시스템  개선",
+    "t": "본사(주요사업군) 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef604d-46882",
+    "x": "현지조치12_담보부채권 경매사건 수계 불철저",
+    "t": "부산지역본부 종합감사",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f00e8d-69189",
+    "x": "지역민방위협의회 운영 및 민방위 경보시설 점검 부적정",
+    "t": "주교면 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f15d94-10358",
+    "x": "산업안전보건관리비 정산지급 소홀",
+    "t": "중동면 자체 종합감사 실시",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed6ca-107709",
+    "x": "정기재물조사 업무 소홀",
+    "t": "[순천]송산초등학교 종합감사",
+    "current_work_type": "13",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07327-21134",
+    "x": "버스 임차계약 소홀",
+    "t": "(사)구리시새마을회 특정감사",
+    "current_work_type": "02",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eef8a7-122351",
+    "x": "신규 및 변경 설치 수입증지요금계기 미고시",
+    "t": "행정국 종합감사 ",
+    "current_work_type": "20",
+    "current_sector": "03"
+  },
+  {
+    "id": "자체감사-pap-central-11f11828-144",
+    "x": "최종합격자에 대한 결격사유 확인 미흡",
+    "t": "산하기관 채용실태 점검",
+    "current_work_type": "14",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11f071e1-20814",
+    "x": "휴직자 휴직 전 교육 관련",
+    "t": "공급지사 종합감사",
+    "current_work_type": "11",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eebe45-115031",
+    "x": "보조금 정산업무 부적정(유통지원과)",
+    "t": "농·축·임업 보조사업 특정감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f08932-1971",
+    "x": "승진후보자 서열명부 작성 부적정",
+    "t": "남북협력기금 집행실태 감사",
+    "current_work_type": "11",
+    "current_sector": "06"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2179-121585",
+    "x": "2024 더 나은 작은학교 교육과정 [예술꽃, 이야기꽃, 웃음꽃 프로젝트] 브랜딩 운영",
+    "t": "[속초양양] 상평초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed52e-108774",
+    "x": "이륜자동차 사용신고 업무 부적정",
+    "t": "2024년 음암면 정기종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2023-1025788",
+    "x": "❍ 한국시각장애인연합회에서 운영하는 시각장애인중앙지원센터는 2008년 운영 개시 이후, 2016년 1회 2,000만원의 증액이 있어 2억 2,000만원이 지원되고 있으나, 한국지체장애인협회에서 운영하는 중앙장애인편의증진기술센터의 경우는 2023년에 2억 8,000만원이 증액되어 현재 5억원을 지원 받고 있음",
+    "t": "장애인단체 보조금 형평성 제고 필요",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11f03f8a-26041",
+    "x": "매출채권보험 책임잔액 관리 소홀",
+    "t": "부산신용보험센터 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11eeec15-55288",
+    "x": "의료장비 관리 신고 업무 소홀",
+    "t": "2024년 태백병원 종합감사",
+    "current_work_type": "05",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ce86-25101",
+    "x": "제2시립노인복지관 운영 위탁 사업비 집행 관리 미흡",
+    "t": " 공기관 위탁사무 감사",
+    "current_work_type": "18",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11ef497c-50048",
+    "x": "(현지조치-05) Patrind 유량계 하자처리 시행",
+    "t": "2024 글로벌사업본부 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeec26-124158",
+    "x": "동구 청소년어울림마당 운영 활성화",
+    "t": "민간위탁사업 운영실태 감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0cf21-15271",
+    "x": "의료분쟁 소송비용 및 의료사고배상보험료 절감",
+    "t": "본원 원무과 종합감사",
+    "current_work_type": "12",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f00edd-30009",
+    "x": "[양주백석중]학교스포츠클럽 운영 결과 관리 미흡",
+    "t": "[동두천양주] 2025년 학교주도형 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11effa59-74722",
+    "x": "수의계약 체결 및 기초금액 산정 소홀, 견적제출 안내 공고기간 미준수",
+    "t": "대전성천초등학교 종합감사",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "국회결산-2024-1026622",
+    "x": "❍ ‘바닥 마감재 철거 후 재설치 공사’가 사전조사 결과와 달리 규모가 축소되어, 공사비 예산액 15억 700만원 중 예산 편성 당시의 목적에 적합한 집행액은 9억 3,200만원으로 집행률이 60% 수준임.\r\n❍ 집행되지 않은 공사비 금액 5억 7,500만원 중 4억 4,600만원을 자산취득비 1억원, 임차료 1억 4,500만원, 타 내역 사업을 위한 공사비 2억 100만원 등 다른 용도로 전용·조정하여 집행하였음.",
+    "t": "공사비 예산의 효율적 편성·집행 및 목적외 사용 지양 필요",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee19c-126869",
+    "x": "계약대가 지급업무 소홀",
+    "t": "농업기술센터 종합감사",
+    "current_work_type": "02",
+    "current_sector": "11"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef794a-80119",
+    "x": "영상정보처리기기 내부관리 계획 게시 소홀",
+    "t": "공립 어린이집 특정감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef32c6-89888",
+    "x": "[문산북중] 2023학년도 평가계획 수립 절차 미준수",
+    "t": "[파주] 2024년 학교주도형 종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe070-75383",
+    "x": "동 지역사회보장협의체의 선제적인 위기가구 발굴 및 지원",
+    "t": "상반기 동 종합감사(범어2동 행정복지센터)",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ec61-13471",
+    "x": "학교운영위원회 운영 소홀",
+    "t": "장기초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f01050-32420",
+    "x": "정기검사 법정주기 적용 소홀",
+    "t": "전북지역본부 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11effb27-46890",
+    "x": "민원 서류 접수 업무 소홀",
+    "t": "2025년도 문평면 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f136d4-21005",
+    "x": "전입신고 처리 부적정",
+    "t": "두서면 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2022-1023491",
+    "x": "❍ ‘소상공인 온라인 판로지원’ 사업 중 ‘구독경제 지원’ 사업은 참여 업체(1,377개) 중 978개(71%)가 100만원 미만의 매출액을 달성하는 등 사업실적이 저조함",
+    "t": "구독경제 유형별 매출 실적 점검 및 개선방안 마련 필요",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cc2a-32850",
+    "x": "평가계획 수립 소홀",
+    "t": "신도림중학교 학교자율 종합감사",
+    "current_work_type": "03",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11381-16934",
+    "x": "이동식사다리 작업 안전관리 부적정",
+    "t": "대구이룸고등학교 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0110b-5861",
+    "x": "기록물 관리 부적정",
+    "t": "수원문화재단 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11ddb-16442",
+    "x": "민원처리기한 미준수",
+    "t": "민원처리실태점검",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f010e7-73062",
+    "x": "장애인 자동차 표지 관리 소홀",
+    "t": "2025년 평산동 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f086fb-24614",
+    "x": "수입증지(인증기) 수입금 납입 지연",
+    "t": "동해면 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f03c25-25201",
+    "x": "하천점용허가 업무 소홀",
+    "t": "부산울산지역본부 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "ALIO-2024-2026012210319901-8",
+    "x": "8. 기자재 구입 미흡",
+    "t": "2024년 농림축산식품부 정기 종합감사 지적사항 1부",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f13a28-3032",
+    "x": "(현지조치-18) 복합가스측정기 검교정 미흡",
+    "t": "한강유역 산하부서(1) 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efac54-110217",
+    "x": "장애정도 재판정 통보 업무 처리",
+    "t": "2024년 하반기 단구동 정기종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2024-1027253",
+    "x": "❍ 동 사업은 예산이 다양한 기업의 솔루션 개발에 분산되면서 의료 현장에 시급히 필요한 필수 질환 중심 기술에 대한 집중도가 떨어지고 있어 의료 현장 활용성과 환자 체감도가 낮음\r\n❍ 동 사업은 국비 투입에 따른 공공 기여 성과를 측정할 수 있는 성과지표가 미비한 상황임",
+    "t": "국민 건강과 직결된 기술 개발에 자원 집중 및 의료현장 수요 기반 과제 선정·재배치\r\n필요 등",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef772c-115959",
+    "x": "건설공사 감독 및 준공정산 업무 소홀",
+    "t": " (대산면) 종합감사",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-central-11ef171a-4416",
+    "x": "전문도서관 소장자료 관리 미흡",
+    "t": "국가생명윤리정책원 정기종합감사",
+    "current_work_type": "24",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeeca3-86896",
+    "x": "[화성중] 평가계획 수립 절차 미흡",
+    "t": "[화성오산]2024년 학교종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f087c8-41967",
+    "x": "공영주차장 설치기준 미준수",
+    "t": "중랑구시설관리공단 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f14a86-4212",
+    "x": "국유재산 감정평가비용 회수 관련 업무 처리 불철저",
+    "t": "광주전남지역본부 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f107f1-8210",
+    "x": "불용 계측기 격리 보관 필요",
+    "t": "공급지사 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f142e3-10148",
+    "x": "주민등록표 등·초본 교부 처리 부적정",
+    "t": "대현동 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f07d91-22260",
+    "x": "임차보증금 재산조사 및 채권보전조치 착수",
+    "t": "대전재기지원센터 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f00631-30313",
+    "x": "농식품산업 해외진출지원사업 보조금 관리 투명성 강화",
+    "t": "해외사업 등 추진실태 성과감사 ",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eefd50-53901",
+    "x": "(14) 소송미수채권 대손 처리 절차 부적정 및 시스템 개선 검토",
+    "t": "한강유역(3) 및 금강유역 산하부서(2) 종합감사",
+    "current_work_type": "12",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f13176-10919",
+    "x": "시설공사 계약업무 부적정",
+    "t": "구미초등학교 종합감사",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f009d9-70026",
+    "x": "특정토양오염 관리대상시설 연간 점검계획 수립 지연",
+    "t": "맑은환경과, 책박물관(사업소) 종합감사",
+    "current_work_type": "14",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee7e6-88960",
+    "x": "(계원예술중) 학교규칙 현행화 미이행",
+    "t": "[성남] 2024년 학교 종합감사",
+    "current_work_type": "19",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f00242-69035",
+    "x": "사례관리 대상자 선정 절차 미준수",
+    "t": "동 행정복지센터 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeefc0-128150",
+    "x": "기록물 관리 소홀",
+    "t": "매립장사업소 자체 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eefc8e-55505",
+    "x": "투자기업 사후관리 실질화 방안 마련(개선)",
+    "t": "투자금융센터 수시감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f099a9-23230",
+    "x": "안전관리 소홀(교통관제 업무 종사자 자리이석)_옥천역",
+    "t": "추석 대수송 취약분야 및 공직기강 확립",
+    "current_work_type": "16",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11f099a9-23232",
+    "x": "안전관리 소홀(교통관제업무 종사자 휴대전화 보관에 관한 사항)에 관한 사항_부평역",
+    "t": "추석 대수송 취약분야 및 공직기강 확립",
+    "current_work_type": "16",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11f128cc-5060",
+    "x": "교통사고 피해시설물 복구 부적정",
+    "t": "전북본부 종합감사",
+    "current_work_type": "22",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07e21-51080",
+    "x": "의료폐기물 위탁처리계약에 관한 사항",
+    "t": "송탄보건소 종합감사(6일)",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef52c9-40158",
+    "x": "직원의 일과 후 행위 부적정",
+    "t": "직원의 일과 후 행위 확인 건",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef3291-100620",
+    "x": "서천군 ◇◇◇◇◇◇ 건립사업 추진 관련 민원처리 부적정",
+    "t": "서천군 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efee56-67629",
+    "x": "상품권 구매 내역 공개 소홀",
+    "t": "[순천]팔마초등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11efb29f-42246",
+    "x": "민원 응대 담당자 보호를 위한 선제적 악성민원 대응체계 구축",
+    "t": "2024년도 감사 모범부서 및 모범인 선정",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef59d8-103202",
+    "x": "응시자 제출 서류 파기 미실시(광산구시설관리공단)",
+    "t": "광산구 공공기관 채용실태 특정감사",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11c50-20167",
+    "x": "학교장허가 교외체험학습 부적정 운영",
+    "t": "온정초등학교 소규모학교 컨설팅감사",
+    "current_work_type": "10",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c5ed-26432",
+    "x": "자치회관 연간 운영계획 등 주민자치회 심의 누락",
+    "t": "동 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04c0d-56375",
+    "x": "시설공사 수의계약 부적정",
+    "t": "2025년 부안관내 종합감사 실시(변산서중)",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f1108e-8916",
+    "x": "분할연금의 실질적 혼인관계 부존재기간 처리 부적정",
+    "t": "2026년도 1차수 지사 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0c673-14457",
+    "x": "융자금 기일예고통지 업무 미흡",
+    "t": "서부기금센터 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee50b-97823",
+    "x": "공용차량 운행·관리 소홀",
+    "t": "평택시복지재단 종합감사(7일)",
+    "current_work_type": "21",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-public-11f1232e-8323",
+    "x": "상속분쟁재산 적극 매각을 통한 국세수입 증대",
+    "t": "서울동부지역본부 종합감사",
+    "current_work_type": "06",
+    "current_sector": "03"
+  },
+  {
+    "id": "국회결산-2023-1026092",
+    "x": "❍ 공공직장어린이집 운영사업은 관련 법령에 따라 근로복지공단이 고용노동부로부터 위탁받아 수행하고 있는바, 일반경쟁입찰을 통해 사업자를 선정하도록 하고 있는 사업예산(일반용역비, 210-14) 성격과 부합하지 않고, 그간 별도의 계약 없이 사업이 수행되어 온바, 명확한 과업내용의 부재로 사업에 대한 정부의 감독이 부실해질 우려가 있음",
+    "t": "사업 성격에 맞는 예산과목 설정 및 계약을 통한 과업내용 정립 필요",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecb09-131697",
+    "x": "계약 업무 소홀",
+    "t": "2024년 3월 종합감사(함안교육지원청)",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "ALIO-2024-2025020510124597-9",
+    "x": "9. 안전 전담 조직 및 책임자 지정 미흡",
+    "t": "붙임 2024년 농림축산식품부 종합감사 결과에 따른 지적사항",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f13c56-12530",
+    "x": "장애인 등록 및 재판정 지연 통보",
+    "t": "2026년 강서동 종합감사",
+    "current_work_type": "07",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efec5a-79558",
+    "x": "소방안전관리 소홀",
+    "t": "동 행정복지센터 정기종합감사",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-public-11f15293-449",
+    "x": "공사관리규정의 지체상금 관련 조항 개정 필요",
+    "t": "안전.건설분야 종합감사",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f133e6-5172",
+    "x": "공사·용역·물품 계약 업무 소홀",
+    "t": "2026년 4월 종합감사(창원기계공업고등학교)",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-central-11efd878-3354",
+    "x": "노인맞춤돌봄서비스 대상자 관리 소홀",
+    "t": "2024년 인천광역시 정부합동감사",
+    "current_work_type": "14",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efab8d-80473",
+    "x": "양주시 무한돌봄센터 네트워크(무한돌봄행복센터)운영 민간위탁 업무처리 소홀(no.1)",
+    "t": "민간위탁 사무 특정감사",
+    "current_work_type": "18",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe29b-43793",
+    "x": "인허가등 관련 소방시설 회신 부적정",
+    "t": "계룡소방서 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed05e-100919",
+    "x": "선금지급에 따른 채권확보 업무 부적정",
+    "t": "도로건설사업소 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2023-1024351",
+    "x": "❍ 조세심판원의 최근 3년간의 연구용역 과제를 살펴보면, 3건 모두 조세심판원의 정책 개발 및 현안에 관한 사항임에도 정책연구비(260-02)가 아닌 일반연구비(260-01)로 집행하였음\r\n❍ 조세심판원은 정책연구 성격의 사업을 일반연구비(260-01)로 집행함으로써 정책연구 관련 법령에 따라 실시해야 하는 정책연구심의위원회 심의, 연구결과물의 평가 및 공개 등을 이행하지 않고 있음",
+    "t": "정책연구 성격의 사업은 정책연구비로 집행할 필요",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efa717-97394",
+    "x": "급식소위원회 운영 부적정",
+    "t": "(음성) 감곡중학교 종합감사",
+    "current_work_type": "08",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eef30f-125446",
+    "x": "학업성적관리(교과학습 평가 관련) 업무 부적정",
+    "t": "아름중학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeef45-116357",
+    "x": "계약금액 증액에 따른 계약보증금 지급 확약서 미징구",
+    "t": "기관 통합 재무감사(1차)",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f13238-4006",
+    "x": "조류충돌예방용 엽탄, 공포탄 사용에 관한 사항",
+    "t": "2026년 제1회 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2022-1023360",
+    "x": "❍ 기업활력 제고를 위해 기업의 사업재편을 지원하고 있으나, 전통적인 제조업 중심 기업들이 많은 지방에서 사업재편 사업에 대한 수요가 많음에도 사업재편 승인기업의 절반 가량(43%)은 수도권에 집중되어 있음\n - 총 387개 사업재편 승인기업 중 수도권 소재기업 167개\n❍ 사업재편이 제조업 위주로 집중적으로 이루어지고 있으며, 기업이 이미 상당한 투자를 하여 성과가 발생하고 있는 부분을 지원한 사례가 있음",
+    "t": "사업재편 사업의 효과성 제고를 위한 실질적 지원 방안 강구 필요",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f044c3-29419",
+    "x": "직원 근무성적평정(가‧감점) 처리 부적정",
+    "t": "2025년 인천경기남부지역본부 종합감사",
+    "current_work_type": "11",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11ef3812-50695",
+    "x": "장해(척추)급부금 지급심사 부적정",
+    "t": "특정감사(보험사고조사 업무)",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eff368-44417",
+    "x": "개인정보 처리 소홀",
+    "t": "[무안]프렌즈유치원 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f15421-572",
+    "x": "폐업·소멸 사업장 대상 과납보험료 적극적 반환 행정 추진",
+    "t": "2026년도 보험사업 바로모아 종합감사",
+    "current_work_type": "20",
+    "current_sector": "02"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1a3c-115570",
+    "x": "지방자치단체구매카드 관리 소홀",
+    "t": "동 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efb90f-39085",
+    "x": "채권매각을 통해 회수 가능성이 희박한 종결채권 35% 회수 성공",
+    "t": "국외지사 감사취약사항 실태점검",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11effcb5-29520",
+    "x": "휴게소 관리 부적정",
+    "t": "2025년 상반기 현장 기동점검",
+    "current_work_type": "14",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef02d1-91196",
+    "x": "인지세 징수 소홀",
+    "t": "갈매동 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef86c8-77890",
+    "x": "노견정비 임차용역 안전 및 보건 확보 의무 소홀",
+    "t": "2024 진영읍 종합감사",
+    "current_work_type": "02",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f02bc1-56608",
+    "x": "건축허가 동의 회신기간 미준수",
+    "t": "강서소방서 종합감사",
+    "current_work_type": "10",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0e09c-10674",
+    "x": "민영주택건설사업 관련 도시계획시설 기부채납 업무처리 소홀",
+    "t": "2026년 공유재산 관리 및 활용실태 특정감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0fda8-11131",
+    "x": "위해(회수)의약품 유통관리 미흡",
+    "t": "의약품관리종합정보센터 종합감사",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecd57-132509",
+    "x": "주민자치센터 수강료 관리 부적정",
+    "t": "목천읍 정기 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f11929-8366",
+    "x": "비축거래처 등록 및 관리 업무 부적정",
+    "t": "대구경북지역본부 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed6c9-109841",
+    "x": "학교 교육계획 수립을 위한 실태 분석 및 반영 요소 소홀",
+    "t": "[순천]조례초등학교 종합감사",
+    "current_work_type": "03",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef69bf-47340",
+    "x": "전파 교육 활성화를 위한 교육지원 및 진로체험인증기관 재인증 획득",
+    "t": "서울본부 정기감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03f58-45473",
+    "x": "처분의무 부과농지의 농지전용허가(협의) 부적정",
+    "t": "평택시 종합감사",
+    "current_work_type": "10",
+    "current_sector": "11"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef4292-104684",
+    "x": "◐◐◐◐센터 운영·관리 부적정",
+    "t": "민간위탁사업 집행실태",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efee7b-33015",
+    "x": "수용재결 신청업무 부적정",
+    "t": "경기북부지역본부 종합감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "ALIO-2024-2025010210107934-3",
+    "x": "3. 인사위원회 심의?의결 없이 승진임용하는 등 인사업무를 부당하게 처리한 관련자에게 ?징계규정?에 따라 징계처분(경징계 이상)할 것",
+    "t": "2024년 문화체육관광부 종합감사 지적사항",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0c52f-17466",
+    "x": "디지털 기술을 통한 화차 제동시험기의 표준화 혁신사례",
+    "t": "기획조정본부, 철도연구원 종합감사",
+    "current_work_type": "23",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f01348-67106",
+    "x": "녹색 발걸음의 날 시행",
+    "t": "국공립어린이집 운영실태",
+    "current_work_type": "19",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef432f-99462",
+    "x": "(삼현여중)교육공무직원(조리실무사) 채용 업무 소홀",
+    "t": "2024년 7월 종합감사(삼현여자중학교, 삼현여자고등학교)",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03d32-59104",
+    "x": "산림사업 추진 부적정",
+    "t": "부천시 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6b51-100100",
+    "x": "교원인사위원회 구성·운영 업무 소홀(옥야고)",
+    "t": "2024년 9월 종합감사(창녕옥야중학교, 창녕옥야고등학교)",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef3b54-99451",
+    "x": "물품관리 운영에 관한 사항",
+    "t": "2024년 7월 종합감사(가촌초등학교)",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03a0e-30570",
+    "x": "2. 학교급식 운영계획 수립 및 정보공개 부적정",
+    "t": "[군포의왕] 2025년 학교종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f15975-3323",
+    "x": "소하천구역 내 행위허가 협의 절차 소홀",
+    "t": "주천면 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f136da-7048",
+    "x": "지필평가 성적처리 부적정",
+    "t": "정선정보공업고등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef1638-49079",
+    "x": "(현지 9) 수도시설물 청소계획 미수립",
+    "t": "금강유역 산하부서 종합감사(3)",
+    "current_work_type": "03",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-central-11efaa25-3158",
+    "x": "감정평가법인 등 선정 부적정",
+    "t": "인천광역시 정부합동감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f128d3-9144",
+    "x": "본 사업 전환을 통한 어린이재활 의료기관 지정ㆍ운영 확대",
+    "t": "의료자원실 종합감사",
+    "current_work_type": "01",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-public-11ef5560-46052",
+    "x": "비연고지 거주자금 상환사유 발생 후 미상환",
+    "t": "2024년 9월 종합감사(인력지원실)",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef086f-94393",
+    "x": "지필평가 운영 및 채점 부적정",
+    "t": "[원주] 북원중학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efb37a-92696",
+    "x": "학생평가 정보공시 부적정",
+    "t": "(청주)남성초등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f06084-21275",
+    "x": "광물정보 분석시스템 관리 미흡",
+    "t": "해외자산합리화처, 국가광물정보센터 종합감사",
+    "current_work_type": "23",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-public-11efa894-42264",
+    "x": "찾아가는 되찾기 서비스 실시",
+    "t": "정부 지침 준수 및 경영공시 실태 특정감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "ALIO-2025-2025111410285285-3",
+    "x": "3. 관련자 주의 요구\r\n- 관리운영 대행용역 자격요건 및 수의계약 과정의 공정성 논란",
+    "t": "(지적사항) 대통령실 집들이 행사 및 용산어린이정원 위탁업체 선정 의혹에 대한 국회감사요구",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eebe52-116588",
+    "x": "교내상 시상 계획 수립과 운영 부적절",
+    "t": "2024년 화명고등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeece0-90794",
+    "x": "(원삼중) 07. 여비 지급 부적정",
+    "t": "[용인] 2024 학교주도형 종합감사",
+    "current_work_type": "17",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eee056-59298",
+    "x": "허가시설 안전관리규정 심사 및 확인·평가 업무처리 미흡",
+    "t": "전북본부 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f03167-25614",
+    "x": "업무 효율화를 위한 관리형 민원서류 처리대장 운영",
+    "t": "2025년도 상반기 보험사업 바로모아 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2022-1023244",
+    "x": "❍ 식물검역 시험해충 대량 사육동 구축 사업(6억 5,600만원, 단년도 사업)의 당초 건축설계가 에너지절약설계기준을 총족하지 못함에 따라 추가설계를 실시하였고, 이에 따라 해충 사육동 완공이 지연되고 과다한 이월액(5억 5,100만원)이 발생하였음",
+    "t": "건축사업 집행 시 비효율 발생 방지를 위한 노력 필요",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11ef1809-4221",
+    "x": "병역지정업체 인원 배정 제한 조치 소홀",
+    "t": "강원지방병무청, 강원영동병무지청 종합감사",
+    "current_work_type": "03",
+    "current_sector": "09"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1354-79058",
+    "x": "무상 쓰레기 종량제 봉투 지급대상자 선정 및 지급 소홀",
+    "t": "읍면동 종합감사",
+    "current_work_type": "21",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eefaf1-90456",
+    "x": "부대시설 사용허가에 관한 사항",
+    "t": "2024 칠암도서관 종합감사",
+    "current_work_type": "10",
+    "current_sector": "10"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecfb4-78136",
+    "x": "일상감사 미실시",
+    "t": "행정지원국 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f02bd4-28082",
+    "x": "검사결과 사후관리 불철저(주의)",
+    "t": "자금세탁방지실 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07c99-57831",
+    "x": "물품관리 미흡",
+    "t": "2025년 군포사랑장학회 종합감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f04c12-31799",
+    "x": "겸직금지 의무 위반",
+    "t": "임직원 겸직금지 위반행위",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2024-1026874",
+    "x": "❍ 가명정보 결합 수요는 매년 증가하고 있으나, 가명정보 결합 전문기관의 신규 지정건수가 2021년 이래로 매년 감소하는 추세에 있음\r\n❍ 매년 가명정보 결합 전문기관에 대한 지정 취소가 발생함에 따라 전체 기관 수도 2023년 23개에서 2024년 22개로 감소하였음",
+    "t": "가명정보 결합 전문기관의 지정 활성화 필요",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2023-1026224",
+    "x": "❍ 인천국제공항공사는 코로나19로 인한 누적적자와 차입금 증가 등으로 2023년 부채비율은 95.8% 수준이고, 총 부채액 중 금융부채 비중이 80%를 상회하며, 이로 인한 이자비용이 2023년 979억원 발생하였음\r\n- 총 부채액 7조 4,559억원 중 이자가 발생하는 금융부채는 5조 9,852억원(80.3%)이고 이자비용은 2023년 979억원으로 2022년 821억원 대비 19.2%가 증가하였음. 이는 2023년 영업이익 5,224억원의 18.7% 수준이고, 2024년 예산에도 1,263억원의 이자비용을 편성하고 있음",
+    "t": "인천국제공항공사의 재무건전성 개선대책 마련 필요",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2023-1026188",
+    "x": "❍‘운전적성정밀검사’ 사업은 ｢여객자동차운수사업법｣ 및 ｢화물자동차운수사업법｣에 따라 운전업무에 종사하기 위한 요건인 운전적성 정밀검사의 시행을 지원하기 위한 사업임\r\n * 운전적성정밀검사는 신규검사, 특별검사, 자격유지검사로 구분 \r\n❍ 사업용자동차 운전자 중 만 65세 이상 고령운전자는 자격유지검사 대상자로서 만 65~70세 미만은 3년마다, 만 70세 이상은 1년마다 검사를 받도록 하고 있으며, 자격유지검사 대상자 중 택시 및 화물자동차 운수사업 종사자는 의료적성검사(혈압·신체기능 적합도 검사)로 대체가 가능하도록 규정하고 있음\r\n❍ 의료적성검사 대체제도는 자격유지검사 제도도입 당시 택시 및 화물차 업계의 반발로 도입되었으나 의료기관의 부실검사, 낮은 검사기준, 반복 재검사 등으로 인해 의료적성검사의 실효성이 문제가 되고 있음\r\n- 최근 4년간 자격유지검사 부적합률은 2020~2023년 평균 2.5% 수준이나 의료적성검사는 0.2%에 불과하여 고령사업용자동차 운전자의 교통사고 발생을 방지하고자 하는 제도도입 취지를 달성하지 못하고 있고, 자격유지검사의 부적합률도 지속적으로 낮아지고 있는 상황임",
+    "t": "운전적성정밀검사 실효성 제고방안 마련 필요",
+    "current_work_type": "13",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04a7c-69324",
+    "x": "19. [2023년 공공급식 운영 관리 사업] 수탁자 모집 공고 부적정",
+    "t": "보조금 및 민간위탁 운영 실태 특정감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f0ec69-1479",
+    "x": "대부지원에 관한 사항",
+    "t": "2024년 소속기관 종합감사(경남서부지청 등 4개 소속기관)",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef1e40-53169",
+    "x": "(분원)홈페이지 권한 신청서 작성 및 관리 권고",
+    "t": "본원 홍보팀, 분원 홍보팀 업무 전반에 관한 사항",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeebd8-82023",
+    "x": "[위례고-현지조치7] 물품선정위원회에 관한 사항",
+    "t": "[광주하남]2024년 학교종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f17a6e-4819",
+    "x": "구매제도 관리 부적정",
+    "t": "권익위 신고사항 조사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef5450-112533",
+    "x": "쓰레기봉투 공급관리 업무 추진 소홀",
+    "t": "2024년도 동일면 종합감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efff0e-25819",
+    "x": "PC, 노트북 정보보안 소홀",
+    "t": "(2팀)부산광역시남부교육지원청 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef9b07-38444",
+    "x": "압류재산 배분계산서 기한 내 작성·송부 불철저",
+    "t": "대구경북지역본부 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03439-47221",
+    "x": "시설물 안전 관리 계획 수립 및 통보 미흡",
+    "t": "주택정책국 종합감사",
+    "current_work_type": "07",
+    "current_sector": "26"
+  },
+  {
+    "id": "자체감사-pap-public-11f010f5-30442",
+    "x": "3. 예비창업보증 자기자금한도 사정 소홀",
+    "t": "동대문재기지원단 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11ef4595-49460",
+    "x": "32. 취약개소 지정 및 관리 업무 부적정",
+    "t": "수도권본부 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef1c9b-52963",
+    "x": "무정전검사 연동시험 기한 연장 증빙자료 입력 방법 마련",
+    "t": "본사(주요사업군) 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef0dda-91431",
+    "x": "학교장허가 교외체험학습 출석인정 처리 부적정",
+    "t": "2024년 가평교육지원청 학교종합감사",
+    "current_work_type": "10",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2471-120713",
+    "x": "출결사항 관리에 관한 사항",
+    "t": "(충주) 소태초등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f163d9-1001",
+    "x": "3. 복수 매출채권에 대한 팩토링 심사·결재 방식 개선 필요",
+    "t": "플랫폼 금융 제도 운영실태 감사",
+    "current_work_type": "08",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-central-11eebc05-3784",
+    "x": "민원대행 업무처리 부적정",
+    "t": "출입국·외국인기관 종합감사",
+    "current_work_type": "18",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-public-11eed140-59888",
+    "x": "일일보안점검 미실시",
+    "t": "강원지역본부종합감사",
+    "current_work_type": "23",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-public-11ef3dc9-50490",
+    "x": "외화시장금리 고시업무 소홀",
+    "t": "특별감사(자금부, 경영관리부)",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef666f-45856",
+    "x": "국제 소프트웨어 프로세스 품질인증 관리 미흡",
+    "t": "ICT분야 업무추진실태 특정감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0660d-58970",
+    "x": "각종 위원회 운영 부적정",
+    "t": "충청북도교육도서관 종합감사",
+    "current_work_type": "08",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11f116bc-5986",
+    "x": "소송비용 예납금 관리 부적정",
+    "t": " 법률구조업무 및 기관운영 전반(제1차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f030a2-59621",
+    "x": "유치원규칙 제·개정 절차 미준수",
+    "t": "2025년 6월 완주관내학교 종합감사 실시(봉서유)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-central-11eebe46-4168",
+    "x": "유연근무자 복무관리 미흡",
+    "t": "설명절 공직기강 점검",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eebfce-60762",
+    "x": "화재 예방관리 미흡",
+    "t": "2024년도 상반기 공직기강 점검",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-public-11f136d6-6170",
+    "x": "설계변경 절차 준수 미흡",
+    "t": "청평양수발전소 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f00923-31442",
+    "x": "제소 후 종결 입력 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제1차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f13c55-6263",
+    "x": "세출예산 집행과목 부적정",
+    "t": "출연기관 종합감사(수성문화재단)",
+    "current_work_type": "17",
+    "current_sector": "02"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eedf88-134436",
+    "x": "기간제근로자 채용 업무 부적정",
+    "t": "2024년 합천읍 종합감사",
+    "current_work_type": "11",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11ef06ad-54340",
+    "x": "공매 배분계산서 기한 내 작성 불철저",
+    "t": "인천지역본부 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f011bb-34194",
+    "x": "공용차량 정비사항 관리 소홀",
+    "t": "현풍읍 종합감사",
+    "current_work_type": "21",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eff892-73536",
+    "x": "신용카드 적립 포인트 세입관리 미흡",
+    "t": "보령시니어클럽 종합감사",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eef0b1-56433",
+    "x": "소송구조사건 종결구분 입력 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제3차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f163d9-999",
+    "x": "1. 상거래 신용지수 연계보증 취급요건 명확화 필요",
+    "t": "플랫폼 금융 제도 운영실태 감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecef3-128630",
+    "x": "개인정보 처리 위탁 업무 소홀",
+    "t": "[강진]계산초등학교 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07805-48542",
+    "x": "외부강의 신고 부적정",
+    "t": "2025년 9월 남원관내 종합감사 실시(남원용성중, 학교자율형)",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f16945-491",
+    "x": "유족연금 수급권 변경 처리 부적정",
+    "t": "[종합감사] e음감사(2차)",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eff57e-63107",
+    "x": "세외수입 세입처리 업무 소홀",
+    "t": "청원구청 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f096b2-34963",
+    "x": "소방계획 수립 지연",
+    "t": "시립도서관 종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef0545-48592",
+    "x": "장기요양기관 CCTV 설치 지원 부적정",
+    "t": "수원, 대전, 남양주, 전주보훈요양원 종합감사",
+    "current_work_type": "23",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11f000a3-32077",
+    "x": "자동심장충격기(AED) 점검관리 업무 철저",
+    "t": "중앙·강남·삼송지사 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef312f-29834",
+    "x": "학교급식 업무 운영에 관한 사항",
+    "t": "[여주] 2024년 학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f0ce99-12997",
+    "x": "농업생산기반시설 사용허가 원상회복비용 채권 확보 소홀",
+    "t": "제주지역본부 종합감사 ",
+    "current_work_type": "10",
+    "current_sector": "11"
+  },
+  {
+    "id": "자체감사-pap-central-11eff315-1333",
+    "x": "의료급여 상한일수 초과자에 대한 연장심의 소홀",
+    "t": "2025년 충청남도 정부합동감사",
+    "current_work_type": "08",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11effa30-13878",
+    "x": "공기구 수리 후 전표작성 미흡",
+    "t": "한전KPS 종합감사(서울경기전력지사)",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeebcf-88588",
+    "x": "학교운영위원회 소집공고 지연 및 학부모 사전의견수렴 미실시",
+    "t": "[이천] 2024년 학교종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f10227-20889",
+    "x": "인감증명서 대리 발급 부적정",
+    "t": "상반기 동 종합감사(황금1동 행정복지센터)",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f02585-27432",
+    "x": "대중소기업 안전보건 상생협력사업 매칭지원 금액 재결정",
+    "t": "부산권역 종합감사",
+    "current_work_type": "12",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-public-11f08959-20060",
+    "x": "관내 휴게소 “범죄예방 우수시설” 인증 확대 추진",
+    "t": "충북본부 종합감사",
+    "current_work_type": "01",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-central-11efbb75-3145",
+    "x": "자유무역지역 관리 업무 소홀",
+    "t": "「동해자유무역지역관리원」 종합감사",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f158b9-5278",
+    "x": "어선검사증서 및 보고서 내용 기재에 관한 사항",
+    "t": "창원지사 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cb65-24558",
+    "x": "물품검사(수) 업무 소홀",
+    "t": "청림동 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef6f15-47731",
+    "x": "검사원 검사일정 사전 보고 미실시",
+    "t": "추석명절 대비 공직복무 확립 기강감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed2d4-112068",
+    "x": "교직원 복무관리 소홀",
+    "t": "[여수]여선중학교 종합감사",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecbcd-61360",
+    "x": "안전검사 유효기간 초과 승강기 운행정지 명령 등 소홀",
+    "t": "공주시 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f00922-31474",
+    "x": "민원업무처리 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제1차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef007d-82467",
+    "x": "[중원중] 학교운영위원회 운영 미흡(회의소집 공고 및 회의록 공개 지연)",
+    "t": "[부천] 2024년 학교주도형 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2dd7-119032",
+    "x": "학교발전기금 및 학교운영위원회 운영 부적정",
+    "t": "길안중학교 컨설팅감사",
+    "current_work_type": "17",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f03487-27403",
+    "x": "장기위탁교육 복귀 인력에 대한 활용 강화",
+    "t": "경영지원분야 성과감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eed528-59722",
+    "x": "변호사보수 산정 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제1차 정기감사)",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef5066-48488",
+    "x": "복무처리 부적정",
+    "t": "임상약무과 외 4개 부서 정기감사",
+    "current_work_type": "11",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f16e16-3489",
+    "x": "사업구역 외 영업행위 사업차량 행정처분 미이행",
+    "t": "도시교통과 종합감사",
+    "current_work_type": "21",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-public-11ef7b00-45436",
+    "x": "열차종합제어장치 모니터(DU) 자체 개발로 재정 건전성 확보",
+    "t": "시설물 관리실태 특정감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef7a4b-111277",
+    "x": "보안점검부 관리 소홀",
+    "t": "하계휴가철 및 추석명절 공직감찰",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07cb9-32432",
+    "x": "회계관계공무원 관직 변경 소홀(교통관리과)",
+    "t": "2025년 자체감사(재무감사)",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0c85d-11200",
+    "x": "배전선로 진단업무 미흡",
+    "t": "부평전력지사, 남인천지사 종합감사",
+    "current_work_type": "13",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05631-42190",
+    "x": "증지 수입금 처리 업무 소홀",
+    "t": "(칠원읍) 종합감사",
+    "current_work_type": "20",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11efb787-37045",
+    "x": "고철등 재생재료 매각 업무 소홀",
+    "t": "연말연시 공직기강 점검",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f08715-19575",
+    "x": "부동산 담보 취급 부적정",
+    "t": "서울경기지역본부 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeece0-90795",
+    "x": "(원삼중) 08. 장학금 지급대상자 선정 학교운영위원회 심의 미실시",
+    "t": "[용인] 2024 학교주도형 종합감사",
+    "current_work_type": "15",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef8d07-39774",
+    "x": "네트워크 보안관리 소홀",
+    "t": "경기지역본부 종합감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f02ef8-58467",
+    "x": "장애인복지업무 처리 부적정",
+    "t": "2025년 상반기 동 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07cb9-32434",
+    "x": "예산집행품의 절차 미준수(교통관리과)",
+    "t": "2025년 자체감사(재무감사)",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0f2bd-9862",
+    "x": "장기요양 관련 자료 외부제공 시 개인정보 안전성 확보 조치 미흡",
+    "t": "2026년 2월 종합감사(원주횡성지사)",
+    "current_work_type": "23",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fcd3-16700",
+    "x": "물품관리 업무 소홀",
+    "t": "유성여자고등학교 종합감사",
+    "current_work_type": "21",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-public-11eecc64-59769",
+    "x": "주민세 종업원분 납부 업무 부적정",
+    "t": "한전KPS 종합감사(영흥사업처)",
+    "current_work_type": "06",
+    "current_sector": "03"
+  },
+  {
+    "id": "ALIO-2024-2025010310109410-1",
+    "x": "1. 행정소송 승소(소취하)에 따른 소송비용 회수절차 지연",
+    "t": "환경부 2024년 한국환경공단 종합감사_지적사항",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eecc81-128082",
+    "x": "업무추진비 집행내역 공개 소홀 및 지급관리대장 미작성 - 남면",
+    "t": "2024년 영월군 정기 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eff595-35117",
+    "x": "파산재단 소송결과기록 디지털화 관련 가이드라인 등 마련 권고",
+    "t": "소송관리 업무 운영 실태 특정감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f03475-2873",
+    "x": "자유무역지역 내 사무실동 운영 부적정",
+    "t": "율촌자유무역지역관리원 종합감사",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef3782-112400",
+    "x": "밀폐공간 작업관리 미흡",
+    "t": "서부소방서 종합감사",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eebe80-123450",
+    "x": "선금 채권관리 업무처리 소홀",
+    "t": "세계유산본부 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe29b-43773",
+    "x": "건축허가등의 동의업무 소홀",
+    "t": "예산소방서 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f086fb-24615",
+    "x": "주민등록증 등기 배송 수수료 관리 부적정",
+    "t": "동해면 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f06208-23999",
+    "x": "MSDS 키오스크 도입을 통한 근로자 안전교육 강화",
+    "t": "출자회사 운영 적정성 특정감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fced-17420",
+    "x": "아동급식 지원 업무 소홀",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2022-1023802",
+    "x": "❍ 동 사업의 목적과 직접적 관련성이 크지 않은 지출이 있음",
+    "t": "맞춤서비스지원 사업 예산을 사업과 직접 관련된 사항으로 지출",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ffed-6461",
+    "x": "건강관리-12 금연지도원 연간 활동계획 수립 업무 소홀",
+    "t": "보건행정분야 종합감사",
+    "current_work_type": "03",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-public-11ef7a4a-42516",
+    "x": "수리보완요청서 시스템 미표출",
+    "t": "군산지사 종합감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f01f0f-28905",
+    "x": "(울산지사) 디딤돌대출 조건변경승인 표준처리기간에 관한 사항",
+    "t": "동남권 지역본부 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11f0166c-26286",
+    "x": "환경청과의 적극 행정을 통한 대기배출 초과부과금 2.8억원 절감",
+    "t": "영동에코 및 강릉발전본부 종합감사",
+    "current_work_type": "06",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee743-87284",
+    "x": "(호매실초) 2021, 2022학년도 개인정보 파기 관리대장 미작성",
+    "t": "[수원] 2024년 학교주도형 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f06ce1-53841",
+    "x": "청소년증 발급 업무 소홀 (no.10)",
+    "t": "2025년 회천1동 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f056fd-25532",
+    "x": "통합방재시스템 안전점검 보고 소홀",
+    "t": "덕유산국립공원사무소 종합감사",
+    "current_work_type": "14",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f06611-55572",
+    "x": "여비 지급 소홀",
+    "t": "2025년 6~7월 전주 관내  종합감사(전주한들초)",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f099cb-52906",
+    "x": "(현지조치) 장애정도 결정 통보 부적정",
+    "t": "2025년 광적면 종합감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed32a-84667",
+    "x": "재정정보 공개 업무처리 부적정",
+    "t": "(동래)부곡여자중학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f099a9-23231",
+    "x": "안전관리 소홀(교통관제업무 종사자 휴대전화 보관에 관한 사항)에 관한 사항_증평역",
+    "t": "추석 대수송 취약분야 및 공직기강 확립",
+    "current_work_type": "16",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-public-11efe1f1-35897",
+    "x": "신용도하락기업 기한연장 업무 미흡",
+    "t": "사상지점 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2140-93618",
+    "x": "강동도서관 문화교실 운영 기록물 관리 소홀",
+    "t": "2024년 강동도서관 자율 종합감사",
+    "current_work_type": "24",
+    "current_sector": "10"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efb6c3-79429",
+    "x": "하자검사 미이행",
+    "t": "2024년 대덕구 자체 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eed05e-59244",
+    "x": "유동성 지원 기업 실태조사 프로세스 개선방안 마련",
+    "t": "경남지역본부 종합감사",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0f4d2-11700",
+    "x": "(17) 지적사항에 대한 조치 미흡",
+    "t": "경영지침·내부통제·경영공시 성과감사",
+    "current_work_type": "24",
+    "current_sector": "27"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef9c2a-76132",
+    "x": "대형폐기물 스티커 및 종량제 봉투 수불관리 소홀",
+    "t": "삼계면 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef8d07-39630",
+    "x": "정기검사 판정 부적정 등",
+    "t": "경기지역본부 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe8dc-76020",
+    "x": "인감증명서 위임장 접수 소홀",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef637d-94993",
+    "x": "매점 사용허가 재산 평가액 산정 소홀",
+    "t": "상서고등학교(학교법인 상서학원) 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fbe4-15615",
+    "x": "공가 사용 및 복무 관련 내부 규정 운영 부적정",
+    "t": "보조금 지원시설 종합감사(함박종합사회복지관)",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2ebd-89619",
+    "x": "[가림중]신용카드 인센티브 세입 조치 소홀",
+    "t": "2024년 광명교육지원청 학교종합감사 실시",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07bd2-57846",
+    "x": "복지관 이용 안내 및 홍보관련(시민감사관 권고)",
+    "t": "2025년 군포시노인복지관 종합감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eedaa8-124201",
+    "x": "학교체육소위원회 미구성",
+    "t": "[함평]나산실용예술중학교",
+    "current_work_type": "08",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f18a79-5313",
+    "x": "13. 기초생활수급 의사무능력(미약)자 관리 소홀",
+    "t": "와부읍 종합감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11f13238-4084",
+    "x": "상업시설 관리 및 내부평가 업무 소홀",
+    "t": "2026년 제1회 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efabb6-110241",
+    "x": "5.공공용봉투 및 종량제 봉투 관리 업무 소홀",
+    "t": "2024년 하반기 무실동 정기종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8f7c-108024",
+    "x": "자치회관 프로그램 강의계획서 징구 소홀",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eedb8d-55996",
+    "x": "사해행위취소소송 승소 시 피고 관리 방안 미비",
+    "t": "2024년 4월 종합감사(요양기관지원실)",
+    "current_work_type": "12",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f02710-55083",
+    "x": "학교회계 추가경정예산(간주처리) 편성 부적정",
+    "t": "[춘천] 금산초등학교 종합감사",
+    "current_work_type": "17",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-central-11efc67f-3519",
+    "x": "보조금 예산안 통지 등 절차 준수 미흡",
+    "t": "대한무역투자진흥공사 특정감사",
+    "current_work_type": "15",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-public-11f107e9-9776",
+    "x": "농산물 유통관리단 운영 개선 필요",
+    "t": "인천지역본부 종합감사",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2024-1027638",
+    "x": "❍ 내역사업인 ‘콘텐츠 전략펀드 출자’는 사실상 2025년 3월말 모펀드 조성이 완료되면서 2025년 7월 현재 자펀드 결성 절차를 진행하는 중으로, 이처럼 모펀드 및 자펀드 조성이 지연됨에 따라 2024년 출자된 자금이 민간에 공급되지 못하고 유보되고 있음\r\n- 당초 2024년 정부 출자 800억원(문화체육관광부 450억원, 과학기술정보통신부 350억원)과 민간 출자 1,200억원으로 2,000억원 규모의 모펀드를 조성하고, 이후 자펀드 조성 단계에서 4,000억원 규모의 민간 출자를 모집하여 총 6,000억원 규모의 펀드를 조성할 계획이었음\r\n- 그러나 민간 참여기관들과의 출자 여부 및 규모, 참여방식 등에 대한 협의에 장기간이 소요됨에 따라 모펀드 조성이 지연되었고, 민간 출자 규모 또한 목표의 절반 수준인 600억원만 모집됨에 따라, 당초 계획보다 600억원 감소한 1,400억원 규모의 모펀드가 조성되었으며 자펀드 조성 목표도 당초 6,000억원에서 4,000억원으로 축소하였음",
+    "t": "신속한 자펀드 결성 및 투자 필요",
+    "current_work_type": "03",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f01c13-69292",
+    "x": "시설공사 업무처리 부적정",
+    "t": "안성중고등학교 종합감사",
+    "current_work_type": "04",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f1414d-5630",
+    "x": "도초비금분소 내용연수 초과 업무용 PC 불용조치 필요",
+    "t": "2026년 제3차 복무감사",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef89bf-105929",
+    "x": "학생봉사활동 운영 부적정",
+    "t": "도리원초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "국회결산-2022-1023715",
+    "x": "❍ 한국환경산업기술원은 지원기업으로부터 회수한 정산금(2022년말 기준 79억 5,400만원)을 환경부에 반납하지 않고 보유하고 있어 국가재정의 비효율성이 유발됨",
+    "t": "중소환경기업 사업화 지원사업 정산금의 신속한 국고 반납 필요",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef02a0-119481",
+    "x": "개별화교육계획 수립에 관한 사항",
+    "t": "2024년 인천서흥초등학교 종합감사(인천남부)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f09452-20700",
+    "x": "자료제공 요구 최소화를 통한 개인정보 보호 노력",
+    "t": "재산조사 업무 운영 실태 특정감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11effa54-31190",
+    "x": "16. 고리4호기 원자로 하부헤드 관통관 및 고리3,4호기 노내핵계측기 안내관 정비에 대한 원자력 재산보험 청구",
+    "t": "고리원자력본부 종합감사 ",
+    "current_work_type": "16",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ec47-27968",
+    "x": "관내 학교 화재 예방에 관한 사항",
+    "t": "2025년 경기도화성오산교육지원청 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee5b3-130357",
+    "x": "물품관리 업무 소홀",
+    "t": "울진초등학교 종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeaaba-134335",
+    "x": "청사방호계획 미수립",
+    "t": "정남면 종합감사",
+    "current_work_type": "20",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efaae6-38522",
+    "x": "청소년 전국 가요제 보조금 집행·정산 부적정",
+    "t": "하반기 보조금감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "ALIO-2025-2026072710450897-3",
+    "x": "3. 공무국외출장 심사위원회 운영 부적정 : 권고1, 개선1",
+    "t": "지적사항",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef7ece-39601",
+    "x": "감정평가 의뢰 업무 소홀",
+    "t": "강원본부 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef9b63-77757",
+    "x": "후원금 관리 부적정",
+    "t": "민간위탁기관 운영실태 감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efc68d-36483",
+    "x": "고액현금거래 보고 관련 수표관리대장 작성 미흡(수표관리 대장 작성 미흡)",
+    "t": "AML(자금세탁방지) 운영 실태 점검",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef44e5-111639",
+    "x": "통합사례관리 종결 대상자 사후관리 미이행",
+    "t": "2024년 동 정기종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f10575-10249",
+    "x": "검사증서의 차기검사 지정에 관한 사항",
+    "t": "동해지사 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f158d2-965",
+    "x": "차량운행현황 관리 소홀(8)",
+    "t": "사무관리 등 내부통제 취약부문 점검",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1713-128652",
+    "x": "20##학년도 학적 관리 부적정",
+    "t": "홍성여자고등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f05708-24357",
+    "x": "후취담보 조건 미양수자산 관리에 관한 사항",
+    "t": "유동화사업 운영실태 특정감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11f0c5ab-17917",
+    "x": "보조공학기기 사후관리 미실시",
+    "t": "충북지사 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f1065f-8527",
+    "x": "실적평가위원회 기록물 관리 등 운영체계 강화",
+    "t": "2026년 3월 종합감사(건강보험연구원)",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2022-1023937",
+    "x": "❍ 도로인프라 성능시험장 구축 사업은 시험장의 운영시 수입구조가 발생할 가능성이 있음에도 운영의 위탁에 관한 법적 근거가 불충분함",
+    "t": "도로인프라 성능시험장 운영 위탁 근거 마련 필요",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eef21c-91044",
+    "x": "[의공고]학교안전관리 계획 연수 미준수",
+    "t": "[의정부] 2024 학교주도형 종합감사",
+    "current_work_type": "11",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efce1b-77100",
+    "x": "농지취득자격증명 발급 부적정",
+    "t": "남양읍 종합감사",
+    "current_work_type": "05",
+    "current_sector": "11"
+  },
+  {
+    "id": "자체감사-pap-public-11ef9b07-38435",
+    "x": "공사 무담보채권 시효소송 제기 부적정",
+    "t": "대구경북지역본부 종합감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0465e-25142",
+    "x": "계측기 검교정 관리기준 미준수",
+    "t": "석유비축분야 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef11b1-110298",
+    "x": "소하천점용료 부과 소홀",
+    "t": "2024년 상반기 부론면 정기종합감사",
+    "current_work_type": "06",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-public-11efe9ad-34117",
+    "x": "사고유보(예외)기업 사후관리 업무",
+    "t": "2024년 4분기 시스템감사(비대면ㆍ디지털감사)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12197-1819",
+    "x": "비밀문서 관리 소홀",
+    "t": "2026년 곤명면 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07cb9-32437",
+    "x": "회계증빙서류 보관 및 관리 소홀에 관한 사항(교통관리과)",
+    "t": "2025년 자체감사(재무감사)",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eed518-58164",
+    "x": "외부강의등 신고 의무 위반",
+    "t": "2023년 하반기 외부강의등 이행 실태 점검",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f1525c-6534",
+    "x": "자격검정 시험위원 정보 관리 철저",
+    "t": "서울본부 정기감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f0c8dc-767",
+    "x": "전자의무기록시스템(EMR) 인증 관리 부적정",
+    "t": "한국보건의료정보원 정기종합감사",
+    "current_work_type": "01",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1bfa-115666",
+    "x": "읍면동 찾아가는 보건복지서비스 사업비 집행업무 소홀",
+    "t": "소하1동 종합감사",
+    "current_work_type": "15",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2212-126666",
+    "x": "학생평가 업무 처리 부적정",
+    "t": "(청주)수성초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c521-42919",
+    "x": "학교운동부 출전 (전지훈련) 경비  게시 소홀",
+    "t": "연암초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f065f0-64521",
+    "x": "여비 집행 부적정",
+    "t": "[구례]간문초등학교 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ce7c-6745",
+    "x": "19. 복지 민원 접수 및 처리 업무 소홀",
+    "t": "민원사무처리실태  특정감사 ",
+    "current_work_type": "07",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03aba-61922",
+    "x": "산업안전 보건관리비 미계상",
+    "t": "동탄출장소 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07cb9-32433",
+    "x": "세출예산 집행과목 부적정(교통관리과)",
+    "t": "2025년 자체감사(재무감사)",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f08ef0-16160",
+    "x": "전자기록물 관리 부적정",
+    "t": "지사종합감사(2차)",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeeb57-89310",
+    "x": "[신갈고] 2023학년도 학교생활인권규정 개정 절차 소홀",
+    "t": "[용인]2024년 학교종합감사",
+    "current_work_type": "19",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efbe9e-102079",
+    "x": "유치원 운영위원회 안건심의 관리 소홀",
+    "t": "서울독산초등학교(병설유치원) 학교자율 종합감사",
+    "current_work_type": "08",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11b88-16634",
+    "x": "학교생활기록부 학적사항 및 출결상황 특기사항 관리·기재 부적정",
+    "t": "마차고등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed062-99973",
+    "x": "민원 처리 업무 소홀",
+    "t": "2024년 3월 종합감사(경상남도남해교육지원청)",
+    "current_work_type": "07",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12f02-6110",
+    "x": "19. 공동체사업단 부가가치세 경정․환급 관리 소홀",
+    "t": "상반기 민간위탁사무 등 특정감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef604a-113037",
+    "x": "차량등록사업소 조례 개정 소홀",
+    "t": "차량등록사업소 자체 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efad38-37293",
+    "x": "위생안전 검사기관 인증 획득 및 국제공인시험 역량 확보",
+    "t": "국가물산업클러스터사업단 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11c1f-22527",
+    "x": "적극행정 국민신청 처리 지연 부적정",
+    "t": "민원처리 지연 사항",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8f7c-108055",
+    "x": "인감증명서 위임장 접수 소홀",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eeb909-59553",
+    "x": "상해요인 부적정 결정유예 통제방안 미비",
+    "t": "상해요인 정당처리 및 결정유예 업무처리 실태",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f000ae-32632",
+    "x": "임직원 국외출장 승인 및 관리 부적정",
+    "t": "신성장사업본부, 해외사업본부 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f06059-43501",
+    "x": "민방위 편성 및 교육 업무 소홀",
+    "t": "작전2동 행정복지센터 종합감사",
+    "current_work_type": "22",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6059-113986",
+    "x": "농지취득자격증명 발급 부적정",
+    "t": "내수읍 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f11c46-6507",
+    "x": "건설현장 산업재해 예방조치 미흡",
+    "t": "전북지역본부 종합감사 ",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efeccb-41231",
+    "x": "주민등록증 관리 업무 소홀",
+    "t": "용산1동행정복지센터 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f057a8-42691",
+    "x": "공사계약 업무 소홀",
+    "t": "2025년 7월 종합감사(학생교육원)",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe9a1-62888",
+    "x": "지역민방위대원 교육면제처리 부적정",
+    "t": "봉명1동, 강서2동 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef3391-81342",
+    "x": "[경수중] 13-7 교직원 장애인 학대 예방교육 소홀",
+    "t": "[안산]2024 학교주도형 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f1018f-27462",
+    "x": "대형폐기물 수수료 납입 업무 소홀",
+    "t": "광양읍 종합감사",
+    "current_work_type": "06",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-public-11ef6524-44886",
+    "x": "해외 정보사항 관리 불철저(현지주의)",
+    "t": "프랑크프루트사무소 종합감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0526b-57353",
+    "x": "유치원 통학차량 관리에 관한 사항",
+    "t": "드림유치원 종합감사",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eec624-106919",
+    "x": "정보공개 업무처리 소홀",
+    "t": "(서부)토성초등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04a7c-69312",
+    "x": "7. [공립작은도서관 민간위탁] 관리·감독 소흘",
+    "t": "보조금 및 민간위탁 운영 실태 특정감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cce7-25499",
+    "x": "의사무능력자 관리 소홀",
+    "t": "2025년 매전면 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11245-20026",
+    "x": "기간제근로자 사회보험 자격 상실 신고 지연",
+    "t": "기획경제국 종합감사",
+    "current_work_type": "05",
+    "current_sector": "19"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef0212-123526",
+    "x": "평가계획 관련 학업성적관리위원회 심의 소홀",
+    "t": "2024년 6월 군산관내 종합감사 실시(나포초, 학교자율형)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05e34-62985",
+    "x": "남산실버복지센터 ‘지역사회와 함께하는 현장 중심 통합 돌봄’",
+    "t": "민간위탁기관 운영 실태 특정감사",
+    "current_work_type": "18",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eec197-122135",
+    "x": "평가계획 수립 절차 미준수",
+    "t": "(서부)상리초등학교 종합감사 ",
+    "current_work_type": "03",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f0093f-32930",
+    "x": "▢▢출장소 법률구조 우수사례",
+    "t": "법률구조업무 및 기관운영 전반(제2차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f099a9-23233",
+    "x": "안전관리 소홀(교통관제업무종사자 휴대폰 보관 미흡)에 관한 사항_수도단 고속차량운영처",
+    "t": "추석 대수송 취약분야 및 공직기강 확립",
+    "current_work_type": "16",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-central-11f07b42-2049",
+    "x": "연말정산 업무 위탁용역 부적절",
+    "t": "한국소방산업기술원 종합감사",
+    "current_work_type": "18",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-central-11f10662-908",
+    "x": "교통사고 행정처분 업무소홀",
+    "t": "인천경찰청 종합감사",
+    "current_work_type": "07",
+    "current_sector": "23"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eef8a7-122333",
+    "x": "우수평생학습동아리 지원사업 보조금 정산 소홀",
+    "t": "행정국 종합감사 ",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef0e75-119203",
+    "x": "보조금 정산검사 소홀",
+    "t": "보조금 특정감사(상당,서원,흥덕,청원구청)",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11effaf3-34136",
+    "x": "사고유보(예외)기업 사후관리 업무 미흡",
+    "t": "인천중앙지점 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee4d0-131613",
+    "x": "주민등록증 재발급 수수료 징수 부적정",
+    "t": "죽항동 자체감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0428f-24911",
+    "x": "건설공사 계약면허 선정 부적정",
+    "t": "상모사곡동 종합감사",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eff296-29149",
+    "x": "자동차검사 수수료 환불(감면) 관리 소홀",
+    "t": "한국교통안전공단 종합감사(지역본부, 검사소 및 교통안전체험교육센터)",
+    "current_work_type": "06",
+    "current_sector": "21"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c8ed-38562",
+    "x": "인감증명서 대리발급 부적정",
+    "t": "중앙동 정기종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0ce5e-34904",
+    "x": "학교회계 세입 업무 소홀",
+    "t": "2025년 11월 종합감사(대병중학교, 대병학원)",
+    "current_work_type": "17",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef547d-48187",
+    "x": "상품위험평가 방법 개선에 따른 내규 개정 이행",
+    "t": "자금세탁방지업무 특정감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef9fc0-38411",
+    "x": "개인정보 관련 지침서 내용 오류",
+    "t": "사내 전산시스템 보안관리 실태 감사",
+    "current_work_type": "23",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-public-11eec646-56890",
+    "x": "일상감사 미경유",
+    "t": "한강유역 산하부서 종합감사(1)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeeb12-80979",
+    "x": "[능길초] 5-4 시설공사 계약업무 소홀",
+    "t": "[안산]2024년 학교 종합감사(실지)",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef306d-119661",
+    "x": "공사의 시공 및 정산에 관한 사항",
+    "t": "율곡고등학교 종합감사",
+    "current_work_type": "04",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef9040-113917",
+    "x": "기본형 공익직불금 등 지급 소홀",
+    "t": "2024 안양면 종합감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "감사원-2025-공개문전문13371cf940-6",
+    "x": "그런데 감사원 감사기간(2025. 10. 13.\\~11. 7.) 중 금산군의 조림사업 추진실\n\n태를 점검한 결과 다음과 같은 문제점이 확인되었다.\n\n가. 대상지가 아닌데도 일괄 재조림을 실시하는 등 조림지 사후관리 미흡\n\n산림청은 매년 시·도를 통해 다음 연도 시·군·구의 조림사업 수요를 조사하면\n\n서 “벌채지(수확 벌채, 수종갱신 벌채, 피해목 벌채) 면적 및 예정면적 등을 반드시\n\n확인 및 고려하여 작성” 하도록 하고 있고, 시·도로 하여금 시·군·구의 수요량 의\n\n견을 수렴하는 등 실제 조림수요 면적을 검토하여 수요를 작성하도록 하고 있다.\n\n그리고 산림청은 매년 조림지 활착상황(봄철 조림지 및 전년도 가을철 조림지)과\n\n보식 및 재조림(이하 “재·보식”이라 한다) 계획 및 실적을 확인하기 위해 7월경\n\n시·도에 공문을 시행하여 조림지 수종별 활착상황과 함께 재·보식 계획, 이전 연도\n\n재·보식 실적을 10월 초순까지 제출하도록 하고 있다.",
+    "t": "음성군·금산군 정기감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04ce1-47545",
+    "x": "학업성적평가 및 관리미흡",
+    "t": "감천초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eebf31-61117",
+    "x": "무선국 통신보안 변경 계획 수립 필요",
+    "t": "2024년 제2차 복무감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f100c6-377",
+    "x": "수시적성검사 우편통지 관련 개인정보 유출 주의 조치 필요",
+    "t": "종합행정감사(태백운전면허시험장)",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f04d81-57656",
+    "x": "하천구역 내 행위허가 협의 절차 소홀",
+    "t": "금동 자체감사",
+    "current_work_type": "10",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef5e9e-116137",
+    "x": "비상근무 대체휴무자 시간외근무수당 중복 지급",
+    "t": "은척면 자체 종합감사 실시 ",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f14d1e-2783",
+    "x": "배전설비 계통관리 미흡",
+    "t": "공주청양지사, 당진지사, 제천지사, 단양지사, 충주전력지사 종합감사",
+    "current_work_type": "16",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-public-11ef1966-51416",
+    "x": "구상권 행사 결정업무 내부통제 강화방안 마련",
+    "t": "2024년도 상반기 보험사업  종합감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeeca3-86743",
+    "x": "[한백중] 3. 교직원 대상 안전교육 미실시",
+    "t": "[화성오산]2024년 학교종합감사",
+    "current_work_type": "22",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f1557b-6569",
+    "x": "사업계획서 등 자료 방치",
+    "t": "선거기간 대비 공직기강 확립 특별 복무점검",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f1392d-11042",
+    "x": "사전통지서 반송분 공시송달 소홀",
+    "t": "문화유산과, 주차정책과 종합감사",
+    "current_work_type": "24",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07f0c-58217",
+    "x": "기록물 등록 ․ 관리에 관한 사항",
+    "t": "동행정복지센터 자체종합감사(2차)",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef083e-127072",
+    "x": "당직근무규정 위반 및 청사보안업무 소홀",
+    "t": "상하수도사업소 부분감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8955-110310",
+    "x": "민간위탁사업 절차 이행 소홀",
+    "t": "지체장애인협회 남원시지회",
+    "current_work_type": "18",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef132c-114961",
+    "x": "학교 규칙 공포 및 정보공시 미실시에 관한 사항",
+    "t": "2024년 6월 무주관내  학교자율형 종합감사 실시(무주중앙초)",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0166d-27102",
+    "x": "사건번호 부여 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제3차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2c4c-95994",
+    "x": "대형폐기물 및 공사장생활폐기물 대장 작성 소홀",
+    "t": "도산면 종합감사",
+    "current_work_type": "04",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-public-11ef69ab-43269",
+    "x": "전사 게스트룸 관리 개선 방안 마련",
+    "t": "공직기강 일상점검",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8088-107425",
+    "x": "비소모품 관리에 관한 사항",
+    "t": "본청 일상경비 감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef06ad-54334",
+    "x": "담보부채권 경매사건 열람 불철저",
+    "t": "인천지역본부 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0d3db-33494",
+    "x": "여성가족원 운영위원회 운영 소홀",
+    "t": "여성가족원 종합감사",
+    "current_work_type": "08",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0554b-29624",
+    "x": "물품선정위원회에 관한 사항",
+    "t": "구지중학교 종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6fe3-92243",
+    "x": "공유재산 사용허가 부적정",
+    "t": "대구팔달초등학교 재무감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11effe46-71239",
+    "x": "이용료 납부일 관련 운영규정과 이용계약서 내용 상이",
+    "t": "2025년 장애인주간보호시설 특정감사",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eef304-59388",
+    "x": "유일사주차장 버스전용주차장 안내판 정비(도색) 필요",
+    "t": "2024년 제5차 복무감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eedb8b-57417",
+    "x": "보안점검검표 기록관리 미비",
+    "t": "2024년 4월 종합감사(익산지사)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f11929-8364",
+    "x": "농산물 유통관리단 운영 부적정",
+    "t": "대구경북지역본부 종합감사",
+    "current_work_type": "16",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f17462-116",
+    "x": "사무편람 작성 및 비치 소홀",
+    "t": "2026년 보조금 감사",
+    "current_work_type": "24",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11f08219-24627",
+    "x": "검사수수료 부적정(추징,환불 등)",
+    "t": "2025년 하반기 반복지적사례 자율감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f14795-3181",
+    "x": "유통개선효과 비례 사업비 차등배정 등 바우처 지원사업 개선",
+    "t": "온라인도매시장 운영실태 성과감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f100ab-11752",
+    "x": "개인정보 처리 위탁사항 미공개",
+    "t": "[여수] 여수성산유치원 종합감사",
+    "current_work_type": "18",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef2f94-50225",
+    "x": "인증 제도 전산시스템 구축 필요 등",
+    "t": "2024년도 인증 업무실태 성과감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eef21c-91109",
+    "x": "[의정부초]개인정보 관련 업무 소홀",
+    "t": "[의정부] 2024 학교주도형 종합감사",
+    "current_work_type": "23",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efab87-109010",
+    "x": "건설공사장 근로자 폭염대응 강화를 위한 점검 개선",
+    "t": "폭염 대비 취약계층 이용시설 등 중점점검",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef5eb5-95974",
+    "x": "계속도로점용료 등 세외수입 체납관리 소홀",
+    "t": "유가읍 종합감사",
+    "current_work_type": "20",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03b54-63473",
+    "x": "시설공사 환경보전비 계상 및 준공검사에 관한 사항",
+    "t": "2025년 인천학산초등학교 자율감사(인천남부)",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c75c-40626",
+    "x": "계약 업무 및 정산 부적정",
+    "t": "산내중학교 종합감사(컨설팅)",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f04a9d-25756",
+    "x": "직원 복무관리 미흡",
+    "t": "서울북부지사 종합감사",
+    "current_work_type": "11",
+    "current_sector": "01"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8df8-104835",
+    "x": "유치원 회계  세입금 관리 철저",
+    "t": "  2024년 11월 (사립) 대동유치원 종합감사",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f002d3-71688",
+    "x": "장기입원자 정부양곡 할인 지원 부적정(no.7)",
+    "t": "2025년 장흥면 종합감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eebf64-107151",
+    "x": "유치원  시설 무단  변경 사용",
+    "t": "(남부) 영림유치원 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f15a59-1520",
+    "x": "농어업인 국고지원 신청 안내 정기자료 처리 내부통제 소홀",
+    "t": "농어업인에 대한 연금보험료 국고보조 제도 성과감사",
+    "current_work_type": "15",
+    "current_sector": "20"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1a3c-115600",
+    "x": "주민등록증 관리 및 재발급 수수료 징수 부적정",
+    "t": "동 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f176b2-5875",
+    "x": "6. 방범순찰 보조금 목적 외 사용 및 물품 정산증빙 관리 소홀",
+    "t": "2026년 보조금 집행실태 특정감사",
+    "current_work_type": "15",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8f7c-108163",
+    "x": "가락2동 종교협의회 사업 추진",
+    "t": "동 주민센터 종합감사",
+    "current_work_type": "03",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11f0cb28-21447",
+    "x": "위임전결규정 미준수",
+    "t": "진료행정실, 교육인재개발실 자체 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eefc5f-101406",
+    "x": "유치원운영위원회 회의록 공개에 관한 사항",
+    "t": "어울림유치원 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f01a68-31688",
+    "x": "23. 건설사업관리용역 계약변경 미시행",
+    "t": "강원본부 종합감사",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f13ed0-8037",
+    "x": "전국 최초 도시재생사업 통합 모니터링 DB 구축 및 운영체계 마련",
+    "t": "민간위탁사업 운영실태 감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1e61-121544",
+    "x": "자동차(수송기계) 부품산업 클러스터 육성사업 추진 소홀",
+    "t": "제천시 민간위탁,사회단체보조 분야 특정감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f06690-45805",
+    "x": "민원 이송 처리 소홀",
+    "t": "(고충)민원처리실태 감사",
+    "current_work_type": "07",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed21e-130857",
+    "x": "보안교육에 관한 사항",
+    "t": "[여수]여수봉산초등학교 종합감사",
+    "current_work_type": "23",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f17df5-4431",
+    "x": "출장명령 위임전결규정 미준수 및 사전자율감사 부실 작성",
+    "t": "방사선종양학과의 조직, 인사, 예산 및 주요 사항에 대한 정기감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0fcde-11751",
+    "x": "보증사고처리 업무 준수를 위한 교육 실시",
+    "t": "순천지점 종합감사",
+    "current_work_type": "09",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f0f7ee-13001",
+    "x": "동의서 징구 절차 부적정",
+    "t": "방축지구 배수개선사업 민원에 따른 특정감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f04750-29443",
+    "x": "여비(운임) 부당 수령",
+    "t": "2025년 6월 기강감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f05d4e-23718",
+    "x": "2025년 상반기 외부강의 등의 신고 이행실태 점검결과",
+    "t": "2025년 상반기 외부강의등 신고 이행실태 점검",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2024-1027884",
+    "x": "❍ 내내역사업인 ‘어린이제품 안전체험관’의 구축현황을 살펴보면 수도권에 2개소, 충청권에 2개소, 영남권에 4개소, 강원권에 1개소가 구축되어 호남권, 제주 등 일부 지역에는 어린이제품 안전체험관이 설치되지 않은 것으로 나타남\r\n- 2017년에 구축된 전북 임실의 안전체험관은 시설 노후화 등의 사유로 2022년 운영 종료",
+    "t": "어린이제품 안전체험관 권역별 균형 설치 필요",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f166f0-2328",
+    "x": "인권침해 사후조치 관련 조항과 상위 법령 간 정합성 미흡",
+    "t": "「인권경영 이행실태 점검」 합동감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef5563-46242",
+    "x": "정보화사업 상용소프트웨어 직접구매 제외 검토요청 서류 부적정",
+    "t": "2024년 9월 종합감사(빅데이터사업실)",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c99e-53430",
+    "x": "행정재산 일시사용 허가 규정 관리 소홀",
+    "t": "대구예담학교 종합감사",
+    "current_work_type": "10",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef06ca-54366",
+    "x": "유망산업 내 선도기업에 대한 가치투자로 초과수익 창출",
+    "t": "[종합감사] 2024년 상반기 기금운용 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efff9a-73272",
+    "x": "체육진흥과 하자검사 미이행",
+    "t": "시설공사 하자검사 관리실태 특정감사",
+    "current_work_type": "04",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efa6df-68209",
+    "x": "재단 이사회 운영 소홀",
+    "t": "울주문화재단 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efd214-74770",
+    "x": "외부강의 등의 신고 절차 미준수",
+    "t": "평택산업진흥원 종합감사(7일)",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11e7a-7711",
+    "x": "지방세 체납액 완납자 재산 압류 해제 업무 소홀",
+    "t": "이원면 종합감사",
+    "current_work_type": "20",
+    "current_sector": "02"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eee743-87418",
+    "x": "(잠원초) 2022~2024학년도 학교안전계획 수립 부적정",
+    "t": "[수원] 2024년 학교주도형 종합감사",
+    "current_work_type": "22",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1354-79065",
+    "x": "망해산 등산로 환경정비활동 추진",
+    "t": "읍면동 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f121a5-15092",
+    "x": "장애인 재판정 안내 지연 및 처리 절차 미준수",
+    "t": "부북면행정복지센터 종합감사",
+    "current_work_type": "05",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f160a3-11913",
+    "x": "공사계약 이행 관리 서류 관리 소홀",
+    "t": "의령읍 종합감사",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f06dd1-45783",
+    "x": "겸직 사전허가 미이행",
+    "t": "충청남도교육청안전수련원 종합감사",
+    "current_work_type": "10",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eeea76-58848",
+    "x": "특정가스사용시설 완성검사 처리에 관한 사항",
+    "t": "부산광역본부 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed698-131966",
+    "x": "인사위원회 운영에 관한 사항",
+    "t": "2024년 서구가족센터 특정감사",
+    "current_work_type": "08",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11ef6677-46206",
+    "x": "위탁수수료 정리 업무 지연",
+    "t": "정부 위탁사업 운영실태 특정감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f176b3-1506",
+    "x": "인성교육 및 생명존중교육에 관한 사항",
+    "t": "2026년 해명초등학교 종합감사(인천 강화)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11efe9fb-33386",
+    "x": "직원제안제도 실시성과평가 보완 필요",
+    "t": "2025년 3월 종합감사(고객지원실)",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef4b21-49608",
+    "x": "(18) 충남서부정수장 단독 가동 대비 구내배관 계획 마련",
+    "t": "금강유역 직할부서 종합감사",
+    "current_work_type": "03",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-public-11eec497-61261",
+    "x": "온누리 상품권 관리 서랍장 미시건",
+    "t": "설명절 계기 공직기강 확립 복무점검",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eff353-29573",
+    "x": "차량운영관리 부적정",
+    "t": "2025년 제1차 종합감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0f58a-13458",
+    "x": "통합사례관리 업무 소홀",
+    "t": "2026년도 이창동 종합감사",
+    "current_work_type": "08",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11efa0c2-34917",
+    "x": "소속 직원 관리감독 부적정",
+    "t": "2024년 12월 종합감사(글로벌협력사업실)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6e3e-108382",
+    "x": "하천점용료 부과 업무 소홀",
+    "t": "주왕산면 종합감사",
+    "current_work_type": "06",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-public-11f12ca3-3252",
+    "x": "사무소 귀부인자 업무인계인수 지침 미준수",
+    "t": "2026년 제1차 해외사무소 감사(키르기스스탄, 타지키스탄)",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f08d39-54979",
+    "x": "산업안전보건관리비 요율 적용 부적정",
+    "t": "건설공사 안전관리분야 특정감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef904b-42381",
+    "x": "(06) 지정폐기물 처리 부적정",
+    "t": "2024년 금강유역(4) 산하부서 종합감사",
+    "current_work_type": "22",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-public-11f08d21-14965",
+    "x": "2단계 스키장 노후배관 교체공사 계약관리 미흡(공사감독 미흡)",
+    "t": "관광마케팅본부 종합감사",
+    "current_work_type": "04",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eee66e-56130",
+    "x": "소송비용 회수 업무 소홀",
+    "t": "경남ㆍ제주지역본부 종합감사",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05878-33939",
+    "x": "상품권 사용 및  관리 부적정",
+    "t": "동문초등학교 재무감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f078b5-22873",
+    "x": "사물함 보증금 관리에 관한 사항",
+    "t": "생활체육팀 자체종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeab63-133975",
+    "x": "장애인 자동차 표지 발급에 관한 사항",
+    "t": "2024년 1/4분기 동 행정복지센터 종합감사",
+    "current_work_type": "05",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-public-11ef7169-44955",
+    "x": "안전보건관리체계 구축 컨설팅(공단) 사업수행 방법 개선",
+    "t": "사회적 이슈 대응 분야 특정감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8466-115041",
+    "x": "학교 보건(응급장비 관리 및 감염병 예방관리 계획 수립)에 관한 사항",
+    "t": "2024년 9월 무주관내 종합감사(무주반디유치원)",
+    "current_work_type": "03",
+    "current_sector": "15"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0e7b9-12757",
+    "x": "세종RCE 국제 인증 획득을 통한 교육공동체 성장 모델 확립",
+    "t": "2026년 세종특별자치시교육청 소통담당관‧미래기획관 재무감사 ",
+    "current_work_type": "01",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efccbd-77353",
+    "x": "학교회계 예산 운용 및 결산 업무에 관한 사항",
+    "t": "연동중학교 종합감사",
+    "current_work_type": "17",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef846c-79185",
+    "x": "신용카드 결제대금 지출 지연 및 연체료 지급 부적정",
+    "t": "일상경비 등 집행실태 감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f07297-1954",
+    "x": "중소기업확인서 입찰참가자격 판단기준일에 관한 사항",
+    "t": "서울지방조달청 종합감사",
+    "current_work_type": "02",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eed9c9-125334",
+    "x": "물품 구매 절차 소홀",
+    "t": "월평초등학교 종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11efcd77-35767",
+    "x": "인증 실무지침 ‘기준 12.3 의료정보 수집 및 활용 지침’ 개정 권고",
+    "t": "보건의료정보과 전반에 관한 사항",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efbd2c-38341",
+    "x": "1분기 복무관리 및 행동강령 이행실태 점검결과",
+    "t": "공직기강 확립 및 행동강령 이행실태 점검(1분기)",
+    "current_work_type": "11",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eeca08-129175",
+    "x": "물품관리대장 작성 소홀",
+    "t": "민간위탁사무 운영실태 특정감사",
+    "current_work_type": "21",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef170c-50191",
+    "x": "공용차량 관리대장 작성 미흡",
+    "t": "제1차 해외무역관 리스크 내부통제 실태 점검 특정감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef0299-131465",
+    "x": "신용카드 포인트 세입조치 소홀",
+    "t": "도원고등학교 종합감사",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03b58-42813",
+    "x": "농업기계 임대사업 운영 부적정",
+    "t": "농업기술센터 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0c91b-22647",
+    "x": "정보보안 위반(휴대용저장매체(USB 등) 방치)",
+    "t": "추석명절 공직기강 특별점검",
+    "current_work_type": "23",
+    "current_sector": "01"
+  },
+  {
+    "id": "국회결산-2024-1026697",
+    "x": "❍ 전자심판제도를 도입하였다고는 하나, 심판청구서 접수 외 대부분의 절차가 비전자적 방식으로 운용되고 있고, ｢국세기본법｣ 상 관련 법적 근거가 마련되지 않아 전자 송달이 이루어지지 않고 있음",
+    "t": "전자 송달 효력 등에 관한 법적 근거 마련 노력 필요",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f046af-24845",
+    "x": "사업수행능력평가(PQ) 세부평가기준 수립 부적정",
+    "t": "구미도시공사 종합감사",
+    "current_work_type": "15",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef1768-99875",
+    "x": "(법인)학교법인 업무 부적정",
+    "t": "2024년 5월 종합감사(마산중앙고등학교)",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "국회결산-2024-1026735",
+    "x": "❍ 전공의 의료공백에 따른 의료인력 부족 및 부담 가중으로 고엽제환자 검진의 주요 검사항목의 시행건수는 5,322건으로 전년 대비 4,108건 감소(43.6%)하였고, 평균 소요기간은 48일로 전년 대비 증가하였음",
+    "t": "인력 부족에 따른 검진 지연 방지를 위한 근본적 개선방안 마련",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef2ebd-49971",
+    "x": "정기 사업평가 대상사업 재분류 검토 필요",
+    "t": "해외법인 및 합작투자법인 운영실태 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef5f99-115362",
+    "x": "찾아가는 보건복지 상담(모니터상담) 업무 소홀",
+    "t": "2024년 연평면 종합감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11efda28-34940",
+    "x": "사업 계획 시 일상감사 의뢰 누락",
+    "t": "2025년 2월 종합감사(안전경영실)",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0ce99-12960",
+    "x": "건설현장 안전관리(특별교육)에 관한 사항",
+    "t": "제주지역본부 종합감사 ",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-public-11eefbb5-57047",
+    "x": "개인정보보호 업무처리 소홀",
+    "t": "충북지사 종합감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f00163-70791",
+    "x": "장애인 검진비 지원 누락",
+    "t": "상남면 행정복지센터 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef021e-133141",
+    "x": "정관 개정 절차 부적절",
+    "t": "(함안군장학재단) 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f08ba3-51629",
+    "x": "학교운영위원회 운영 소홀",
+    "t": "조치원대동초등학교 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe74e-76590",
+    "x": "수입증지 구 금고 입금 소홀",
+    "t": "하반기 동 종합감사",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0d0f3-14173",
+    "x": "소송 불변기간 관리 부적정",
+    "t": "2025년 11월 종합감사(법무지원실)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fc44-25234",
+    "x": "시설공사 집행 부적정",
+    "t": "폐지학교(청송중학교부동분교장) 감사",
+    "current_work_type": "04",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f12cc3-8257",
+    "x": "유족연금 및 퇴직유족연금특별부가금 지급처리 부적정",
+    "t": "수급자지원 운영실태 감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f11245-20020",
+    "x": "등록공장 현황 관리 소홀",
+    "t": "기획경제국 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef2882-85950",
+    "x": "[김포서초] 자체 금궤검사 실시 소홀",
+    "t": "[김포] 2024년 학교주도형 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f10259-16916",
+    "x": "인사위원회 서면심의 부적정",
+    "t": "행정지원과 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11f0031d-2429",
+    "x": "소송사무 관련 업무처리 부적정",
+    "t": "서울지방국토관리청 종합감사",
+    "current_work_type": "12",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe465-67482",
+    "x": "무인민원발급기 수입금 관리 소홀",
+    "t": "행정지원분야 직무종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-central-11eeefbf-4821",
+    "x": "다수공급자계약 수정계약 체결시 인지세 미납에 관한 사항",
+    "t": "강원지방조달청 종합감사",
+    "current_work_type": "06",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-public-11f149a6-4248",
+    "x": "희운각대피소 전기 분전함 시건 장치 강화 필요",
+    "t": "대피소 운영 실태",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f14a96-16834",
+    "x": "주민등록번호 부여대장 작성·관리 소홀",
+    "t": "2026년 숭의1·3동 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f080ae-36986",
+    "x": "학업중단 숙려제  관리 소홀",
+    "t": "2025 종합감사",
+    "current_work_type": "25",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef60d9-61006",
+    "x": "현장처리물품 방염성능검사 소홀",
+    "t": "부여소방서 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef1cc5-54430",
+    "x": "경비예산 집행 부적정",
+    "t": "정비사업본부 종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eee104-58826",
+    "x": "심사원 청사 안전관리 미흡에 따른 관리 강화 필요",
+    "t": "환경전문심사원 종합감사",
+    "current_work_type": "08",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-public-11ef6f2c-45880",
+    "x": "일반연구사업관리규칙 미준수",
+    "t": "소백산국립공원사무소 종합감사",
+    "current_work_type": "24",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6111-99713",
+    "x": "여권사무 및 여권정보통합관리시스템 보안실태 점검 미실시",
+    "t": "2024년 하반기 구 행정 종합감사",
+    "current_work_type": "14",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0167d-30104",
+    "x": "안정적 열공급을 위한 정비계획 수립 필요",
+    "t": "분당발전본부 종합감사",
+    "current_work_type": "03",
+    "current_sector": "12"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efc9b3-98829",
+    "x": "개발행위허가 업무 소홀",
+    "t": "가평군 종합감사",
+    "current_work_type": "10",
+    "current_sector": "26"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f07cb9-32503",
+    "x": "물품검수조서 작성 소홀(기후에너지과)",
+    "t": "2025년 자체감사(재무감사)",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef68c7-47347",
+    "x": "카드형 OTP 관리 소홀",
+    "t": "추석연휴 복무감사",
+    "current_work_type": "19",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef972c-61225",
+    "x": "지목변경에 따른 취득세 등 미 부과・징수",
+    "t": "서산시 종합감사",
+    "current_work_type": "06",
+    "current_sector": "03"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c676-36901",
+    "x": "노인일자리사업 참여자 급여 지급 부적정",
+    "t": "동주민센터 종합감사",
+    "current_work_type": "17",
+    "current_sector": "16"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0502c-45399",
+    "x": "시설공사 하자검사조서 미작성",
+    "t": "2025년 6월 공립학교(전북유니텍고등학교) 학교자율형 종합감사 실시",
+    "current_work_type": "04",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef8c63-42180",
+    "x": "정보화사업 사전협의 절차 고도화 필요",
+    "t": "내부통제 고도화 특정감사",
+    "current_work_type": "23",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0166c-26287",
+    "x": "통합환경인허가 정기검사 ‘우수’ 사업장 달성",
+    "t": "영동에코 및 강릉발전본부 종합감사",
+    "current_work_type": "10",
+    "current_sector": "18"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0fb23-27220",
+    "x": "지방공무원 복무규정 미준수",
+    "t": "2025년 하반기 고령군농업기술센터 자체 종합감사 ",
+    "current_work_type": "11",
+    "current_sector": "11"
+  },
+  {
+    "id": "자체감사-pap-public-11f02ae9-29951",
+    "x": "제소 후 종결 입력 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제4차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef8080-107543",
+    "x": "관급자재 물품 검수 소홀",
+    "t": "평내동 종합감사",
+    "current_work_type": "13",
+    "current_sector": "24"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f037b3-63893",
+    "x": "민방위 업무에 관한 사항",
+    "t": "2025년 2/4분기 동 행정복지센터 종합감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0143b-33001",
+    "x": "정비사업장 건설공사보험 미징구 등 업무처리 미흡",
+    "t": "서부PF금융지사 종합감사",
+    "current_work_type": "22",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11f02ae8-29942",
+    "x": "송무 업무 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제4차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f136bf-7506",
+    "x": "◍◍◍◍◍◍◍지도자 처우개선비 교부 및 관리 등 부적정",
+    "t": "예산군 종합감사",
+    "current_work_type": "07",
+    "current_sector": "02"
+  },
+  {
+    "id": "자체감사-pap-public-11ef2788-38642",
+    "x": "고객과의 사적금전거래",
+    "t": "영업점 특별감사(평촌남)",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c5c9-32048",
+    "x": "자치회관 회계 관련 업무 처리 부적정(원천징수 미이행, 개인포인트 적립)",
+    "t": "동주민센터 종합감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12e69-15378",
+    "x": "대체휴무 사용 부적정",
+    "t": "한국유교문화진흥원 종합감사",
+    "current_work_type": "11",
+    "current_sector": "10"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef038a-83441",
+    "x": "현19.민방위 업무 소홀",
+    "t": "동 정기 종합감사",
+    "current_work_type": "22",
+    "current_sector": "22"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f058b1-26186",
+    "x": "개발제한구역 내 전기자동차 충전시설 행위허가 등 관리 부적정",
+    "t": "개발제한구역 내 전기자동차 충전시설 행위허가 관련 특정감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f01a5a-66537",
+    "x": "반복민원 처리절차 미준수",
+    "t": "상반기 민원처리실태 특정감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f03518-49828",
+    "x": "지하수 개발·이용 허가 관련 업무 처리 소홀",
+    "t": "음성군 종합감사",
+    "current_work_type": "10",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f0159b-28168",
+    "x": "(강원동부지사) 주택연금 해지 시 초기보증료 환급에 관한 사항",
+    "t": "수도권동부 지역본부 종합감사",
+    "current_work_type": "06",
+    "current_sector": "26"
+  },
+  {
+    "id": "자체감사-pap-public-11f151d0-2544",
+    "x": "상환결정 누락 및 변호사보수 산정 부적정",
+    "t": "법률구조업무 및 기관운영 전반(제5차 정기감사)",
+    "current_work_type": "12",
+    "current_sector": "07"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11efe8fb-68339",
+    "x": "의무교육관리위원회 설치 및 운영 소홀",
+    "t": "[고흥] 영남초등학교 종합감사",
+    "current_work_type": "08",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f1662b-5685",
+    "x": "20. 가설건축물 축조신고 절차 미이행",
+    "t": "도로관리사업소 종합감사",
+    "current_work_type": "05",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cb6f-33827",
+    "x": "차입금 운용 부적정",
+    "t": "청아유치원 종합감사",
+    "current_work_type": "20",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11f036ac-27936",
+    "x": "(세종지사) 공탁금 관리에 관한 사항",
+    "t": "서남권 지역본부 종합감사",
+    "current_work_type": "20",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11eee264-58035",
+    "x": "고용장려금 지급 업무 소홀",
+    "t": "서울동부지사 종합감사",
+    "current_work_type": "19",
+    "current_sector": "19"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f009da-66859",
+    "x": "학교운영위원회 구성 및 선출 부적정",
+    "t": "(충주) 노은초등학교 종합감사",
+    "current_work_type": "08",
+    "current_sector": "05"
+  },
+  {
+    "id": "국회결산-2023-1025124",
+    "x": "❍ 국방부 국방정책실 소속 3개 T/F는 육군 준장 및 각군 중령 등을 상근인원으로 하여 장기간에 걸쳐 사실상 상설화하여 운영하고 있어, 「국방조직 및 정원 관리 훈령」 등에 따른 한시조직 운영 관련 규정에 부합하지 않음\r\n-  국방부는 국방정책실 소속으로 2023년 말까지 전작권 전환 T/F, 한미동맹 70주년 회담준비 T/F, 전략사령부 창설지원 T/F를 운영하였음\r\n❍ 국방부는 특정한 T/F의 운영이 종료된 이후 동일 조직 내에 새로운 T/F를 구성하는 방식으로 사실상 동일 조직을 운영하고 있음\r\n- 대표적으로, 국방부는 2023년 말 국제정책관 소속 한미동맹 70주년 회담준비 T/F의 운영을 종료한 직후 다시 지역안보협력 T/F를 설치하였음",
+    "t": "현재 운영 중인 한시조직 등 정비 및 규정에 부합하는 운영 필요",
+    "current_work_type": "11",
+    "current_sector": "08"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12d8c-13578",
+    "x": "이장 월정수당 지급 업무 소홀",
+    "t": "광천읍 정기종합감사",
+    "current_work_type": "17",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef6ff8-44242",
+    "x": "구상권 행사 결정 업무 내부통제 강화방안 마련",
+    "t": "2024년 하반기 보험사업 종합감사",
+    "current_work_type": "03",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f10711-9053",
+    "x": "고객헌장의 핵심서비스 이행표준 개선 필요",
+    "t": "대국민 홍보 및 민원업무수행 실태  특정감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef86e2-98663",
+    "x": "학교생활기록 행동특성 누가기록 작성 부적정",
+    "t": "[강릉] 정동초등학교 종합감사",
+    "current_work_type": "24",
+    "current_sector": "05"
+  },
+  {
+    "id": "국회결산-2023-1024458",
+    "x": "❍ ｢국고금 관리법 시행규칙｣ 제39조는 지출원인행위(계약)를 하는 경우 지출원인행위서를 작성하고, 이를 지출원인행위부에 기재하도록 함\r\n - 지출원인행위 기재가 지연되는 경우 정해진 세출예산에 비해 지출원인행위가 과도하게 실시되어 배정된 예산을 초과하여 지출이 발생할 우려가 있음\r\n❍ 공정위는 ‘IPTV 및 OTT 탑재용 위원회 홍보 콘텐츠 원고 작성 및 후반작업’계약을 2023년 9월 4일 체결하였으나, 그 사실을 2023년 11월 29일에 이르러 지출원인행위부에 기재하여 ｢국고금 관리법 시행규칙｣ 제39조를 위반하였음",
+    "t": "지출원인행위 관련 행정절차 지연",
+    "current_work_type": "02",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6c25-68148",
+    "x": "인감증명서 발급 위임장 및 발급대장 관리 소홀",
+    "t": "두동면 종합감사",
+    "current_work_type": "18",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f12cbd-14028",
+    "x": "물품 매각 입찰 공고 및 물품 등재 소홀",
+    "t": "흥도초등학교 종합감사",
+    "current_work_type": "02",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11efac7f-38087",
+    "x": "채무자 유형별 회수전략을 통한 특약보증 구상채권 회수율 제고",
+    "t": "서울북부관리센터 종합감사",
+    "current_work_type": "09",
+    "current_sector": "04"
+  },
+  {
+    "id": "자체감사-pap-public-11f003d0-35396",
+    "x": "작업환경 개선을 통한 안전한 사업장 구축",
+    "t": "기술사업소 및 운연차량사업소 일반감사",
+    "current_work_type": "22",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef6e43-107305",
+    "x": "장애인 등록결과 통지 소홀",
+    "t": "상인2동행정복지센터 종합감사",
+    "current_work_type": "05",
+    "current_sector": "16"
+  },
+  {
+    "id": "국회결산-2022-1023057",
+    "x": "❍ 건물대여료는 주택임대사업의 개포9단지 입주 지연 등으로 당초 계획액 대비 수납률이 24.7%에 불과함\n- 2022년 건물대여료 중 주택임대료 계획액 대비 수납률: 24.1%\n- 개포9단지의 경우, 2022년 5월말부터 입주자 모집 공고를 실시하였으나, 입주자 확보를 위해 2차례에 걸쳐 임대보증금을 단계적으로 인하하고 당초 가점 선정방식에서 선착순 모집방식으로 전환하였음에도, 2023년 6월말 기준 입주율이 53.5%에 불과해 1년 이상 대규모 공실이 발생하고 있음",
+    "t": "주택임대수요 적정 반영 필요",
+    "current_work_type": "09",
+    "current_sector": "26"
+  },
+  {
+    "id": "자체감사-pap-public-11eff254-34560",
+    "x": "[5] 공단 직원 시험 응시 관리 부적정",
+    "t": "세종지사 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0c8ef-23256",
+    "x": "정기 재물조사 부적정",
+    "t": "[영동] 부용초등학교 종합감사",
+    "current_work_type": "21",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11ef6677-46188",
+    "x": "압류재산 매각결정 취소 업무 처리 불철저 및 시스템 개선 필요",
+    "t": "정부 위탁사업 운영실태 특정감사",
+    "current_work_type": "06",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11f11160-8415",
+    "x": "특정지역 공급변전소 국가보안시설 재지정 관련 안정적 전력공급 달성",
+    "t": "서울본부 종합감사",
+    "current_work_type": "01",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef08e7-48801",
+    "x": "미실시 검사료 환불금 관리 미흡",
+    "t": "2023회계연도 재무감사(안)",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef9bdb-112726",
+    "x": "응답소 현장민원 처리지연 관련 신분상 조치",
+    "t": "하반기 응답소 현장민원 처리실태 특정감사",
+    "current_work_type": "07",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-public-11ef6f48-45006",
+    "x": "변제계획안에서 제외된 양도담보물을 적기 발견하여 구상권을 회수한 사례",
+    "t": "대구재기지원센터 종합감사",
+    "current_work_type": "09",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11ef471b-93452",
+    "x": "학교수영장 사용허가 갱신 업무 소홀",
+    "t": "경서중학교 수영장 운영관리 실태",
+    "current_work_type": "10",
+    "current_sector": "05"
+  },
+  {
+    "id": "자체감사-pap-public-11eecb11-60395",
+    "x": "[종합2024-001-현05]현지_사택 입주자격 확인 미흡",
+    "t": "2024년 경남사업처(진주지사 포함) 종합감사",
+    "current_work_type": "01",
+    "current_sector": "28"
+  },
+  {
+    "id": "자체감사-pap-public-11ef0d16-52894",
+    "x": "사옥 개보수공사 하자검사 실시 부적정",
+    "t": "사옥 신축, 개보수 등 공사 추진 실태",
+    "current_work_type": "04",
+    "current_sector": "25"
+  },
+  {
+    "id": "자체감사-pap-public-11ef8496-40355",
+    "x": "국소배기장치 성능평가 사업추진 내실화",
+    "t": "서울광역권역 종합감사",
+    "current_work_type": "13",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f0cfee-13913",
+    "x": "스마트기기 관리 부적정",
+    "t": "학교 교육용 스마트기기 관리 실태",
+    "current_work_type": "23",
+    "current_sector": "14"
+  },
+  {
+    "id": "자체감사-pap-local_edu-11eedb4e-133655",
+    "x": "운영위원회  회의록 미작성 등 선수단 운영 소홀",
+    "t": "화성FC 종합감사",
+    "current_work_type": "08",
+    "current_sector": null
+  },
+  {
+    "id": "자체감사-pap-local_edu-11f05002-65036",
+    "x": "범죄사실 이송 지연",
+    "t": "범죄사실 이송 지연 관련 검토 보고",
+    "current_work_type": "12",
+    "current_sector": null
+  },
+  {
+    "id": "국회결산-2023-1026246",
+    "x": "❍ 공동주택관리 분쟁조정위원회는 공동주택에서 발생하는 층간소음에 대한 분쟁조정 업무를 담당하고 있음에도 불구하고, 환경부의 층간소음 이웃사이센터에 비하여 층간소음 분쟁 조정의 실적이 저조한 상황임\r\n- 층간소음 이웃사이센터는 층간소음에 대한 소음 측정이 가능한 반면, 층간소음 분쟁에 대한 조정기능은 없어 분쟁이 지속되는 경우 환경분쟁조정위원회 또는 공동주택관리 분쟁조정위원회의 조정을 거쳐야 하고, 공동주택관리 분쟁조정위원회는 조정을 할 수 있는 권한이 있으나 현재 층간소음에 대한 측정은 실시하고 있지 않음\r\n- 이에 따라 현재 층간소음과 관련된 분쟁이 발생하는 경우 일차적으로는 층간소음에 대한 측정을 하기 위하여 층간소음 이웃사이센터로 분쟁을 접수하는 건수가 많음",
+    "t": "공동주택관리 분쟁조정센터의 층간소음 분쟁 해결을 위한 노력 필요",
+    "current_work_type": "03",
+    "current_sector": "26"
+  }
+]
