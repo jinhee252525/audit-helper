@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>검색 — 감사 선례 도우미</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body class="page-search">
+<header class="app-head">
+  <div class="wrap">
+    <nav class="nav-chips nav-inline" aria-label="주요 메뉴">
+      <a class="chip" href="./index.html">상황</a>
+      <a class="chip chip-active" href="./search.html" aria-current="page">검색</a>
+      <a class="chip" href="./feed.html">신규피드</a>
+      <a class="chip" href="./dashboard.html">대시보드</a>
+      <a class="chip" href="./sources.html">출처</a>
+    </nav>
+    <h1>감사 선례 도우미 <span class="tag">검색</span></h1>
+    <p class="sub">업무 상황을 검색하면 유사 지적사례와 적극행정 면책사례를 함께 보여줍니다. 판단은 담당자·결재권자의 몫입니다.</p>
+    <p class="warn" id="synthetic-note" hidden>⚠ 현재 표시되는 데이터는 <b>합성 예시</b>이거나 샘플 폴백입니다(전체 인덱스 아님).</p>
+    <p class="load-status" id="load-status" aria-live="polite"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls">
+    <input id="q" type="search" placeholder="예: 수의계약 견적, 보조금 정산, 여비…" autocomplete="off">
+    <div class="filters">
+      <select id="f-work"><option value="">업무유형 전체</option></select>
+      <select id="f-org"><option value="">기관유형 전체</option></select>
+      <select id="f-year"><option value="">연도 전체</option></select>
+      <select id="f-type">
+        <option value="">유형 전체</option>
+        <option value="finding">지적</option>
+        <option value="immunity">면책</option>
+        <option value="consult">사전컨설팅</option>
+      </select>
+      <label class="chk"><input type="checkbox" id="f-edu"> 개별학교 포함</label>
+    </div>
+    <div class="meta">
+      <span id="count">0</span>건 표시
+      <span id="loaded-meta" class="faint"></span>
+      · <button id="reset" class="link" type="button">필터 초기화</button>
+    </div>
+  </section>
+
+  <section id="results" class="results" aria-live="polite"></section>
+</main>
+
+<footer class="app-foot"><div class="wrap">
+  감사 선례 도우미 · 결과에는 항상 출처·처분·품질·신뢰 상태가 표시됩니다. 위법 판정은 하지 않습니다.
+</div></footer>
+
+<script src="./search.js"></script>
+</body>
+</html>
