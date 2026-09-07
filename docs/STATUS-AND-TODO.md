@@ -95,11 +95,13 @@
 - 매일배치·헤드리스는 네트워크·로그인 여유 있을 때
 
 ### E-4. 출장 중 "완성" 정의 (체크)
-- [ ] 히어로 1화면이 `app/`에서 demo로 끝까지 흐름
-- [ ] 품질·신뢰 배지 + 개별학교 기본 숨김 유지
-- [ ] F8·F10 UI 자리 동작(샘플)
-- [ ] Pages(또는 동등)로 폰에서 URL 오픈
-- [ ] STATUS에 남은 C-4만 명확히 남김
+- [x] 히어로 1화면이 `app/`에서 demo로 끝까지 흐름 — **done** (sage UI 포함, branch `feat/phone-trip-mvp`)
+- [x] 품질·신뢰 배지 + 개별학교 기본 숨김 유지 — **done** (`feat/phone-trip-mvp`)
+- [x] F8·F10 UI 자리 동작(샘플) — **done** (`feat/phone-trip-mvp`)
+- [ ] Pages(또는 동등)로 폰에서 URL 오픈 — 사용자 OK 대기
+- [x] STATUS에 남은 C-4만 명확히 남김 — **done** (C-4는 출장 후 LLM 작업으로 유지)
+
+> 2026-09-08: 폰 MVP(히어로·sage·F8/F10 바닐라) 반영 → branch `feat/phone-trip-mvp`.
 
 ## D. 핵심 파일 지도
 - 데이터: `data/findings.all.json`(최종 통합) · `findings.pap.json`·`findings.json`(소스본) · `data/codebook.json`
