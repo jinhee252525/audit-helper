@@ -38,3 +38,6 @@ data/retag_work/
 # --- 기타 대용량·로컬 ---
 data/review_queue.json
 nul
+
+# FlexSearch build output (regenerate via pipeline/build_index.py)
+app/data/index/
