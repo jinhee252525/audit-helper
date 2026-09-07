@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>신규피드 — 감사 선례 도우미</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="page-feed">
+  <div class="app feed-app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>신규피드 <span class="tag-inline">F10</span></h1>
+        <p class="tagline">최근 추가 · 검수 큐 (샘플)</p>
+      </div>
+      <nav class="nav-chips" aria-label="주요 메뉴">
+        <a class="chip" href="./index.html">상황</a>
+        <a class="chip" href="./search.html">검색</a>
+        <a class="chip chip-active" href="./feed.html" aria-current="page">신규피드</a>
+        <a class="chip" href="./dashboard.html">대시보드</a>
+        <a class="chip" href="./sources.html">출처</a>
+      </nav>
+    </header>
+
+    <section class="feed-toolbar">
+      <label class="chk"><input type="checkbox" id="f-review-only" checked> 검수큐만</label>
+      <span id="feed-status" class="copy-status" aria-live="polite"></span>
+    </section>
+
+    <section id="feedList" class="feed-list" aria-live="polite">
+      <p class="placeholder">피드를 불러오는 중…</p>
+    </section>
+
+    <footer class="disclaimer">
+      검수큐는 <code>review:true</code> 또는 최근 <code>added_at</code> 항목입니다. 위법·부당을 단정하지 않습니다.
+      합성 예시는 UX 데모용입니다.
+    </footer>
+  </div>
+  <script src="./feed.js" defer></script>
+</body>
+</html>

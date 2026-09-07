@@ -1,51 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>감사 선례 도우미</title>
-<link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>감사 선례 도우미 — 상황 검토</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-<header class="app-head">
-  <div class="wrap">
-    <h1>감사 선례 도우미 <span class="tag">PoC</span></h1>
-    <p class="sub">업무 상황을 검색하면 유사 지적사례와 적극행정 면책사례를 함께 보여줍니다. 판단은 담당자·결재권자의 몫입니다.</p>
-    <p class="warn" id="synthetic-note" hidden>⚠ 현재 표시되는 데이터는 <b>합성 예시</b>이거나 샘플 폴백입니다(전체 인덱스 아님).</p>
-    <p class="load-status" id="load-status" aria-live="polite"></p>
+<body class="page-hero">
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1 id="appTitle">감사 선례 도우미</h1>
+        <p id="tagline" class="tagline">업무를 적으면, 결재 직전 자료까지</p>
+      </div>
+      <nav class="nav-chips" aria-label="주요 메뉴">
+        <a class="chip chip-active" href="./index.html" aria-current="page">상황</a>
+        <a class="chip" href="./search.html">검색</a>
+        <a class="chip" href="./feed.html">신규피드</a>
+        <a class="chip" href="./dashboard.html">대시보드</a>
+        <a class="chip" href="./sources.html">출처</a>
+      </nav>
+    </header>
+
+    <section class="situation-hero" aria-labelledby="situationLabel">
+      <div class="situation-copy">
+        <p id="situationLabel" class="eyebrow">지금 하려는 일</p>
+        <label class="sr-only" for="situationInput">상황 입력</label>
+        <textarea id="situationInput" class="situation-input" rows="2" placeholder="하려는 업무를 적어 주세요."></textarea>
+        <div class="situation-meta">
+          <span id="situationDomain" class="meta-pill">계약</span>
+          <span id="situationWorkType" class="meta-pill soft">계약·용역</span>
+        </div>
+      </div>
+      <button type="button" id="ctaConnect" class="cta-primary">
+        선례 연결하기
+      </button>
+    </section>
+
+    <main class="lanes" id="lanes">
+      <section class="lane" aria-labelledby="laneEvidenceTitle">
+        <header class="lane-head">
+          <h3 id="laneEvidenceTitle">확보된 근거</h3>
+          <p class="lane-sub">본문이 있는 것만 인용 · 선택 시 면책/컨설팅(F8)</p>
+        </header>
+        <div id="evidenceList" class="card-stack empty-hint">
+          <p class="placeholder">「선례 연결하기」를 누르면 근거 카드가 채워집니다.</p>
+        </div>
+        <div id="relatedLane" class="related-lane" hidden>
+          <h4 class="related-title">관련 면책·컨설팅 <span class="f8-tag">F8</span></h4>
+          <div id="relatedList" class="related-stack"></div>
+        </div>
+      </section>
+
+      <section class="lane" aria-labelledby="laneDistanceTitle">
+        <header class="lane-head">
+          <h3 id="laneDistanceTitle">내 업무와의 거리</h3>
+          <p class="lane-sub">같은 점 / 다른 점</p>
+        </header>
+        <div id="distancePanel" class="distance-panel empty-hint">
+          <p class="placeholder">연결 후 같음·다름·확인 포인트가 표시됩니다.</p>
+        </div>
+      </section>
+
+      <section class="lane lane-memo" aria-labelledby="laneMemoTitle">
+        <div class="memo-ribbon" aria-hidden="true"></div>
+        <header class="lane-head">
+          <h3 id="laneMemoTitle">결재용 검토메모</h3>
+          <p class="lane-sub">초안 · 복사 가능 · 목록만은 근거 불가</p>
+        </header>
+        <form id="memoForm" class="memo-form" autocomplete="off"></form>
+        <div class="memo-actions">
+          <button type="button" id="btnCopyMemo" class="btn-secondary" disabled>메모 복사</button>
+          <span id="copyStatus" class="copy-status" aria-live="polite"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="disclaimer">
+      유사 선례·근거만 제시합니다. 위법·부당을 단정하지 않으며, 최종 판단은 담당자·결재권자에게 있습니다.
+      본문 미확보(목록만) 건은 검토메모 근거로 쓸 수 없습니다.
+      합성 예시로 표시된 카드는 UX 데모용이며 실제 선례가 아닙니다.
+    </footer>
   </div>
-</header>
-
-<main class="wrap">
-  <section class="controls">
-    <input id="q" type="search" placeholder="예: 수의계약 견적, 보조금 정산, 여비…" autocomplete="off">
-    <div class="filters">
-      <select id="f-work"><option value="">업무유형 전체</option></select>
-      <select id="f-org"><option value="">기관유형 전체</option></select>
-      <select id="f-year"><option value="">연도 전체</option></select>
-      <select id="f-type">
-        <option value="">유형 전체</option>
-        <option value="finding">지적</option>
-        <option value="immunity">면책</option>
-        <option value="consult">사전컨설팅</option>
-      </select>
-      <label class="chk"><input type="checkbox" id="f-edu"> 개별학교 포함</label>
-    </div>
-    <div class="meta">
-      <span id="count">0</span>건 표시
-      <span id="loaded-meta" class="faint"></span>
-      · <button id="reset" class="link" type="button">필터 초기화</button>
-    </div>
-  </section>
-
-  <section id="results" class="results" aria-live="polite"></section>
-</main>
-
-<footer class="app-foot"><div class="wrap">
-  감사 선례 도우미 PoC · 결과에는 항상 출처·처분·품질·신뢰 상태가 표시됩니다. 위법 판정은 하지 않습니다.
-  <!-- 인덱스 재빌드: python pipeline/build_index.py --input data/findings.all.json --out app/data/index -->
-</div></footer>
-
-<script src="./app.js"></script>
+  <script src="./app.js" defer></script>
 </body>
 </html>
