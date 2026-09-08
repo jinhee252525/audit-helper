@@ -32,6 +32,21 @@
 
 ---
 
+## B0. 오늘 완료 (2026-09-08, 로컬 실측)
+
+- **환경 동기화**: `git fetch/pull` 정상, HEAD=`d70d43f`(origin/main과 동일). GitHub 인증 복구(jinhee252525). Python 미설치 → **Node 정적 서버**로 스모크(신규 패키지·CDN 없음).
+- **스모크 PASS**:
+  - 히어로/검색(`app/index.html`·`app/app.js`): 실인덱스(`app/data/index`, 24샤드·199,572건) 연결, "수의계약 견적" → 실제 지적사례 카드(출처·처분·품질/신뢰 배지) 정상, 합성경고 꺼짐.
+  - 대시보드(`app/dashboard.html`): 렌더 정상.
+- **대시보드 Pages 대응(task B)**: dashboard.html이 `data/findings.json`(gitignore, Pages 미배포)만 쓰던 것을 **이중화**.
+  - 1순위 전체 `findings.json`(로컬·상호작용 필터), 폴백 **집계본** `app/data/dashboard-agg.json`(커밋·배포 대상, 31KB).
+  - 집계본 생성기: `pipeline/build_dashboard_agg.js`(의존성 없는 Node) — `node pipeline/build_dashboard_agg.js`.
+  - Pages 시뮬레이션(app/만 루트)에서 findings 404 시 **집계 요약 모드**(배너·필터 비활성·KPI/차트·샘플카드 24) 동작 확인. 두 모드 콘솔 에러 0(폴백 404는 정상).
+  - 요약뷰 record_type 안내 문구를 실측(consult 102·immunity 89)으로 동적화.
+- **Pages 워크플로**: `.github/workflows/deploy-pages.yml` 로컬 생성(범위 `app/`). **푸시는 OAuth `workflow` 스코프 없음으로 거부** → GitHub 웹에서 수동 생성 필요(내용은 `docs/PAGES.md`와 동일). 이후 **Settings→Pages→Source=GitHub Actions**(공개 여부 확인).
+
+---
+
 ## B. 직전에 완료·인계됨 (2026-09-07)
 
 - **careful 재태깅 12샤드 완료·보수적 병합 반영** (저정밀 코드 01·03·08·09·10·13·14·16·19 대상)

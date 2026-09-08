@@ -118,6 +118,7 @@ svg text{font-family:inherit}
       <a href="dashboard.html" aria-current="page" style="border-color:var(--accent);color:var(--accent)">대시보드</a>
     </nav>
     <div class="notice">이 대시보드는 유사 지적 <b>사례와 근거</b>를 제시합니다. 위법·부당 여부를 단정하지 않으며, 판단은 담당자·결재권자의 몫입니다. 담당자 평가·징계 목적으로 사용하지 않습니다.</div>
+    <div class="notice" id="agg-note" hidden></div>
   </div>
 </header>
 
@@ -225,7 +226,7 @@ svg text{font-family:inherit}
 
 <footer class="app-foot">
   <div class="wrap">
-    감사 선례 도우미 · 대시보드 초안(HITL-B 확인용) · 데이터: <span id="foot-total">-</span>건 (findings.json 실집계) ·
+    감사 선례 도우미 · 대시보드 초안(HITL-B 확인용) · 데이터: <span id="foot-total">-</span>건 집계 ·
     출처: 국회결산·ALIO·감사원·자체감사 · 처분 결측은 "미부과·해당없음"으로 표기(추정 없음).
   </div>
 </footer>
@@ -235,21 +236,94 @@ svg text{font-family:inherit}
 const $ = s => document.querySelector(s);
 const CB = {}; // codebook maps
 let ALL = [], FILT = [], shown = 0;
+let AGG = null; // 집계본(폴백) 데이터 — 있으면 집계 요약 모드
+let RT_COUNTS = { finding:0, consult:0, immunity:0 };
 
 // ---------- 데이터 로드 ----------
+// 1순위: 전체 findings.json(노트북/로컬) → 상호작용 필터 제공
+// 폴백: dashboard-agg.json(집계본, Pages 배포본에 포함) → 집계 요약 모드
 Promise.all([
-  fetch('../data/findings.json').then(r=>r.json()),
-  fetch('../data/codebook.json').then(r=>r.json())
+  fetch('../data/findings.json').then(r=>{ if(!r.ok) throw new Error('no findings'); return r.json(); }),
+  fetch('../data/codebook.json').then(r=>{ if(!r.ok) throw new Error('no codebook'); return r.json(); })
 ]).then(([findings, cb])=>{
   ALL = findings;
   buildCodebook(cb);
+  RT_COUNTS = { finding:0, consult:0, immunity:0 };
+  for(const r of ALL){ if(RT_COUNTS[r.record_type]!=null) RT_COUNTS[r.record_type]++; }
   initFilters();
   $('#total').textContent = ALL.length.toLocaleString();
   $('#foot-total').textContent = ALL.length.toLocaleString();
   apply();
-}).catch(e=>{
-  $('#reclist').innerHTML = '<div class="empty">데이터 로드 실패: '+e+'<br><small>로컬 서버에서 열어야 합니다 — 저장소 루트에서 <code>python -m http.server 8000</code> 후 <code>/app/dashboard.html</code></small></div>';
-});
+}).catch(()=> loadAgg());
+
+// ---------- 집계 요약 모드 (폴백) ----------
+function loadAgg(){
+  fetch('./data/dashboard-agg.json').then(r=>{ if(!r.ok) throw new Error('no agg'); return r.json(); })
+    .then(renderAgg)
+    .catch(e=>{
+      $('#reclist').innerHTML = '<div class="empty">데이터 로드 실패: '+e+'<br><small>로컬 서버에서 열어야 합니다 — 저장소 루트에서 <code>python -m http.server 8000</code> 후 <code>/app/dashboard.html</code>. 배포본은 집계본 <code>app/data/dashboard-agg.json</code>이 필요합니다(<code>node pipeline/build_dashboard_agg.js</code>).</small></div>';
+    });
+}
+
+function renderAgg(a){
+  AGG = a;
+  CB.work = a.labels.work; CB.sector = a.labels.sector; CB.orgOrder = a.labels.org_order;
+  RT_COUNTS = a.record_type;
+
+  const note = $('#agg-note');
+  note.hidden = false;
+  note.innerHTML = '📊 <b>집계 요약 모드</b> — 전체 findings 데이터 없이 사전 집계본(<code>dashboard-agg.json</code> · '+esc(a.source_file)+' 기준 '+a.total.toLocaleString()+'건 · '+esc(a.generated_at)+')으로 표시합니다. 아래 <b>사례 카드는 샘플</b>이며, 상호작용 필터·전체 검색은 노트북 전체 데이터에서 동작합니다.';
+  $('#q').disabled = true; $('#q').placeholder = '집계 요약 모드 — 검색은 노트북 전체 데이터에서';
+  document.querySelectorAll('.filters select').forEach(s=>{ s.disabled = true; });
+  $('#reset').disabled = true;
+  $('#total').textContent = a.total.toLocaleString();
+  $('#foot-total').textContent = a.total.toLocaleString();
+  $('#count').textContent = a.total.toLocaleString();
+
+  document.querySelectorAll('.axis-tabs button').forEach(b=>{
+    b.onclick=()=>{
+      document.querySelectorAll('.axis-tabs button').forEach(x=>x.setAttribute('aria-selected','false'));
+      b.setAttribute('aria-selected','true');
+      document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+      $('#'+b.dataset.view).classList.add('active');
+      setHint(b.dataset.view);
+    };
+  });
+  setHint('axisA');
+
+  aggCharts(a);
+  FILT = a.sample_records || []; shown = 0; renderList(true);
+}
+
+function aggCharts(a){
+  const T = a.total;
+  const dispNone = (a.disposition.find(d=>d[0]==='미부과·해당없음') || [null,0])[1];
+  const dispN = T - dispNone;
+  const maxY = a.year.length ? a.year[a.year.length-1][0] : '-';
+  const srcTxt = a.source.slice(0,4).map(([k,v])=>k+' '+v.toLocaleString()).join(' · ') || '-';
+  const rtTxt = '지적 '+(a.record_type.finding||0).toLocaleString()+' · 컨설팅 '+(a.record_type.consult||0)+' · 면책 '+(a.record_type.immunity||0);
+  const kpis=[
+    {label:'전체 건수',val:T.toLocaleString(),sub:'집계본 기준',cls:''},
+    {label:'유형 구성',val:rtTxt,sub:'record_type',cls:'rt'},
+    {label:'처분 기재 건수',val:dispN.toLocaleString(),sub:'미부과·해당없음 '+dispNone.toLocaleString()+'건',cls:''},
+    {label:'소스',val:a.source.length+'개',sub:srcTxt,cls:'rt'},
+    {label:'최근 연도',val:(maxY==='-'?'-':maxY+'년'),sub:'수집 최신',cls:''},
+  ];
+  $('#kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls}">
+    <div class="k-label">${k.label}</div><div class="k-val">${k.val}</div><div class="k-sub">${k.sub}</div></div>`).join('');
+
+  hbar('#ch-work', a.work_type.slice(0,14).map(([c,v])=>[workLabel(c),v]), {color:'var(--accent2)'}); $('#n-work').textContent=T.toLocaleString();
+  hbar('#ch-disp', a.disposition.slice(0,12), {color:'var(--accent)',labelW:120}); $('#n-disp').textContent=T.toLocaleString();
+  hbar('#ch-law', a.law_top.slice(0,12), {color:'var(--s6)',labelW:230}); $('#n-law').textContent=a.law_total.toLocaleString();
+  const cats=(a.labels.org_order||[]).filter(o=>a.work_org.some(r=>r.parts[o]));
+  stackedBar('#ch-repeat', a.work_org, cats, {legendEl:'#lg-repeat'}); $('#n-repeat').textContent=T.toLocaleString();
+  lineChart('#ch-year', a.year.map(([y,v])=>[y+'',v])); $('#n-year').textContent=a.year.reduce((s,p)=>s+p[1],0).toLocaleString();
+  hbar('#ch-sector', a.sector.slice(0,10), {color:'var(--s3)',labelW:110}); $('#n-sector').textContent=T.toLocaleString();
+  hbar('#ch-source', a.source.slice(0,8), {color:'var(--s1)',labelW:110}); $('#n-source').textContent=T.toLocaleString();
+  hbar('#ch-org', a.org_type.slice(0,8), {color:'var(--s2)',labelW:110}); $('#n-org').textContent=T.toLocaleString();
+  const safe=[['지적(finding)',a.record_type.finding||0],['사전컨설팅(consult)',a.record_type.consult||0],['면책(immunity)',a.record_type.immunity||0]];
+  hbar('#ch-immunity', safe, {color:'var(--ok)',labelW:170});
+}
 
 function buildCodebook(cb){
   CB.work = {}; for(const [k,v] of Object.entries(cb.work_type_관련기능)) CB.work[k]=v.name;
@@ -308,7 +382,7 @@ function setHint(v){
     summary:'전체 규모·출처·안전판을 한눈에 보는 관점 — 결재·보고용.'};
   $('#axisHint').textContent=h[v]||'';
   $('#summaryNote').hidden = v!=='summary';
-  if(v==='summary') $('#summaryNote').innerHTML='<b>안전판 안내:</b> 현재 확보 데이터에 적극행정 <b>면책(immunity)</b> 사례는 미확보이며 사전컨설팅(consult) 8건만 포함됩니다. 면책 사례집 태깅 후 지적↔면책 대조가 채워집니다.';
+  if(v==='summary') $('#summaryNote').innerHTML='<b>안전판 안내:</b> 현재 데이터에 사전컨설팅(consult) <b>'+(RT_COUNTS.consult||0).toLocaleString()+'건</b>, 적극행정 면책(immunity) <b>'+(RT_COUNTS.immunity||0).toLocaleString()+'건</b>이 포함됩니다. 지적↔면책 대조(F8)는 이 사례들로 채워집니다.';
 }
 
 function apply(){
@@ -517,7 +591,7 @@ function renderList(reset){
 $('#more').onclick=()=>renderList(false);
 
 // 리사이즈 시 차트 재렌더 (SVG width 반응)
-let rt; window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(renderCharts,200);});
+let rt; window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{ AGG?aggCharts(AGG):renderCharts(); },200);});
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 </script>
