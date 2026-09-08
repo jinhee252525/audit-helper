@@ -46,6 +46,8 @@
 - **Pages 워크플로**: `.github/workflows/deploy-pages.yml` 로컬 생성(범위 `app/`). **푸시는 OAuth `workflow` 스코프 없음으로 거부** → GitHub 웹에서 수동 생성 필요(내용은 `docs/PAGES.md`와 동일). 이후 **Settings→Pages→Source=GitHub Actions**(공개 여부 확인).
 
 ---
+
+- **도메인팩 골격(E-1.6)**: app/domain-packs/{contract,subsidy}.json + README. 히어로에서 계약|보조금 선택 시 필·workType·메모 placeholder·체크리스트 채움. 팩 로드 실패 시 hero-sample 유지. 대시보드 미변경.
 
 ## B. 직전에 완료·인계됨 (2026-09-07)
 
@@ -94,7 +96,7 @@
 3. **F8 UI**: 지적 카드 옆 면책/컨설팅 나란히 (샘플 데이터로).
 4. **F10 UI**: 신규 피드 / `added_at`·`review` 큐 셸.
 5. **GitHub Pages**(또는 정적 미리보기): demo 기준으로 폰 브라우저에서 열어보기.
-6. **도메인팩 골격**: 계약 → 보조금 (MASTER-PLAN).
+6. ~~**도메인팩 골격**: 계약 → 보조금 (MASTER-PLAN).~~ **done** (2026-09-08) — app/domain-packs/ + 히어로 팩 선택 배선.
 7. **대시보드**: `dashboard-agg.json` 소비(소량 커밋 가능) / AXIS B 인사이트 자리.
 8. 문서 동기화: 이 파일 + `HANDOFF-accuracy.md` + `MASTER-PLAN.md`를 작업 기준으로 유지.
 

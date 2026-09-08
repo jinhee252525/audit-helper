@@ -23,12 +23,16 @@
     consult: "사전컨설팅",
   };
 
+  const PACK_FILES = { contract: "contract.json", subsidy: "subsidy.json" };
+
   const state = {
     data: null,
     connected: false,
     highlighted: new Set(),
     memoGrounds: [],
     selectedId: null,
+    packId: "contract",
+    pack: null,
   };
 
   const $ = (sel, rootEl = document) => rootEl.querySelector(sel);
@@ -50,31 +54,116 @@
     input.value = d.situation.text || "";
     $("#situationDomain").textContent = d.situation.domain;
     $("#situationWorkType").textContent = d.situation.workType;
+    if (state.pack) applyPackToUi();
+  }
+
+  async function loadPack(packId) {
+    const file = PACK_FILES[packId];
+    if (!file) throw new Error("unknown pack: " + packId);
+    const res = await fetch("./domain-packs/" + file, { cache: "no-store" });
+    if (!res.ok) throw new Error("pack load failed: " + file);
+    const pack = await res.json();
+    state.packId = packId;
+    state.pack = pack;
+    return pack;
+  }
+
+  function applyPackToUi() {
+    const pack = state.pack;
+    if (!pack) return;
+    $("#situationDomain").textContent = pack.situationDomain || pack.label;
+    $("#situationWorkType").textContent = pack.defaultWorkType || pack.labelLong || "";
+    const input = $("#situationInput");
+    if (input && pack.situationPlaceholder) {
+      input.placeholder = pack.situationPlaceholder;
+    }
+    document.querySelectorAll(".pack-btn").forEach((btn) => {
+      const on = btn.getAttribute("data-pack") === state.packId;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    renderWorkTypeChips();
+    renderChecklist();
+    if (state.data && state.data.memo) {
+      const prev = {};
+      (state.data.memo.fields || []).forEach((f) => {
+        const el = $("#memo-" + f.id);
+        if (el) prev[f.id] = el.value;
+      });
+      renderMemoFields(state.connected);
+      Object.keys(prev).forEach((id) => {
+        const el = $("#memo-" + id);
+        if (el && prev[id]) el.value = prev[id];
+      });
+    }
+  }
+
+  function renderWorkTypeChips() {
+    const host = $("#workTypeChips");
+    if (!host) return;
+    host.innerHTML = "";
+    const types = (state.pack && state.pack.workTypes) || [];
+    const current = ($("#situationWorkType") && $("#situationWorkType").textContent) || "";
+    types.forEach((wt) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "worktype-chip" + (wt === current ? " is-on" : "");
+      btn.textContent = wt;
+      btn.addEventListener("click", () => {
+        $("#situationWorkType").textContent = wt;
+        host.querySelectorAll(".worktype-chip").forEach((c) => c.classList.remove("is-on"));
+        btn.classList.add("is-on");
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function renderChecklist() {
+    const box = $("#packChecklist");
+    const list = $("#checklistList");
+    if (!box || !list) return;
+    list.innerHTML = "";
+    const items = (state.pack && state.pack.checklist) || [];
+    if (!items.length) {
+      box.hidden = true;
+      return;
+    }
+    box.hidden = false;
+    items.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item.prompt + (item.hint ? " (" + item.hint + ")" : "");
+      list.appendChild(li);
+    });
+  }
+
+  function memoPlaceholderFor(field) {
+    const hints = (state.pack && state.pack.memoFieldHints) || {};
+    return hints[field.id] || field.placeholder || "";
   }
 
   function renderMemoFields(fillDraft) {
     const form = $("#memoForm");
     form.innerHTML = "";
+    if (!state.data || !state.data.memo) return;
     const fields = state.data.memo.fields;
     const draft = state.data.memo.draft;
     fields.forEach((f) => {
       const wrap = document.createElement("div");
       wrap.className = "field";
       const label = document.createElement("label");
-      label.htmlFor = `memo-${f.id}`;
+      label.htmlFor = "memo-" + f.id;
       label.textContent = f.label;
       const ta = document.createElement("textarea");
-      ta.id = `memo-${f.id}`;
+      ta.id = "memo-" + f.id;
       ta.name = f.id;
       ta.rows = f.id === "grounds" || f.id === "diff" ? 3 : 2;
-      ta.placeholder = f.placeholder;
+      ta.placeholder = memoPlaceholderFor(f);
       if (fillDraft && draft[f.id]) ta.value = draft[f.id];
       wrap.append(label, ta);
       form.append(wrap);
     });
     $("#btnCopyMemo").disabled = !fillDraft;
   }
-
   function qualityClass(q) {
     return `quality-${q}`;
   }
@@ -363,9 +452,24 @@
     }
   }
 
+  async function selectPack(packId) {
+    try {
+      await loadPack(packId);
+      applyPackToUi();
+    } catch (err) {
+      console.warn("domain pack load failed; keeping sample defaults", err);
+    }
+  }
+
   function bind() {
     $("#ctaConnect").addEventListener("click", connectPrecedents);
     $("#btnCopyMemo").addEventListener("click", copyMemo);
+    document.querySelectorAll(".pack-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-pack");
+        if (id) selectPack(id);
+      });
+    });
   }
 
   document.addEventListener("DOMContentLoaded", async () => {
@@ -375,12 +479,16 @@
     } catch (err) {
       console.error(err);
       $("#evidenceList").innerHTML =
-        `<p class="placeholder">hero-sample.json을 불러오지 못했습니다. 로컬 정적 서버로 app/을 열어 주세요.</p>`;
+        '<p class="placeholder">hero-sample.json을 불러오지 못했습니다. 로컬 정적 서버로 app/을 열어 주세요.</p>';
     }
+    const want = (params.get("pack") || "contract").toLowerCase();
+    const packId = PACK_FILES[want] ? want : "contract";
+    await selectPack(packId);
   });
 
   window.__auditHelper = {
     connect: connectPrecedents,
     getState: () => ({ ...state, connected: state.connected }),
+    selectPack,
   };
 })();

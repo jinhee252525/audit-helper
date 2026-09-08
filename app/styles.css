@@ -186,6 +186,63 @@ a.chip:hover { color: var(--deep); }
   background: var(--surface);
   color: var(--primary);
 }
+.pack-picker {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.pack-btn {
+  border: 1px solid rgba(91, 124, 115, 0.35);
+  background: var(--surface);
+  color: var(--deep);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.pack-btn.is-active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+.pack-btn:hover { border-color: var(--primary); }
+.worktype-chips {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.worktype-chip {
+  border: 1px dashed rgba(91, 124, 115, 0.4);
+  background: transparent;
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.worktype-chip.is-on {
+  background: var(--sage-soft);
+  border-style: solid;
+  color: var(--deep);
+}
+.pack-checklist {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--deep);
+}
+.pack-checklist summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+.pack-checklist ul {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+.pack-checklist li { margin: 3px 0; }
 .cta-primary {
   flex-shrink: 0;
   background: var(--primary);

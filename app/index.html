@@ -27,10 +27,19 @@
         <p id="situationLabel" class="eyebrow">지금 하려는 일</p>
         <label class="sr-only" for="situationInput">상황 입력</label>
         <textarea id="situationInput" class="situation-input" rows="2" placeholder="하려는 업무를 적어 주세요."></textarea>
+        <div class="pack-picker" role="group" aria-label="도메인 팩">
+          <button type="button" class="pack-btn is-active" data-pack="contract" id="packContract">계약</button>
+          <button type="button" class="pack-btn" data-pack="subsidy" id="packSubsidy">보조금</button>
+        </div>
         <div class="situation-meta">
           <span id="situationDomain" class="meta-pill">계약</span>
           <span id="situationWorkType" class="meta-pill soft">계약·용역</span>
         </div>
+        <div id="workTypeChips" class="worktype-chips" aria-label="제안 업무유형"></div>
+        <details id="packChecklist" class="pack-checklist">
+          <summary>결재 전 점검</summary>
+          <ul id="checklistList"></ul>
+        </details>
       </div>
       <button type="button" id="ctaConnect" class="cta-primary">
         선례 연결하기
