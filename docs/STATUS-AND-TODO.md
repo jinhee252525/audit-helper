@@ -49,6 +49,16 @@
 
 - **도메인팩 골격(E-1.6)**: app/domain-packs/{contract,subsidy}.json + README. 히어로에서 계약|보조금 선택 시 필·workType·메모 placeholder·체크리스트 채움. 팩 로드 실패 시 hero-sample 유지. 대시보드 미변경.
 
+
+## B1. 현황 대시보드 (2026-09-09)
+
+- **status dual-lens A/B1/C/E landed**: `app/status.html` + `app/status.js`
+  - 렌즈: 공직자(얕음) | 발굴자(깊음). 제목 계열 「감사 결과 현황」(제도개선 분석 아님).
+  - A: KPI·업무/처분 막대 · B1: `surge_types` 실급증 표+막대 · C: `work_org` sage 히트맵 + year 라인 · E: 급증∩밀도 초안 카드(샘플 id).
+  - B2/D: 준비 중 플레이스홀더(excerpt n-gram / 법령 공출현) — 다음 단계.
+  - 집계: `pipeline/build_dashboard_agg.js` → `work_year`, `surge_types`(선호 2025 vs 2024) 추가. Pages는 `dashboard-agg.json`만으로 동작.
+  - `dashboard.html`은 레거시 유지 + 현황 링크. 네비에 「현황」칩 추가.
+
 ## B. 직전에 완료·인계됨 (2026-09-07)
 
 - **careful 재태깅 12샤드 완료·보수적 병합 반영** (저정밀 코드 01·03·08·09·10·13·14·16·19 대상)

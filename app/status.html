@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>감사 결과 현황 — 감사 선례 도우미</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    /* status-specific — sage only, no blue / vivid categorical */
+    .status-app { max-width: 1180px; }
+    .status-hero {
+      margin-top: 18px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .status-hero h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+    .status-hero .lead {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      max-width: 52ch;
+    }
+    .lens-toggle {
+      display: inline-flex;
+      background: var(--surface);
+      padding: 5px;
+      border-radius: 999px;
+      gap: 4px;
+    }
+    .lens-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .lens-btn[aria-pressed="true"] {
+      background: var(--deep);
+      color: #f4f7f5;
+      box-shadow: var(--shadow);
+    }
+    .status-meta {
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .status-meta code {
+      background: var(--sage-soft);
+      color: var(--deep);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 0.72rem;
+    }
+    .kpi-row {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .kpi-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.12s ease;
+    }
+    .kpi-card:hover { border-color: var(--primary-soft); }
+    .kpi-card .k { font-size: 0.75rem; color: var(--muted); font-weight: 650; }
+    .kpi-card .v {
+      margin-top: 4px;
+      font-size: 1.35rem;
+      font-weight: 750;
+      color: var(--deep);
+      font-variant-numeric: tabular-nums;
+    }
+    .kpi-card .s { margin-top: 2px; font-size: 0.72rem; color: var(--primary); }
+    .block {
+      margin-top: 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .block-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .block-head h3 { margin: 0; font-size: 0.95rem; font-weight: 750; color: var(--ink); }
+    .block-head .hint { margin: 0; font-size: 0.78rem; color: var(--muted); }
+    .block-tag {
+      display: inline-flex;
+      align-items: center;
+      background: var(--tip);
+      color: var(--deep);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.68rem;
+      font-weight: 750;
+      margin-right: 6px;
+    }
+    .placeholder-panel {
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      padding: 18px 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .placeholder-panel strong { color: var(--deep); }
+    .surge-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sage-soft);
+      border: 1px solid #d5e0d8;
+      color: var(--deep);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .surge-badge:hover { border-color: var(--primary); }
+    .hbar-list { display: flex; flex-direction: column; gap: 8px; }
+    .hbar-row {
+      display: grid;
+      grid-template-columns: minmax(110px, 28%) 1fr auto;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+      padding: 4px 2px;
+      border-radius: 8px;
+    }
+    .hbar-row:hover { background: var(--sage-soft); }
+    .hbar-row .lab {
+      font-size: 0.8rem;
+      font-weight: 650;
+      color: var(--ink);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .hbar-track {
+      height: 10px;
+      background: var(--surface);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .hbar-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 999px;
+      min-width: 2px;
+    }
+    .hbar-fill.soft { background: var(--primary-soft); }
+    .hbar-fill.deep { background: var(--deep); }
+    .hbar-n {
+      font-size: 0.78rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      font-weight: 650;
+      min-width: 3.2em;
+      text-align: right;
+    }
+    .surge-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .surge-table th, .surge-table td {
+      padding: 9px 8px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .surge-table th {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .surge-table tr.clickable { cursor: pointer; }
+    .surge-table tr.clickable:hover { background: var(--sage-soft); }
+    .surge-table .num { font-variant-numeric: tabular-nums; text-align: right; }
+    .delta-up { color: var(--deep); font-weight: 750; }
+    .delta-dn { color: var(--muted); }
+    .small-n {
+      font-size: 0.68rem;
+      color: var(--mid);
+      background: var(--mid-bg);
+      border-radius: 999px;
+      padding: 1px 7px;
+      margin-left: 4px;
+    }
+    .heat-wrap { overflow-x: auto; }
+    .heat-table {
+      border-collapse: separate;
+      border-spacing: 4px;
+      font-size: 0.75rem;
+      min-width: 520px;
+    }
+    .heat-table th {
+      font-weight: 650;
+      color: var(--muted);
+      padding: 4px 6px;
+      text-align: center;
+    }
+    .heat-table th.row-lab {
+      text-align: left;
+      white-space: nowrap;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .heat-cell {
+      width: 54px;
+      height: 36px;
+      border-radius: 10px;
+      border: 0;
+      cursor: pointer;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: var(--deep);
+    }
+    .heat-cell:hover { outline: 2px solid var(--primary); outline-offset: 1px; }
+    .heat-cell.is-zero {
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .year-line {
+      width: 100%;
+      height: 160px;
+      display: block;
+    }
+    .sample-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .sample-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 14px 12px;
+      cursor: pointer;
+      text-align: left;
+    }
+    .sample-card:hover { border-color: var(--primary-soft); }
+    .sample-card .t {
+      margin: 0 0 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--deep);
+    }
+    .sample-card .ex {
+      margin: 0 0 8px;
+      font-size: 0.8rem;
+      color: var(--ink);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .sample-card .foot {
+      font-size: 0.72rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+    }
+    .e-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .e-card {
+      background: linear-gradient(180deg, var(--sage-soft), #f7f8f7);
+      border: 1px solid #d5e0d8;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .e-card h4 { margin: 0 0 6px; font-size: 0.92rem; color: var(--deep); }
+    .e-card p { margin: 0 0 10px; font-size: 0.8rem; color: var(--ink); line-height: 1.5; }
+    .e-ids {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .e-id {
+      font-size: 0.7rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 8px;
+      color: var(--primary);
+      cursor: pointer;
+      font-family: ui-monospace, Consolas, monospace;
+    }
+    .e-id:hover { border-color: var(--primary); }
+    .filter-bar {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: end;
+    }
+    .filter-bar label {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    .filter-bar select {
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      min-width: 140px;
+    }
+    .filter-bar .reset {
+      border: 1px solid var(--border);
+      background: var(--sage-soft);
+      color: var(--deep);
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    /* drilldown drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(51, 56, 64, 0.28);
+      z-index: 40;
+      display: none;
+    }
+    .drawer-backdrop.is-open { display: block; }
+    .drawer {
+      position: fixed;
+      top: 0; right: 0; bottom: 0;
+      width: min(440px, 100%);
+      background: var(--white);
+      border-left: 1px solid var(--border);
+      z-index: 50;
+      transform: translateX(105%);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -4px 0 24px rgba(51, 56, 64, 0.08);
+    }
+    .drawer.is-open { transform: translateX(0); }
+    .drawer-head {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .drawer-head h3 { margin: 0; font-size: 1rem; }
+    .drawer-head p { margin: 4px 0 0; font-size: 0.78rem; color: var(--muted); }
+    .drawer-close {
+      border: 0;
+      background: var(--surface);
+      border-radius: 999px;
+      width: 32px; height: 32px;
+      cursor: pointer;
+      color: var(--deep);
+      font-weight: 700;
+    }
+    .drawer-body {
+      overflow: auto;
+      padding: 12px 16px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .prec-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 13px;
+      background: var(--page);
+    }
+    .prec-card .pt {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--deep);
+      margin: 0 0 4px;
+    }
+    .prec-card .px {
+      font-size: 0.78rem;
+      color: var(--ink);
+      margin: 0 0 8px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      max-height: 6.2em;
+      overflow: hidden;
+    }
+    .prec-card .pf {
+      font-size: 0.72rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+    }
+    .prec-card a { color: var(--primary); font-weight: 650; }
+    .lens-panel[hidden] { display: none !important; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-status">
+  <div class="app status-app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>감사 결과 현황</h1>
+        <p class="tagline">검토용 시사 · 같은 데이터, 두 렌즈</p>
+      </div>
+      <nav class="nav-chips" aria-label="주요 메뉴">
+        <a class="chip" href="./index.html">상황</a>
+        <a class="chip" href="./search.html">검색</a>
+        <a class="chip" href="./feed.html">신규피드</a>
+        <a class="chip chip-active" href="./status.html" aria-current="page">현황</a>
+        <a class="chip" href="./dashboard.html">대시보드</a>
+        <a class="chip" href="./sources.html">출처</a>
+      </nav>
+    </header>
+
+    <section class="status-hero">
+      <div>
+        <h2>감사 결과 현황</h2>
+        <p class="lead">공직자(얕은 렌즈)와 발굴자(깊은 렌즈)가 같은 집계를 봅니다. 위법·부당을 단정하지 않으며, 숫자는 검토용 시사입니다.</p>
+        <p class="status-meta" id="loadStatus" aria-live="polite">불러오는 중…</p>
+      </div>
+      <div class="lens-toggle" role="group" aria-label="렌즈 선택">
+        <button type="button" class="lens-btn" id="lensPublic" aria-pressed="true" data-lens="public">공직자</button>
+        <button type="button" class="lens-btn" id="lensScout" aria-pressed="false" data-lens="scout">발굴자</button>
+      </div>
+    </section>
+
+    <!-- 공직자 -->
+    <div id="lensPublicPanel" class="lens-panel" data-lens-panel="public">
+      <div class="filter-bar" id="publicFilters">
+        <label>업무유형
+          <select id="fWork"></select>
+        </label>
+        <label>처분
+          <select id="fDisp"></select>
+        </label>
+        <button type="button" class="reset" id="fReset">초기화</button>
+      </div>
+      <div class="kpi-row" id="publicKpis"></div>
+      <div class="two-col">
+        <section class="block" aria-labelledby="aWorkTitle">
+          <div class="block-head">
+            <h3 id="aWorkTitle"><span class="block-tag">A</span>업무유형 분포</h3>
+            <p class="hint">막대·숫자 클릭 → 선례 목록</p>
+          </div>
+          <div class="hbar-list" id="aWorkBars"></div>
+        </section>
+        <section class="block" aria-labelledby="aDispTitle">
+          <div class="block-head">
+            <h3 id="aDispTitle"><span class="block-tag">A</span>처분 분포</h3>
+            <p class="hint">필터와 연동</p>
+          </div>
+          <div class="hbar-list" id="aDispBars"></div>
+        </section>
+      </div>
+      <section class="block" id="publicSurgeBlock">
+        <div class="block-head">
+          <h3><span class="block-tag">B1</span>전년 대비 시사</h3>
+          <p class="hint">증가가 있으면 한 줄로만</p>
+        </div>
+        <div id="publicSurge"></div>
+      </section>
+      <section class="block">
+        <div class="block-head">
+          <h3>선례 샘플</h3>
+          <p class="hint">집계본 샘플 · 클릭 시 상세</p>
+        </div>
+        <div class="sample-grid" id="publicSamples"></div>
+      </section>
+    </div>
+
+    <!-- 발굴자 -->
+    <div id="lensScoutPanel" class="lens-panel" data-lens-panel="scout" hidden>
+      <div class="kpi-row" id="scoutKpis"></div>
+      <section class="block" aria-labelledby="b1Title">
+        <div class="block-head">
+          <h3 id="b1Title"><span class="block-tag">B1</span>업무유형 급증 (전년 대비)</h3>
+          <p class="hint" id="b1Hint">실집계 · small_n 주의</p>
+        </div>
+        <div class="two-col">
+          <div class="hbar-list" id="b1Bars"></div>
+          <div style="overflow-x:auto">
+            <table class="surge-table" id="b1Table">
+              <thead>
+                <tr>
+                  <th>업무</th>
+                  <th class="num">전년</th>
+                  <th class="num">금년</th>
+                  <th class="num">Δ</th>
+                  <th class="num">증감률</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <section class="block">
+          <div class="block-head">
+            <h3><span class="block-tag">B2</span>표현 패턴</h3>
+          </div>
+          <div class="placeholder-panel">
+            <strong>준비 중 — excerpt n-gram</strong><br />
+            원문 발췌 n-gram 공출현은 별도 파이프라인 후 연결합니다. 지금은 가짜 수치를 만들지 않습니다.
+          </div>
+        </section>
+        <section class="block">
+          <div class="block-head">
+            <h3><span class="block-tag">D</span>법령 공출현</h3>
+          </div>
+          <div class="placeholder-panel">
+            <strong>준비 중 — 법령 공출현</strong><br />
+            legal_basis 동시출현 행렬은 다음 단계에서 붙입니다.
+          </div>
+        </section>
+      </div>
+
+      <section class="block" aria-labelledby="cTitle">
+        <div class="block-head">
+          <h3 id="cTitle"><span class="block-tag">C</span>업무 × 기관유형 밀도</h3>
+          <p class="hint">sage 휘도 스케일 · 셀 클릭 → 선례</p>
+        </div>
+        <div class="heat-wrap" id="cHeat"></div>
+        <div class="block-head" style="margin-top:18px">
+          <h3>연도 추세</h3>
+          <p class="hint">전체 건수</p>
+        </div>
+        <svg class="year-line" id="cYear" viewBox="0 0 640 160" role="img" aria-label="연도별 건수 추세"></svg>
+      </section>
+
+      <section class="block" aria-labelledby="eTitle">
+        <div class="block-head">
+          <h3 id="eTitle"><span class="block-tag">E</span>검토용 초안 카드</h3>
+          <p class="hint">급증 유형 ∩ 고밀도 셀 · 판단 단정 금지</p>
+        </div>
+        <div class="e-grid" id="eCards"></div>
+      </section>
+    </div>
+
+    <footer class="disclaimer">
+      본 화면은 감사 결과의 분포·추세를 검토용으로 보여 줍니다. 위법·부당·징계 필요 여부를 단정하지 않으며,
+      최종 판단은 담당자·결재권자에게 있습니다. 출처 링크와 처분 표기를 함께 확인하세요.
+    </footer>
+  </div>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div>
+        <h3 id="drawerTitle">선례 목록</h3>
+        <p id="drawerSub"></p>
+      </div>
+      <button type="button" class="drawer-close" id="drawerClose" aria-label="닫기">×</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </aside>
+
+  <script src="./status.js" defer></script>
+</body>
+</html>
