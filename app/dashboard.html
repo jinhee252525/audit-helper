@@ -1,598 +1,591 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>감사 선례 대시보드 (초안)</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>인사이트 — 감사 선례 도우미</title>
 <link rel="stylesheet" href="./styles.css" />
 <style>
-/* dashboard-specific — sage matte (shared :root from styles.css); no blue / vivid categorical */
-:root{
-  /* chart extras + aliases (styles.css already sets primary palette) */
-  --grid:#E0E3E2; --axis:#C5CBC8;
-  --paper:#ffffff; --ink2:#45566a; --faint:var(--muted);
-  --line:var(--border); --wash:var(--sage-soft);
-  --accent:var(--primary); --accent2:var(--primary-soft);
-  --ok:#357a51; --ok-bg:#e4f1e9; --no:#b0432c; --no-bg:#f7e7e2;
-  --mid:#b9821a; --mid-bg:#f6eed8;
-  /* sage luminance scale for bars/stacks (deep → soft) */
-  --s1:#3F5D50; --s2:#4E6E62; --s3:#5B7C73; --s4:#6F9085; --s5:#8DA399; --s6:#A8B9B0;
+/* Insight dashboard — sage mockup layout; no blue / HITL chrome */
+.page-insight {
+  background: var(--page);
+  color: var(--ink);
+  min-height: 100vh;
 }
-*{box-sizing:border-box}
-body{margin:0;background:var(--page);color:var(--ink);
-  font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;line-height:1.6;font-size:14px}
-.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
-a{color:var(--accent)}
-.app-head{background:var(--paper);border-bottom:1px solid var(--line);padding:20px 0}
-.app-head h1{margin:0;font-size:22px;letter-spacing:-.02em}
-.app-head .tag{font-size:11px;font-weight:800;color:#fff;background:var(--deep);border-radius:20px;padding:2px 9px;vertical-align:3px;margin-left:6px}
-.app-head .sub{margin:6px 0 0;color:var(--ink2);font-size:13px}
-.nav{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
-.nav a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:4px 12px;color:var(--ink2);background:var(--paper)}
-.notice{margin:12px 0 0;font-size:12.5px;color:var(--mid);background:var(--mid-bg);border-radius:6px;padding:8px 12px}
-.notice.legacy{color:var(--deep);background:var(--tip);border:1px solid var(--border)}
-.notice.legacy a{font-weight:700;color:var(--primary)}
+.insight-wrap {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 20px 0 48px;
+}
+.insight-head {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+.insight-head .brand {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.insight-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.insight-nav a {
+  font-size: 0.88rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.insight-nav a:hover { color: var(--deep); }
+.insight-nav a[aria-current="page"] {
+  color: var(--muted);
+  font-weight: 650;
+}
+.insight-nav .nav-more {
+  font-size: 0.78rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
 
-/* AXIS 탭 */
-.axis-tabs{display:flex;gap:8px;margin:18px 0 6px;flex-wrap:wrap}
-.axis-tabs button{font-size:13px;font-weight:700;border:1px solid var(--line);background:var(--paper);color:var(--ink2);
-  border-radius:8px;padding:9px 16px;cursor:pointer}
-.axis-tabs button[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
-.axis-hint{font-size:12.5px;color:var(--faint);margin:0 0 8px}
+/* Hero: 이번 주 시선 */
+.week-hero {
+  margin-top: 16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 110px;
+}
+.week-hero .accent {
+  width: 8px;
+  flex-shrink: 0;
+  background: var(--deep);
+}
+.week-hero .hero-body {
+  flex: 1;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.week-hero .eyebrow {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: -0.01em;
+}
+.week-hero .summary {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.45;
+  max-width: 36ch;
+}
+.metric-card {
+  background: var(--sage-soft);
+  border-radius: 12px;
+  padding: 14px 22px;
+  text-align: center;
+  min-width: 120px;
+}
+.metric-card .m-label {
+  font-size: 0.75rem;
+  font-weight: 650;
+  color: var(--deep);
+}
+.metric-card .m-val {
+  margin-top: 2px;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--deep);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
 
-/* 필터 */
-.controls{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:8px 0 16px}
-#q{width:100%;padding:11px 14px;font-size:15px;border:1px solid var(--line);border-radius:9px;background:var(--page);color:var(--ink)}
-#q:focus{outline:2px solid var(--accent2);outline-offset:1px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
-.filters label{font-size:11.5px;color:var(--faint);display:flex;flex-direction:column;gap:3px}
-.filters select{padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:var(--page);color:var(--ink);font-size:13px;min-width:120px}
-.filters .reset{align-self:flex-end;background:none;border:1px solid var(--line);color:var(--accent);cursor:pointer;font-size:12.5px;border-radius:7px;padding:7px 12px}
-.meta{margin-top:10px;font-size:12.5px;color:var(--faint)}
-#count{font-weight:800;color:var(--accent)}
+/* Two columns */
+.insight-cols {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 820px) {
+  .insight-cols { grid-template-columns: 1fr; }
+}
+.insight-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px 20px;
+  box-shadow: var(--shadow);
+}
+.insight-card h2 {
+  margin: 0 0 14px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.insight-card .card-note {
+  margin: -6px 0 12px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
 
-/* KPI */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 18px}
-.kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;border-top:3px solid var(--accent2)}
-.kpi .k-label{font-size:12px;color:var(--faint);margin-bottom:4px}
-.kpi .k-val{font-size:26px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.kpi .k-sub{font-size:11.5px;color:var(--ink2);margin-top:4px;line-height:1.5}
-.kpi.rt .k-val{font-size:16px;font-weight:700}
+/* Vertical bar chart */
+.vbars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  height: 180px;
+  padding: 0 4px 0;
+}
+.vbar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+}
+.vbar-track {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.vbar-fill {
+  width: 72%;
+  max-width: 42px;
+  border-radius: 8px 8px 4px 4px;
+  min-height: 4px;
+  transition: height 0.25s ease;
+}
+.vbar-label {
+  margin-top: 8px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+}
+.vbar-n {
+  font-size: 0.65rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
 
-/* 차트 그리드 */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:820px){.grid2{grid-template-columns:1fr}}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:14px}
-.card h3{margin:0 0 2px;font-size:15px}
-.card .c-sub{font-size:11.5px;color:var(--faint);margin:0 0 10px}
-.card .c-sub b{color:var(--ink2)}
-.chart{width:100%}
-.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:11.5px;color:var(--ink2);margin-top:8px}
-.legend span{display:inline-flex;align-items:center;gap:4px}
-.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
-.bar-row-label{font-size:11.5px;fill:var(--ink2)}
-.bar-val{font-size:11px;fill:var(--ink2);font-variant-numeric:tabular-nums}
-.axis-tick{font-size:10.5px;fill:var(--faint)}
-.gridline{stroke:var(--grid);stroke-width:1}
-.baseline{stroke:var(--axis);stroke-width:1}
-svg text{font-family:inherit}
-.section{display:none}
-.section.active{display:block}
+/* Quality tall cards */
+.q-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  min-height: 180px;
+}
+.q-pill {
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 8px;
+  text-align: center;
+}
+.q-pill .q-lab {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.q-pill .q-pct {
+  font-size: 1.85rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+.q-list {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+.q-body {
+  background: var(--primary);
+  color: #f4f7f5;
+}
+.q-matched {
+  background: var(--deep);
+  color: #f4f7f5;
+}
 
-/* 카드 리스트 */
-.reclist{display:flex;flex-direction:column;gap:10px;margin:2px 0 40px}
-.rec{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;border-left:4px solid var(--accent2)}
-.rec.rt-consult{border-left-color:var(--mid)}
-.rec.rt-immunity{border-left-color:var(--ok)}
-.rec-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:5px}
-.rtype{font-size:11.5px;font-weight:800;color:var(--accent)}
-.ftype{font-size:14px;font-weight:700;flex:1;min-width:120px}
-.badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;white-space:nowrap}
-.b-disp{background:var(--wash);color:var(--accent)}
-.b-none{background:var(--page);color:var(--faint);border:1px solid var(--line)}
-.b-consult{background:var(--mid-bg);color:var(--mid)}
-.excerpt{margin:4px 0 8px;font-size:13.5px;color:var(--ink);white-space:pre-line;
-  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-.rec-foot{display:flex;flex-wrap:wrap;gap:5px 14px;font-size:12px;color:var(--ink2);margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
-.rec-foot .src{margin-left:auto;font-weight:600}
-.law{color:var(--ink2)}
-.more{display:block;margin:6px auto 40px;background:var(--paper);border:1px solid var(--line);border-radius:8px;
-  padding:10px 20px;color:var(--accent);cursor:pointer;font-size:13px}
-.empty{color:var(--faint);text-align:center;padding:40px 0}
-.loading{text-align:center;padding:60px 0;color:var(--faint)}
-.app-foot{border-top:1px solid var(--line);padding:16px 0 50px;color:var(--faint);font-size:12px;margin-top:20px}
-.disclaim{font-size:11.5px;color:var(--faint);background:var(--page);border:1px dashed var(--line);border-radius:8px;padding:8px 12px;margin:0 0 14px}
+/* Recent body secured */
+.recent-card {
+  margin-top: 16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px 16px;
+  box-shadow: var(--shadow);
+}
+.recent-card h2 {
+  margin: 0 0 14px;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.recent-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--tip);
+  border-radius: 12px;
+  padding: 14px 18px;
+  flex-wrap: wrap;
+}
+.recent-row .r-title {
+  flex: 1;
+  min-width: 140px;
+  font-weight: 650;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.recent-row .r-status {
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: var(--deep);
+  white-space: nowrap;
+}
+.recent-row .r-open {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.recent-row .r-open:hover { color: var(--deep); }
+.recent-row .r-open[aria-disabled="true"] {
+  color: var(--muted);
+  pointer-events: none;
+  font-weight: 600;
+}
+
+.insight-foot {
+  margin-top: 20px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.insight-foot code {
+  background: var(--sage-soft);
+  color: var(--deep);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.68rem;
+}
+.insight-empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 28px 8px;
+  font-size: 0.88rem;
+}
 </style>
 </head>
-<body>
-<header class="app-head">
-  <div class="wrap">
-    <h1>감사 선례 대시보드<span class="tag">초안 · HITL-B</span></h1>
-    <p class="sub">감사원·국회결산·자체감사·공공기관 지적사례 통합 — 상황을 선례에 매핑해 결재 전에 확인하고, 반복 패턴에서 제도개선을 발굴합니다.</p>
-<p class="notice legacy" id="status-legacy-note">레거시 HITL 대시보드입니다. 선호 화면은 <a href="./status.html">「현황」 status.html</a>(공직자·발굴자 렌즈)입니다.</p>
-    <nav class="nav">
-      <a href="index.html">유사검색(F1)</a>
-      <a href="sources.html">데이터 출처</a>
-      <a href="status.html">현황</a>
-      <a href="dashboard.html" aria-current="page" style="border-color:var(--accent);color:var(--accent)">대시보드</a>
-    </nav>
-    <div class="notice">이 대시보드는 유사 지적 <b>사례와 근거</b>를 제시합니다. 위법·부당 여부를 단정하지 않으며, 판단은 담당자·결재권자의 몫입니다. 담당자 평가·징계 목적으로 사용하지 않습니다.</div>
-    <div class="notice" id="agg-note" hidden></div>
+<body class="page-insight">
+  <div class="insight-wrap">
+    <header class="insight-head">
+      <a class="brand" href="./index.html">감사 선례 도우미</a>
+      <nav class="insight-nav" aria-label="주요 메뉴">
+        <a href="./dashboard.html" aria-current="page">인사이트</a>
+        <a class="nav-more" href="./index.html">상황</a>
+        <a class="nav-more" href="./status.html">현황</a>
+        <a class="nav-more" href="./search.html">검색</a>
+      </nav>
+    </header>
+
+    <section class="week-hero" aria-labelledby="weekTitle">
+      <div class="accent" aria-hidden="true"></div>
+      <div class="hero-body">
+        <div>
+          <p class="eyebrow" id="weekTitle">이번 주 시선</p>
+          <p class="summary" id="weekSummary">집계를 불러오는 중…</p>
+        </div>
+        <div class="metric-card" title="본문이 있는 건 비율(인덱스 품질 집계)">
+          <div class="m-label">본문 확보율</div>
+          <div class="m-val" id="bodyRate">—</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="insight-cols">
+      <section class="insight-card" aria-labelledby="workDistTitle">
+        <h2 id="workDistTitle">업무유형 분포</h2>
+        <p class="card-note" id="workNote"></p>
+        <div class="vbars" id="workBars" role="img" aria-label="업무유형별 건수 막대"></div>
+      </section>
+
+      <section class="insight-card" aria-labelledby="qualityTitle">
+        <h2 id="qualityTitle">근거 품질 구성</h2>
+        <p class="card-note" id="qualityNote"></p>
+        <div class="q-row" id="qualityRow">
+          <div class="q-pill q-list"><span class="q-lab">목록만</span><span class="q-pct" id="qList">—</span></div>
+          <div class="q-pill q-body"><span class="q-lab">본문 확보</span><span class="q-pct" id="qBody">—</span></div>
+          <div class="q-pill q-matched"><span class="q-lab">근거 대조</span><span class="q-pct" id="qMatched">—</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="recent-card" aria-labelledby="recentTitle">
+      <h2 id="recentTitle">최근 본문 확보</h2>
+      <ul class="recent-list" id="recentList">
+        <li class="insight-empty">불러오는 중…</li>
+      </ul>
+    </section>
+
+    <p class="insight-foot" id="footMeta"></p>
   </div>
-</header>
-
-<main class="wrap">
-  <div class="axis-tabs" role="tablist" aria-label="사용자 관점">
-    <button role="tab" id="tab-a" aria-selected="true" data-view="axisA">실무담당자 (내 업무 선례)</button>
-    <button role="tab" id="tab-b" aria-selected="false" data-view="axisB">제도개선 (반복 패턴)</button>
-    <button role="tab" id="tab-s" aria-selected="false" data-view="summary">결재권자 (요약)</button>
-  </div>
-  <p class="axis-hint" id="axisHint"></p>
-
-  <!-- 필터 -->
-  <div class="controls">
-    <input id="q" type="search" placeholder="원문·기관명·법령 검색 (예: 보조금, 초과근무, 계약)">
-    <div class="filters">
-      <label>관련기능(업무)<select id="f-work"></select></label>
-      <label>처분종류<select id="f-disp"></select></label>
-      <label>소스<select id="f-source"></select></label>
-      <label>연도<select id="f-year"></select></label>
-      <label>기관유형<select id="f-org"></select></label>
-      <label>발생분야<select id="f-sector"></select></label>
-      <button class="reset" id="reset">필터 초기화</button>
-    </div>
-    <div class="meta">현재 조건 <span id="count">0</span>건 / 전체 <span id="total">0</span>건</div>
-  </div>
-
-  <!-- KPI -->
-  <section class="kpis" id="kpis"></section>
-
-  <!-- 요약 뷰 안내 (결재권자) -->
-  <div class="disclaim" id="summaryNote" hidden></div>
-
-  <!-- AXIS A: 실무담당자 -->
-  <section class="section active" id="axisA">
-    <div class="card">
-      <h3>업무(관련기능)별 지적 분포</h3>
-      <p class="c-sub">내 업무유형을 골라 유사 지적이 얼마나 있는지 확인하세요. 모수 N=<b id="n-work">0</b></p>
-      <div id="ch-work" class="chart"></div>
-    </div>
-    <div class="grid2">
-      <div class="card">
-        <h3>처분종류 분포</h3>
-        <p class="c-sub">처분 미기재는 <b>미부과·해당없음</b>으로 집계(국회 시정요구·통보 등은 처분이 없음). N=<b id="n-disp">0</b></p>
-        <div id="ch-disp" class="chart"></div>
-      </div>
-      <div class="card">
-        <h3>근거법령 Top 12</h3>
-        <p class="c-sub">지적에 인용된 법령 상위. 현행 여부는 조문 조회 전 <b>확인 필요</b>. N=<b id="n-law">0</b> (법령 인용건)</p>
-        <div id="ch-law" class="chart"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AXIS B: 제도개선 -->
-  <section class="section" id="axisB">
-    <div class="card">
-      <h3>반복지적 Top — 업무(관련기능) × 기관유형</h3>
-      <p class="c-sub">반복도가 높은 업무유형과 그 기관유형 구성. 제도개선 우선순위 후보. N=<b id="n-repeat">0</b></p>
-      <div id="ch-repeat" class="chart"></div>
-      <div class="legend" id="lg-repeat"></div>
-    </div>
-    <div class="grid2">
-      <div class="card">
-        <h3>연도 추세</h3>
-        <p class="c-sub">연도별 지적 건수 추이. 2026은 공개 진행분(부분). N=<b id="n-year">0</b></p>
-        <div id="ch-year" class="chart"></div>
-      </div>
-      <div class="card">
-        <h3>발생분야(보조축) 분포</h3>
-        <p class="c-sub">발생분야는 소스 대부분 미기재 → <b>보조 지표</b>로만 참고. N=<b id="n-sector">0</b>(미상 포함)</p>
-        <div id="ch-sector" class="chart"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SUMMARY: 결재권자 -->
-  <section class="section" id="summary">
-    <div class="grid2">
-      <div class="card">
-        <h3>소스별 분포</h3>
-        <p class="c-sub">수집 출처 구성. N=<b id="n-source">0</b></p>
-        <div id="ch-source" class="chart"></div>
-      </div>
-      <div class="card">
-        <h3>기관유형별 분포</h3>
-        <p class="c-sub">지적 대상 기관유형. N=<b id="n-org">0</b></p>
-        <div id="ch-org" class="chart"></div>
-      </div>
-    </div>
-    <div class="card">
-      <h3>지적 ↔ 면책 안전판 (F8)</h3>
-      <p class="c-sub">같은 업무에서 "과감히 하되 보호받는 길" — 면책·사전컨설팅 인정 사례를 나란히 봅니다.</p>
-      <div id="ch-immunity" class="chart"></div>
-    </div>
-  </section>
-
-  <!-- 카드 리스트 (공통) -->
-  <div class="card" style="margin-top:6px">
-    <h3>사례 카드 <span style="font-weight:400;color:var(--faint);font-size:12.5px">(현재 조건, 최신순)</span></h3>
-    <p class="c-sub">각 카드는 <b>유사 지적 사례</b>입니다 — 위법 단정이 아니라 참고 선례. 모든 카드에 출처 링크·처분(없으면 미부과·해당없음)을 표시합니다.</p>
-    <div class="reclist" id="reclist"><div class="loading">데이터를 불러오는 중…</div></div>
-    <button class="more" id="more" hidden>더 보기 (+20)</button>
-  </div>
-</main>
-
-<footer class="app-foot">
-  <div class="wrap">
-    감사 선례 도우미 · 대시보드 초안(HITL-B 확인용) · 데이터: <span id="foot-total">-</span>건 집계 ·
-    출처: 국회결산·ALIO·감사원·자체감사 · 처분 결측은 "미부과·해당없음"으로 표기(추정 없음).
-  </div>
-</footer>
 
 <script>
 "use strict";
-const $ = s => document.querySelector(s);
-const CB = {}; // codebook maps
-let ALL = [], FILT = [], shown = 0;
-let AGG = null; // 집계본(폴백) 데이터 — 있으면 집계 요약 모드
-let RT_COUNTS = { finding:0, consult:0, immunity:0 };
-
-// ---------- 데이터 로드 ----------
-// 1순위: 전체 findings.json(노트북/로컬) → 상호작용 필터 제공
-// 폴백: dashboard-agg.json(집계본, Pages 배포본에 포함) → 집계 요약 모드
-Promise.all([
-  fetch('../data/findings.json').then(r=>{ if(!r.ok) throw new Error('no findings'); return r.json(); }),
-  fetch('../data/codebook.json').then(r=>{ if(!r.ok) throw new Error('no codebook'); return r.json(); })
-]).then(([findings, cb])=>{
-  ALL = findings;
-  buildCodebook(cb);
-  RT_COUNTS = { finding:0, consult:0, immunity:0 };
-  for(const r of ALL){ if(RT_COUNTS[r.record_type]!=null) RT_COUNTS[r.record_type]++; }
-  initFilters();
-  $('#total').textContent = ALL.length.toLocaleString();
-  $('#foot-total').textContent = ALL.length.toLocaleString();
-  apply();
-}).catch(()=> loadAgg());
-
-// ---------- 집계 요약 모드 (폴백) ----------
-function loadAgg(){
-  fetch('./data/dashboard-agg.json').then(r=>{ if(!r.ok) throw new Error('no agg'); return r.json(); })
-    .then(renderAgg)
-    .catch(e=>{
-      $('#reclist').innerHTML = '<div class="empty">데이터 로드 실패: '+e+'<br><small>로컬 서버에서 열어야 합니다 — 저장소 루트에서 <code>python -m http.server 8000</code> 후 <code>/app/dashboard.html</code>. 배포본은 집계본 <code>app/data/dashboard-agg.json</code>이 필요합니다(<code>node pipeline/build_dashboard_agg.js</code>).</small></div>';
-    });
-}
-
-function renderAgg(a){
-  AGG = a;
-  CB.work = a.labels.work; CB.sector = a.labels.sector; CB.orgOrder = a.labels.org_order;
-  RT_COUNTS = a.record_type;
-
-  const note = $('#agg-note');
-  note.hidden = false;
-  note.innerHTML = '📊 <b>집계 요약 모드</b> — 전체 findings 데이터 없이 사전 집계본(<code>dashboard-agg.json</code> · '+esc(a.source_file)+' 기준 '+a.total.toLocaleString()+'건 · '+esc(a.generated_at)+')으로 표시합니다. 아래 <b>사례 카드는 샘플</b>이며, 상호작용 필터·전체 검색은 노트북 전체 데이터에서 동작합니다.';
-  $('#q').disabled = true; $('#q').placeholder = '집계 요약 모드 — 검색은 노트북 전체 데이터에서';
-  document.querySelectorAll('.filters select').forEach(s=>{ s.disabled = true; });
-  $('#reset').disabled = true;
-  $('#total').textContent = a.total.toLocaleString();
-  $('#foot-total').textContent = a.total.toLocaleString();
-  $('#count').textContent = a.total.toLocaleString();
-
-  document.querySelectorAll('.axis-tabs button').forEach(b=>{
-    b.onclick=()=>{
-      document.querySelectorAll('.axis-tabs button').forEach(x=>x.setAttribute('aria-selected','false'));
-      b.setAttribute('aria-selected','true');
-      document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-      $('#'+b.dataset.view).classList.add('active');
-      setHint(b.dataset.view);
-    };
-  });
-  setHint('axisA');
-
-  aggCharts(a);
-  FILT = a.sample_records || []; shown = 0; renderList(true);
-}
-
-function aggCharts(a){
-  const T = a.total;
-  const dispNone = (a.disposition.find(d=>d[0]==='미부과·해당없음') || [null,0])[1];
-  const dispN = T - dispNone;
-  const maxY = a.year.length ? a.year[a.year.length-1][0] : '-';
-  const srcTxt = a.source.slice(0,4).map(([k,v])=>k+' '+v.toLocaleString()).join(' · ') || '-';
-  const rtTxt = '지적 '+(a.record_type.finding||0).toLocaleString()+' · 컨설팅 '+(a.record_type.consult||0)+' · 면책 '+(a.record_type.immunity||0);
-  const kpis=[
-    {label:'전체 건수',val:T.toLocaleString(),sub:'집계본 기준',cls:''},
-    {label:'유형 구성',val:rtTxt,sub:'record_type',cls:'rt'},
-    {label:'처분 기재 건수',val:dispN.toLocaleString(),sub:'미부과·해당없음 '+dispNone.toLocaleString()+'건',cls:''},
-    {label:'소스',val:a.source.length+'개',sub:srcTxt,cls:'rt'},
-    {label:'최근 연도',val:(maxY==='-'?'-':maxY+'년'),sub:'수집 최신',cls:''},
+(function () {
+  const $ = (s) => document.querySelector(s);
+  const BAR_COLORS = ["#3F5D50", "#4A6B5E", "#5B7C73", "#6F9085", "#8DA399", "#A3B5AC"];
+  const BUCKETS = [
+    { key: "계약", codes: ["02"] },
+    { key: "예산", codes: ["17"] },
+    { key: "인사", codes: ["11"] },
+    { key: "보조금", codes: ["15"], tip: "코드 15 지원·보상" },
+    { key: "정보화", codes: ["23"] },
+    { key: "기타", codes: null },
   ];
-  $('#kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls}">
-    <div class="k-label">${k.label}</div><div class="k-val">${k.val}</div><div class="k-sub">${k.sub}</div></div>`).join('');
 
-  hbar('#ch-work', a.work_type.slice(0,14).map(([c,v])=>[workLabel(c),v]), {color:'var(--accent2)'}); $('#n-work').textContent=T.toLocaleString();
-  hbar('#ch-disp', a.disposition.slice(0,12), {color:'var(--accent)',labelW:120}); $('#n-disp').textContent=T.toLocaleString();
-  hbar('#ch-law', a.law_top.slice(0,12), {color:'var(--s6)',labelW:230}); $('#n-law').textContent=a.law_total.toLocaleString();
-  const cats=(a.labels.org_order||[]).filter(o=>a.work_org.some(r=>r.parts[o]));
-  stackedBar('#ch-repeat', a.work_org, cats, {legendEl:'#lg-repeat'}); $('#n-repeat').textContent=T.toLocaleString();
-  lineChart('#ch-year', a.year.map(([y,v])=>[y+'',v])); $('#n-year').textContent=a.year.reduce((s,p)=>s+p[1],0).toLocaleString();
-  hbar('#ch-sector', a.sector.slice(0,10), {color:'var(--s3)',labelW:110}); $('#n-sector').textContent=T.toLocaleString();
-  hbar('#ch-source', a.source.slice(0,8), {color:'var(--s1)',labelW:110}); $('#n-source').textContent=T.toLocaleString();
-  hbar('#ch-org', a.org_type.slice(0,8), {color:'var(--s2)',labelW:110}); $('#n-org').textContent=T.toLocaleString();
-  const safe=[['지적(finding)',a.record_type.finding||0],['사전컨설팅(consult)',a.record_type.consult||0],['면책(immunity)',a.record_type.immunity||0]];
-  hbar('#ch-immunity', safe, {color:'var(--ok)',labelW:170});
-}
-
-function buildCodebook(cb){
-  CB.work = {}; for(const [k,v] of Object.entries(cb.work_type_관련기능)) CB.work[k]=v.name;
-  CB.sector = cb.sector_발생분야;
-  CB.orgOrder = cb.org_type;
-}
-const workLabel = c => (c && CB.work[c]) ? (c+' '+CB.work[c]) : '미상';
-const sectorLabel = c => (c && CB.sector[c]) ? (c+' '+CB.sector[c]) : '미상';
-const dispLabel = d => (d && String(d).trim()) ? d : '미부과·해당없음';
-
-// ---------- 필터 ----------
-const F = {work:'',disp:'',source:'',year:'',org:'',sector:'',q:''};
-function uniqCounts(fn){ const m={}; for(const r of ALL){ const k=fn(r); m[k]=(m[k]||0)+1; } return m; }
-
-function initFilters(){
-  fillSelect('#f-work','전체 업무', Object.keys(CB.work).map(c=>[c, workLabel(c)]), r=>r.work_type||'');
-  const disps = [...new Set(ALL.map(r=>dispLabel(r.disposition)))];
-  fillSelectRaw('#f-disp','전체 처분', disps.map(d=>[d,d]));
-  fillSelectRaw('#f-source','전체 소스', [...new Set(ALL.map(r=>r.source))].map(s=>[s,s]));
-  const years=[...new Set(ALL.map(r=>r.year))].filter(y=>y).sort((a,b)=>b-a);
-  fillSelectRaw('#f-year','전체 연도', years.map(y=>[y,y+'년']));
-  const orgs=(CB.orgOrder||[]).filter(o=>ALL.some(r=>r.org_type===o));
-  fillSelectRaw('#f-org','전체 기관유형', orgs.map(o=>[o,o]));
-  const secs=[...new Set(ALL.map(r=>sectorLabel(r.sector)))].sort();
-  fillSelectRaw('#f-sector','전체 발생분야', secs.map(s=>[s,s]));
-
-  $('#f-work').onchange=e=>{F.work=e.target.value;apply();};
-  $('#f-disp').onchange=e=>{F.disp=e.target.value;apply();};
-  $('#f-source').onchange=e=>{F.source=e.target.value;apply();};
-  $('#f-year').onchange=e=>{F.year=e.target.value;apply();};
-  $('#f-org').onchange=e=>{F.org=e.target.value;apply();};
-  $('#f-sector').onchange=e=>{F.sector=e.target.value;apply();};
-  let t; $('#q').oninput=e=>{clearTimeout(t);t=setTimeout(()=>{F.q=e.target.value.trim();apply();},220);};
-  $('#reset').onclick=()=>{Object.keys(F).forEach(k=>F[k]='');document.querySelectorAll('.filters select').forEach(s=>s.value='');$('#q').value='';apply();};
-
-  // AXIS 탭
-  document.querySelectorAll('.axis-tabs button').forEach(b=>{
-    b.onclick=()=>{
-      document.querySelectorAll('.axis-tabs button').forEach(x=>x.setAttribute('aria-selected','false'));
-      b.setAttribute('aria-selected','true');
-      document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-      $('#'+b.dataset.view).classList.add('active');
-      setHint(b.dataset.view);
-    };
-  });
-  setHint('axisA');
-}
-function fillSelect(sel,ph,pairs){ // pairs=[code,label]
-  const el=$(sel); el.innerHTML='<option value="">'+ph+'</option>';
-  pairs.forEach(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;el.appendChild(o);});
-}
-const fillSelectRaw=fillSelect;
-function setHint(v){
-  const h={axisA:'내 업무유형·처분·법령을 확인하는 관점 — 결재 전 유사 지적 점검(F2).',
-    axisB:'반복 지적 패턴·추세를 보는 관점 — 제도개선 과제 발굴(F5).',
-    summary:'전체 규모·출처·안전판을 한눈에 보는 관점 — 결재·보고용.'};
-  $('#axisHint').textContent=h[v]||'';
-  $('#summaryNote').hidden = v!=='summary';
-  if(v==='summary') $('#summaryNote').innerHTML='<b>안전판 안내:</b> 현재 데이터에 사전컨설팅(consult) <b>'+(RT_COUNTS.consult||0).toLocaleString()+'건</b>, 적극행정 면책(immunity) <b>'+(RT_COUNTS.immunity||0).toLocaleString()+'건</b>이 포함됩니다. 지적↔면책 대조(F8)는 이 사례들로 채워집니다.';
-}
-
-function apply(){
-  FILT = ALL.filter(r=>{
-    if(F.work && r.work_type!==F.work) return false;
-    if(F.disp && dispLabel(r.disposition)!==F.disp) return false;
-    if(F.source && r.source!==F.source) return false;
-    if(F.year && String(r.year)!==String(F.year)) return false;
-    if(F.org && r.org_type!==F.org) return false;
-    if(F.sector && sectorLabel(r.sector)!==F.sector) return false;
-    if(F.q){
-      const hay=((r.source_excerpt||'')+' '+(r.org_name||'')+' '+(r.audit_org||'')+' '+
-        (r.legal_basis||[]).map(l=>l.law||'').join(' ')).toLowerCase();
-      if(!hay.includes(F.q.toLowerCase())) return false;
-    }
-    return true;
-  });
-  $('#count').textContent = FILT.length.toLocaleString();
-  renderKPI(); renderCharts(); renderList(true);
-}
-
-// ---------- 집계 유틸 ----------
-function tally(arr, keyFn){ const m=new Map(); for(const r of arr){const k=keyFn(r); m.set(k,(m.get(k)||0)+1);} return m; }
-function topN(map, n){ return [...map.entries()].sort((a,b)=>b[1]-a[1]).slice(0,n); }
-
-// ---------- KPI ----------
-function renderKPI(){
-  const n=FILT.length;
-  const bySrc=tally(FILT,r=>r.source);
-  const rt=tally(FILT,r=>r.record_type);
-  const dispN=FILT.filter(r=>r.disposition&&String(r.disposition).trim()).length;
-  const years=FILT.map(r=>r.year).filter(Boolean);
-  const maxY=years.length?Math.max(...years):'-';
-  const srcTxt=topN(bySrc,4).map(([k,v])=>k+' '+v.toLocaleString()).join(' · ')||'-';
-  const rtTxt='지적 '+(rt.get('finding')||0).toLocaleString()+' · 컨설팅 '+(rt.get('consult')||0)+' · 면책 '+(rt.get('immunity')||0);
-  const kpis=[
-    {label:'현재 조건 건수',val:n.toLocaleString(),sub:'전체 '+ALL.length.toLocaleString()+'건 중',cls:''},
-    {label:'유형 구성',val:rtTxt,sub:'record_type',cls:'rt'},
-    {label:'처분 기재 건수',val:dispN.toLocaleString(),sub:'미부과·해당없음 '+(n-dispN).toLocaleString()+'건',cls:''},
-    {label:'소스',val:bySrc.size+'개',sub:srcTxt,cls:'rt'},
-    {label:'최근 연도',val:maxY===''||maxY==='-'?'-':maxY+'년',sub:'수집 최신',cls:''},
-  ];
-  $('#kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls}">
-    <div class="k-label">${k.label}</div><div class="k-val">${k.val}</div><div class="k-sub">${k.sub}</div></div>`).join('');
-}
-
-// ---------- 차트: 가로 막대 ----------
-function hbar(el, rows, opt){ // rows=[label,value], opt={max, color, unit}
-  opt=opt||{}; const box=$(el); const N=rows.length;
-  if(!N){ box.innerHTML='<div class="empty" style="padding:20px 0">해당 데이터 없음</div>'; return; }
-  const rh=26, gap=6, top=6, labelW=opt.labelW||150, valW=54;
-  const H=top+N*(rh+gap), W=Math.max(box.clientWidth||600,320);
-  const plotW=W-labelW-valW;
-  const max=opt.max || Math.max(...rows.map(r=>r[1]),1);
-  const color=opt.color||'var(--accent2)';
-  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img">`;
-  rows.forEach((r,i)=>{
-    const y=top+i*(rh+gap), w=Math.max(plotW*r[1]/max,1);
-    s+=`<text class="bar-row-label" x="${labelW-8}" y="${y+rh/2+4}" text-anchor="end">${esc(r[0])}</text>`;
-    s+=`<rect x="${labelW}" y="${y}" width="${w}" height="${rh}" rx="4" fill="${color}"><title>${esc(r[0])}: ${r[1].toLocaleString()}</title></rect>`;
-    s+=`<text class="bar-val" x="${labelW+w+6}" y="${y+rh/2+4}">${r[1].toLocaleString()}</text>`;
-  });
-  s+='</svg>';
-  box.innerHTML=s;
-}
-
-// ---------- 차트: 누적 가로 막대 (work_type × org_type) ----------
-const ORGCOL={'중앙':'var(--s1)','공공기관':'var(--s2)','기초':'var(--s3)','광역':'var(--s4)','교육':'var(--s5)','기타':'var(--s6)'};
-function stackedBar(el, rows, cats, opt){ // rows=[{label, parts:{cat:val}, total}]
-  const box=$(el); const N=rows.length; opt=opt||{};
-  if(!N){ box.innerHTML='<div class="empty" style="padding:20px 0">해당 데이터 없음</div>'; return; }
-  const rh=28, gap=8, top=6, labelW=opt.labelW||150, valW=56;
-  const H=top+N*(rh+gap), W=Math.max(box.clientWidth||600,320);
-  const plotW=W-labelW-valW;
-  const max=Math.max(...rows.map(r=>r.total),1);
-  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img">`;
-  rows.forEach((r,i)=>{
-    const y=top+i*(rh+gap); let x=labelW;
-    s+=`<text class="bar-row-label" x="${labelW-8}" y="${y+rh/2+4}" text-anchor="end">${esc(r.label)}</text>`;
-    cats.forEach(c=>{
-      const v=r.parts[c]||0; if(!v) return;
-      const w=plotW*v/max;
-      s+=`<rect x="${x}" y="${y}" width="${Math.max(w-2,1)}" height="${rh}" rx="2" fill="${ORGCOL[c]||'var(--faint)'}"><title>${esc(r.label)} · ${c}: ${v.toLocaleString()}</title></rect>`;
-      x+=w;
-    });
-    s+=`<text class="bar-val" x="${x+6}" y="${y+rh/2+4}">${r.total.toLocaleString()}</text>`;
-  });
-  s+='</svg>';
-  box.innerHTML=s;
-  // legend
-  if(opt.legendEl){
-    $(opt.legendEl).innerHTML=cats.map(c=>`<span><i style="background:${ORGCOL[c]||'var(--faint)'}"></i>${c}</span>`).join('');
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
   }
-}
 
-// ---------- 차트: 라인 (연도 추세) ----------
-function lineChart(el, pts){ // pts=[label,value] ordered
-  const box=$(el); const N=pts.length;
-  if(!N){ box.innerHTML='<div class="empty" style="padding:20px 0">해당 데이터 없음</div>'; return; }
-  const W=Math.max(box.clientWidth||500,320), H=220, padL=44, padR=16, padT=14, padB=28;
-  const plotW=W-padL-padR, plotH=H-padT-padB;
-  const max=Math.max(...pts.map(p=>p[1]),1);
-  const xstep = N>1 ? plotW/(N-1) : 0;
-  const X=i=>padL+(N>1?i*xstep:plotW/2), Y=v=>padT+plotH-(plotH*v/max);
-  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img">`;
-  for(let g=0;g<=4;g++){const v=max*g/4,y=Y(v);
-    s+=`<line class="gridline" x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}"/>`;
-    s+=`<text class="axis-tick" x="${padL-6}" y="${y+3}" text-anchor="end">${Math.round(v).toLocaleString()}</text>`;}
-  let d=''; pts.forEach((p,i)=>{d+=(i?'L':'M')+X(i)+' '+Y(p[1])+' ';});
-  s+=`<path d="${d}" fill="none" stroke="var(--accent2)" stroke-width="2.5"/>`;
-  pts.forEach((p,i)=>{ s+=`<circle cx="${X(i)}" cy="${Y(p[1])}" r="4" fill="var(--accent)"><title>${esc(p[0])}: ${p[1].toLocaleString()}</title></circle>`;
-    s+=`<text class="bar-val" x="${X(i)}" y="${Y(p[1])-9}" text-anchor="middle">${p[1].toLocaleString()}</text>`;
-    s+=`<text class="axis-tick" x="${X(i)}" y="${H-9}" text-anchor="middle">${esc(p[0])}</text>`;});
-  s+=`<line class="baseline" x1="${padL}" y1="${padT+plotH}" x2="${W-padR}" y2="${padT+plotH}"/>`;
-  s+='</svg>';
-  box.innerHTML=s;
-}
+  function pct(n, d) {
+    if (!d) return null;
+    return Math.round((1000 * n) / d) / 10; // one decimal, then display as int if .0
+  }
 
-// ---------- 차트 렌더 ----------
-function renderCharts(){
-  // work_type 분포
-  const wm=tally(FILT,r=>r.work_type);
-  const wrows=topN(wm,14).map(([c,v])=>[workLabel(c),v]);
-  hbar('#ch-work', wrows, {color:'var(--accent2)'});
-  $('#n-work').textContent=FILT.length.toLocaleString();
+  function fmtPct(p) {
+    if (p == null || Number.isNaN(p)) return "—";
+    const r = Math.round(p);
+    return r + "%";
+  }
 
-  // disposition
-  const dm=tally(FILT,r=>dispLabel(r.disposition));
-  hbar('#ch-disp', topN(dm,12), {color:'var(--accent)',labelW:120});
-  $('#n-disp').textContent=FILT.length.toLocaleString();
+  function shortTitle(rec) {
+    const ex = (rec.source_excerpt || "").replace(/\s+/g, " ").trim();
+    if (ex) {
+      const line = ex.split(/[.\n\r]/)[0].replace(/^[○●■□\-–—\s]+/, "").trim();
+      if (line.length >= 4) return line.length > 28 ? line.slice(0, 28) + "…" : line;
+    }
+    const parts = [rec.org_name, rec.disposition].filter(Boolean);
+    return parts.join(" · ") || rec.id || "사례";
+  }
 
-  // 법령 top
-  const lm=new Map(); let lawN=0;
-  for(const r of FILT) for(const l of (r.legal_basis||[])){ if(l.law){lm.set(l.law,(lm.get(l.law)||0)+1);lawN++;} }
-  hbar('#ch-law', topN(lm,12), {color:'var(--s6)',labelW:230});
-  $('#n-law').textContent=lawN.toLocaleString();
+  function workBuckets(agg) {
+    const wt = Object.fromEntries(agg.work_type || []);
+    const used = new Set();
+    const rows = [];
+    for (const b of BUCKETS) {
+      if (!b.codes) continue;
+      let n = 0;
+      for (const c of b.codes) {
+        n += wt[c] || 0;
+        used.add(c);
+      }
+      rows.push({ key: b.key, n, tip: b.tip || (agg.labels && agg.labels.work && b.codes[0] ? agg.labels.work[b.codes[0]] : "") });
+    }
+    let other = 0;
+    for (const [c, v] of Object.entries(wt)) {
+      if (!used.has(c)) other += v;
+    }
+    rows.push({ key: "기타", n: other, tip: "위 다섯 유형 외 합" });
+    return rows;
+  }
 
-  // 반복지적 work_type × org_type (stacked)
-  const cats=(CB.orgOrder||['중앙','공공기관','기초','광역','교육','기타']).filter(o=>FILT.some(r=>r.org_type===o));
-  const wtop=topN(tally(FILT,r=>r.work_type),10);
-  const rrows=wtop.map(([c])=>{
-    const parts={}, sub=FILT.filter(r=>r.work_type===c);
-    cats.forEach(o=>{const n=sub.filter(r=>r.org_type===o).length; if(n)parts[o]=n;});
-    return {label:workLabel(c), parts, total:sub.length};
-  });
-  stackedBar('#ch-repeat', rrows, cats, {legendEl:'#lg-repeat'});
-  $('#n-repeat').textContent=FILT.length.toLocaleString();
+  function renderBars(rows) {
+    const max = Math.max(...rows.map((r) => r.n), 1);
+    const el = $("#workBars");
+    el.innerHTML = rows
+      .map((r, i) => {
+        const h = Math.max(4, Math.round((r.n / max) * 150));
+        const tip = r.tip ? ` title="${esc(r.tip)}: ${r.n.toLocaleString()}건"` : ` title="${r.n.toLocaleString()}건"`;
+        return `<div class="vbar-col"${tip}>
+          <div class="vbar-track"><div class="vbar-fill" style="height:${h}px;background:${BAR_COLORS[i % BAR_COLORS.length]}"></div></div>
+          <div class="vbar-label">${esc(r.key)}</div>
+          <div class="vbar-n">${r.n.toLocaleString()}</div>
+        </div>`;
+      })
+      .join("");
+  }
 
-  // 연도 추세
-  const ym=tally(FILT.filter(r=>r.year),r=>r.year);
-  const yrs=[...ym.keys()].sort((a,b)=>a-b).map(y=>[y+'', ym.get(y)]);
-  lineChart('#ch-year', yrs);
-  $('#n-year').textContent=FILT.filter(r=>r.year).length.toLocaleString();
+  function applyQuality(q, n, note) {
+    const list = q.list_only != null ? q.list_only : Math.max(0, n - (q.body || 0) - (q.matched || 0));
+    const body = q.body || 0;
+    const matched = q.matched || 0;
+    const pList = pct(list, n);
+    const pBody = pct(body, n);
+    const pMatched = pct(matched, n);
+    $("#qList").textContent = fmtPct(pList);
+    $("#qBody").textContent = fmtPct(pBody);
+    $("#qMatched").textContent = fmtPct(pMatched);
+    $("#bodyRate").textContent = fmtPct(pBody);
+    $("#qualityNote").textContent = note || "";
+    return { pBody, pList, pMatched, body, list, matched };
+  }
 
-  // 발생분야 (보조)
-  const sm=tally(FILT,r=>sectorLabel(r.sector));
-  hbar('#ch-sector', topN(sm,10), {color:'var(--s3)',labelW:110});
-  $('#n-sector').textContent=FILT.length.toLocaleString();
+  function heroSummary(agg, qualityInfo) {
+    const rows = workBuckets(agg);
+    const top = rows.slice().sort((a, b) => b.n - a.n)[0];
+    const bodyPct = qualityInfo && qualityInfo.pBody != null ? Math.round(qualityInfo.pBody) : null;
+    if (top && top.n > 0) {
+      if (bodyPct != null) {
+        return `${top.key} 업무 선례가 집계에서 가장 많습니다. 본문 확보율은 ${bodyPct}%입니다.`;
+      }
+      return `${top.key} 업무 선례가 집계에서 가장 많습니다.`;
+    }
+    if (agg.insight) return agg.insight;
+    return "집계 데이터를 표시합니다.";
+  }
 
-  // 소스
-  const srm=tally(FILT,r=>r.source);
-  hbar('#ch-source', topN(srm,8), {color:'var(--s1)',labelW:110});
-  $('#n-source').textContent=FILT.length.toLocaleString();
+  function renderRecent(samples) {
+    const withBody = (samples || []).filter((r) => (r.source_excerpt || "").trim());
+    const pick = withBody.slice(0, 3);
+    const el = $("#recentList");
+    if (!pick.length) {
+      el.innerHTML = '<li class="insight-empty">본문 발췌가 있는 샘플이 없습니다.</li>';
+      return;
+    }
+    el.innerHTML = pick
+      .map((r) => {
+        const url = (r.source_url || "").trim();
+        const open = url
+          ? `<a class="r-open" href="${esc(url)}" target="_blank" rel="noopener noreferrer">열기</a>`
+          : `<span class="r-open" aria-disabled="true">열기</span>`;
+        return `<li class="recent-row">
+          <span class="r-title">${esc(shortTitle(r))}</span>
+          <span class="r-status">본문 확보</span>
+          ${open}
+        </li>`;
+      })
+      .join("");
+  }
 
-  // 기관유형
-  const om=tally(FILT,r=>r.org_type);
-  hbar('#ch-org', topN(om,8), {color:'var(--s2)',labelW:110});
-  $('#n-org').textContent=FILT.length.toLocaleString();
+  function render(agg, qualityPayload) {
+    const rows = workBuckets(agg);
+    renderBars(rows);
+    $("#workNote").textContent =
+      `집계본 ${agg.total.toLocaleString()}건 · ${esc(agg.generated_at || "")} · 보조금=지원·보상(15)`;
 
-  // 안전판(면책/컨설팅)
-  const rtm=tally(FILT,r=>r.record_type);
-  const safe=[['지적(finding)',rtm.get('finding')||0],['사전컨설팅(consult)',rtm.get('consult')||0],['면책(immunity)',rtm.get('immunity')||0]];
-  hbar('#ch-immunity', safe, {color:'var(--ok)',labelW:170});
-}
+    let qInfo = null;
+    if (qualityPayload && qualityPayload.quality && qualityPayload.n_docs) {
+      const q = Object.assign({}, qualityPayload.quality);
+      if (q.list_only == null) {
+        q.list_only = Math.max(0, qualityPayload.n_docs - (q.body || 0) - (q.matched || 0));
+      }
+      qInfo = applyQuality(
+        q,
+        qualityPayload.n_docs,
+        `인덱스 품질 집계 N=${qualityPayload.n_docs.toLocaleString()} · 목록만/본문/근거대조(matched)`
+      );
+      if (qualityPayload.insight) {
+        // keep computed hero; insight is advisory in foot
+      }
+    } else {
+      // Honest fallback from sample_records only — do not invent corpus-wide %
+      const samples = agg.sample_records || [];
+      let list = 0, body = 0;
+      for (const r of samples) {
+        const ex = (r.source_excerpt || "").trim();
+        if (!ex) list++;
+        else body++;
+      }
+      if (samples.length) {
+        qInfo = applyQuality(
+          { list_only: list, body, matched: 0 },
+          samples.length,
+          `품질 전체 집계 없음 — 샘플 ${samples.length}건·발췌 유무만 분류(근거 대조는 인덱스 집계 필요)`
+        );
+      } else {
+        $("#qualityNote").textContent = "품질 집계 파일이 없어 비율을 표시하지 않습니다.";
+      }
+    }
 
-// ---------- 카드 리스트 ----------
-function renderList(reset){
-  const box=$('#reclist');
-  if(reset){ shown=0; box.innerHTML=''; }
-  if(!FILT.length){ box.innerHTML='<div class="empty">현재 조건에 맞는 사례가 없습니다. 필터를 완화해 보세요.</div>'; $('#more').hidden=true; return; }
-  const slice=FILT.slice(shown, shown+20);
-  const html=slice.map(r=>{
-    const disp=r.disposition&&String(r.disposition).trim();
-    const dispBadge=disp?`<span class="badge b-disp">${esc(r.disposition)}</span>`:`<span class="badge b-none">미부과·해당없음</span>`;
-    const rtBadge=r.record_type==='consult'?'<span class="badge b-consult">사전컨설팅</span>':(r.record_type==='immunity'?'<span class="badge b-consult">면책</span>':'');
-    const laws=(r.legal_basis||[]).map(l=>l.law).filter(Boolean).slice(0,3).map(esc).join(', ');
-    const org=[r.org_name,r.audit_org].filter(Boolean).map(esc).join(' · ');
-    return `<article class="rec rt-${esc(r.record_type)}">
-      <div class="rec-top">
-        <span class="rtype">유사 지적 사례</span>
-        <span class="ftype">${esc(workLabel(r.work_type))}</span>
-        ${rtBadge}${dispBadge}
-      </div>
-      <div class="excerpt">${esc(r.source_excerpt||'(원문 발췌 없음)')}</div>
-      <div class="rec-foot">
-        ${laws?`<span class="law">근거법령: ${laws} <small style="color:var(--faint)">(현행 확인 필요)</small></span>`:'<span class="law" style="color:var(--faint)">근거법령 미기재</span>'}
-        <span>${org||''}</span>
-        <span class="src">${esc(r.source)} · ${r.year||'-'} · <a href="${esc(r.source_url||'#')}" target="_blank" rel="noopener">출처↗</a></span>
-      </div>
-    </article>`;
-  }).join('');
-  box.insertAdjacentHTML('beforeend', html);
-  shown+=slice.length;
-  $('#more').hidden = shown>=FILT.length;
-}
-$('#more').onclick=()=>renderList(false);
+    $("#weekSummary").textContent = heroSummary(agg, qInfo);
+    renderRecent(agg.sample_records);
 
-// 리사이즈 시 차트 재렌더 (SVG width 반응)
-let rt; window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{ AGG?aggCharts(AGG):renderCharts(); },200);});
+    const bits = [
+      `대시보드 집계: <code>dashboard-agg.json</code> ${agg.total.toLocaleString()}건`,
+      agg.source_file ? `원본 ${esc(agg.source_file)}` : "",
+      qualityPayload ? `품질: <code>insight-quality.json</code> / index` : "품질: 샘플 폴백",
+      "판단·처분은 담당자 몫입니다.",
+    ].filter(Boolean);
+    $("#footMeta").innerHTML = bits.join(" · ");
+  }
 
-function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  function loadJson(url) {
+    return fetch(url).then((r) => {
+      if (!r.ok) throw new Error(url + " " + r.status);
+      return r.json();
+    });
+  }
+
+  Promise.all([
+    loadJson("./data/dashboard-agg.json"),
+    loadJson("./data/insight-quality.json").catch(() =>
+      loadJson("./data/index/dashboard-agg.json").catch(() => null)
+    ),
+  ])
+    .then(([agg, quality]) => {
+      if (quality && !quality.quality && quality.n_docs == null) quality = null;
+      // normalize index file shape
+      if (quality && quality.quality && !quality.n_docs && quality.n_docs !== 0) {
+        /* keep */
+      }
+      render(agg, quality);
+    })
+    .catch((e) => {
+      $("#weekSummary").textContent = "집계를 불러오지 못했습니다.";
+      $("#recentList").innerHTML =
+        '<li class="insight-empty">데이터 로드 실패: ' +
+        esc(String(e.message || e)) +
+        "<br><small><code>app/data/dashboard-agg.json</code>이 필요합니다.</small></li>";
+    });
+})();
 </script>
 </body>
 </html>

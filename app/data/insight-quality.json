@@ -1,0 +1,12 @@
+{
+  "n_docs": 199572,
+  "quality": {
+    "list_only": 0,
+    "body": 174261,
+    "matched": 25311
+  },
+  "insight": "본문 확보·고신뢰 비중을 늘리면 검토메모 근거 품질이 올라갑니다.",
+  "high_trust_pct": 70.8,
+  "source": "pipeline/build_index.py → app/data/index/dashboard-agg.json (findings.all)",
+  "note": "list_only는 원 집계에 키가 없어 n_docs − body − matched 로 산출(현재 0)."
+}

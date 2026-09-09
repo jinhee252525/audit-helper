@@ -76,3 +76,10 @@ jobs:
 
 - `/` 히어로 · `/search.html` · `/feed.html`
 - 합성/샘플 경고가 보이면 정상(전체 findings 아님).
+
+---
+
+## 사용자명 없는 URL이 필요할 때
+
+GitHub Pages URL에 `jinhee252525`이 들어가는 것이 부담되면, **Cloudflare Pages**로 `app/`만 배포해 `*.pages.dev` 주소를 쓰면 됩니다(도메인 구매 불필요).  
+절차: [CLOUDFLARE-PAGES.md](./CLOUDFLARE-PAGES.md)
