@@ -23,11 +23,22 @@
       </nav>
     </header>
 
+    <div id="scopeBadge" class="scope-badge" role="status" aria-live="polite">
+      <span class="scope-label">자료 범위</span>
+      <span id="scopeMode" class="scope-mode">확인 중…</span>
+      <span id="scopeCount" class="scope-count"></span>
+      <span id="scopeNote" class="scope-note"></span>
+    </div>
+
     <section class="situation-hero" aria-labelledby="situationLabel">
       <div class="situation-copy">
         <p id="situationLabel" class="eyebrow">지금 하려는 일</p>
         <label class="sr-only" for="situationInput">상황 입력</label>
         <textarea id="situationInput" class="situation-input" rows="2" placeholder="하려는 업무를 적어 주세요."></textarea>
+        <p id="privacyNotice" class="privacy-notice">
+          입력 내용은 <strong>이 브라우저에서만</strong> 처리됩니다(로컬 템플릿·인덱스 검색).
+          외부 AI로 전송하지 않습니다. BYOK(외부 키) 경로가 연결되면 그 시점에 별도 안내합니다.
+        </p>
         <div class="pack-picker" role="group" aria-label="도메인 팩">
           <button type="button" class="pack-btn is-active" data-pack="contract" id="packContract">계약</button>
           <button type="button" class="pack-btn" data-pack="subsidy" id="packSubsidy">보조금</button>
@@ -41,18 +52,71 @@
           <summary>결재 전 점검</summary>
           <ul id="checklistList"></ul>
         </details>
+
+        <div id="followUpPanel" class="followup-panel" hidden>
+          <p class="followup-title">보완하면 선례 비교가 정확해집니다 <span class="soft-opt">(모르면 비워 두세요 · 미확인)</span></p>
+          <div class="followup-grid">
+            <label class="followup-field">
+              <span>기관유형</span>
+              <select id="fuOrgType">
+                <option value="">미확인</option>
+                <option value="중앙">중앙</option>
+                <option value="광역">광역</option>
+                <option value="기초">기초</option>
+                <option value="공공기관">공공기관</option>
+                <option value="교육">교육</option>
+                <option value="기타">기타</option>
+              </select>
+            </label>
+            <label class="followup-field">
+              <span>업무 단계 <em>(선택)</em></span>
+              <select id="fuWorkStage">
+                <option value="">미확인</option>
+                <option value="사전검토">사전검토</option>
+                <option value="입찰·계약">입찰·계약</option>
+                <option value="이행·변경">이행·변경</option>
+                <option value="정산·종료">정산·종료</option>
+                <option value="사후·감사대응">사후·감사대응</option>
+              </select>
+            </label>
+            <label class="followup-field">
+              <span>대략 시기</span>
+              <select id="fuTiming">
+                <option value="">미확인</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022이전">2022 이전</option>
+              </select>
+            </label>
+          </div>
+          <p class="followup-hint">값을 추정해 채우지 않습니다. 비우면 메모 「미확인 사항」에 남깁니다.</p>
+        </div>
       </div>
       <button type="button" id="ctaConnect" class="cta-primary">
         선례 연결하기
       </button>
     </section>
 
+    <div id="demoLockBanner" class="demo-lock-banner" hidden role="alert">
+      <strong>데모/폴백 모드</strong> — 초안 미리보기만 가능합니다.
+      「실무용 검토메모 확정·출처포함 내보내기」는 잠깁니다. 실인덱스 연결 후 사용하세요.
+    </div>
+
+    <div id="failurePanel" class="failure-panel" hidden role="status"></div>
+
     <main class="lanes" id="lanes">
       <section class="lane" aria-labelledby="laneEvidenceTitle">
         <header class="lane-head">
           <h3 id="laneEvidenceTitle">확보된 근거</h3>
-          <p class="lane-sub">본문이 있는 것만 인용 · 선택 시 면책/컨설팅(F8)</p>
+          <p class="lane-sub">체크한 카드만 메모에 반영 · 원문 온디맨드</p>
         </header>
+        <p id="originalTip" class="original-tip" hidden>
+          원문: 정적 Pages에서는 외부 기관 사이트를 대신 가져올 수 없습니다.
+          「원문 불러오기」는 <strong>새 탭으로 출처 URL 열기</strong> + (발췌만 있으면) <strong>발췌 패널 펼치기</strong>입니다.
+          로컬에서 findings.json이 있으면 필드를 보강합니다.
+        </p>
         <div id="evidenceList" class="card-stack empty-hint">
           <p class="placeholder">「선례 연결하기」를 누르면 근거 카드가 채워집니다.</p>
         </div>
@@ -65,7 +129,7 @@
       <section class="lane" aria-labelledby="laneDistanceTitle">
         <header class="lane-head">
           <h3 id="laneDistanceTitle">내 업무와의 거리</h3>
-          <p class="lane-sub">같은 점 / 다른 점</p>
+          <p class="lane-sub">같은 점 / 다른 점 · 선택한 카드 기준</p>
         </header>
         <div id="distancePanel" class="distance-panel empty-hint">
           <p class="placeholder">연결 후 같음·다름·확인 포인트가 표시됩니다.</p>
@@ -76,11 +140,13 @@
         <div class="memo-ribbon" aria-hidden="true"></div>
         <header class="lane-head">
           <h3 id="laneMemoTitle">결재용 검토메모</h3>
-          <p class="lane-sub">초안 · 복사 가능 · 목록만은 근거 불가</p>
+          <p class="lane-sub">선택 근거만 · 출처·수집일 포함 · 직접 수정</p>
         </header>
         <form id="memoForm" class="memo-form" autocomplete="off"></form>
         <div class="memo-actions">
-          <button type="button" id="btnCopyMemo" class="btn-secondary" disabled>메모 복사</button>
+          <button type="button" id="btnCopyDraft" class="btn-secondary" disabled>초안 미리보기 복사</button>
+          <button type="button" id="btnCopyWithSources" class="btn-add" disabled>출처 포함 복사</button>
+          <button type="button" id="btnConfirmExport" class="btn-confirm" disabled title="실무용 확정/내보내기">실무용 확정·내보내기</button>
           <span id="copyStatus" class="copy-status" aria-live="polite"></span>
         </div>
       </section>
@@ -89,7 +155,7 @@
     <footer class="disclaimer">
       유사 선례·근거만 제시합니다. 위법·부당을 단정하지 않으며, 최종 판단은 담당자·결재권자에게 있습니다.
       본문 미확보(목록만) 건은 검토메모 근거로 쓸 수 없습니다.
-      합성 예시로 표시된 카드는 UX 데모용이며 실제 선례가 아닙니다.
+      합성 예시·데모 카드는 UX용이며 실무 제출 근거가 아닙니다.
     </footer>
   </div>
   <script src="./app.js" defer></script>

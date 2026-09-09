@@ -519,7 +519,12 @@ function renderScout() {
 
   if (a.surge_meta) {
     $("b1Hint").textContent =
-      a.surge_meta.prev + "→" + a.surge_meta.cur + " · 실집계 · small_n 주의";
+      a.surge_meta.prev + "→" + a.surge_meta.cur + " · 실집계 · small_n 주의 · 수집 자료 내 증가";
+  }
+  const foot = $("b1Footnote");
+  if (foot) {
+    foot.innerHTML =
+      "※ 수치는 <strong>수집 자료 내 증가</strong>입니다(전수·모집단 증가 단정 아님). small_n(표본 작음) 표시 건은 해석에 주의하세요.";
   }
 
   const barRows = surges.slice(0, 8).map((s) => ({

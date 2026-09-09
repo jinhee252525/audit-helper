@@ -32,7 +32,17 @@
       "relatedIds": [
         "ev-003",
         "ev-004"
-      ]
+      ],
+      "source_url": "https://pap.go.kr/example/ev-001",
+      "source_excerpt": "변경계약 체결 시 과업지시서 변경 근거와 대가 산정 내역을 문서화하지 않은 사례. 관련 내부 통제 절차 미비.",
+      "added_at": "2026-09-06T10:00:00+09:00",
+      "disposition": "주의",
+      "org_type": "광역",
+      "work_type": "02",
+      "work_type_label": "계약·용역",
+      "year": 2024,
+      "matchWhy": "키워드 겹침: 과업, 변경 · 업무유형 유사: 계약·용역",
+      "matchDiff": "연도·금액 규모는 사례마다 다름 — 내 상황과 대조 필요"
     },
     {
       "id": "ev-002",
@@ -45,7 +55,17 @@
       "excerpt": "목록 메타데이터만 확보됨. 본문 미확보로 검토메모 근거 생성 불가.",
       "highlightSpans": [],
       "canAddToMemo": false,
-      "relatedIds": []
+      "relatedIds": [],
+      "source_url": "",
+      "source_excerpt": "",
+      "added_at": "2026-09-04T11:00:00+09:00",
+      "disposition": null,
+      "org_type": "공공기관",
+      "work_type": "02",
+      "work_type_label": "계약·용역",
+      "year": 2023,
+      "matchWhy": "업무코드 02(계약) 후보",
+      "matchDiff": "본문 미확보 — 비교·인용 보류"
     },
     {
       "id": "ev-003",
@@ -65,7 +85,14 @@
       "canAddToMemo": true,
       "relatedIds": [
         "ev-001"
-      ]
+      ],
+      "source_url": "https://www.acrc.go.kr/example/consult-001",
+      "source_excerpt": "과업 신설·확대 시 사전 컨설팅으로 면책 경로를 확보한 사례.",
+      "added_at": "2026-09-05T14:30:00+09:00",
+      "disposition": "해당없음",
+      "org_type": "중앙",
+      "work_type": "02",
+      "year": 2025
     },
     {
       "id": "ev-004",
@@ -86,7 +113,17 @@
       "relatedIds": [
         "ev-001"
       ],
-      "_synthetic": true
+      "_synthetic": true,
+      "source_url": "https://www.acrc.go.kr/example/immunity-001",
+      "source_excerpt": "과업 범위 조정 전 사전협의·내부통제를 거친 경우 면책이 인정된 사례(합성 예시).",
+      "added_at": "2026-09-07T09:15:00+09:00",
+      "disposition": "인정",
+      "immunity": {
+        "outcome": "인정"
+      },
+      "org_type": "광역",
+      "work_type": "02",
+      "year": 2024
     },
     {
       "id": "ev-005",
@@ -107,7 +144,14 @@
       "relatedIds": [
         "ev-001"
       ],
-      "_synthetic": true
+      "_synthetic": true,
+      "source_url": "https://www.acrc.go.kr/example/consult-002",
+      "source_excerpt": "추가 과업 대가 산정 시 산출내역서 보완 절차를 안내한 컨설팅(합성 예시).",
+      "added_at": "2026-09-03T16:00:00+09:00",
+      "disposition": "해당없음",
+      "org_type": "기초",
+      "work_type": "02",
+      "year": 2023
     }
   ],
   "distance": {
@@ -139,6 +183,11 @@
         "placeholder": "본문 확보된 근거만"
       },
       {
+        "id": "sources",
+        "label": "출처·수집일",
+        "placeholder": "선택 근거의 URL·수집일"
+      },
+      {
         "id": "open",
         "label": "미확인 사항",
         "placeholder": "법령 현행성 등 확인 필요"
@@ -155,7 +204,8 @@
       "diff": "같음: 변경계약·용역·지자체 / 다름: 금액 규모·행위 시점. 과업 신설 비중 확인 필요.",
       "grounds": "「변경계약 체결 시 과업지시서 변경 근거와 대가 산정 내역을 문서화하지 않은 사례.」",
       "open": "관련 법령·지침 현행성 확인 필요. 위임전결 범위 및 산출내역 재검토.",
-      "decision": "단정하지 않음. 본문 확보·근거 대조 완료 건만 인용. 담당자·결재권자 최종 판단."
+      "decision": "단정하지 않음. 본문 확보·근거 대조 완료 건만 인용. 담당자·결재권자 최종 판단.",
+      "sources": "· 용역 과업범위 변경 지적\n  URL: https://pap.go.kr/example/ev-001\n  수집일: 2026-09-06"
     }
   },
   "feed": [
@@ -204,5 +254,9 @@
       "added_at": "2026-09-04T11:00:00+09:00",
       "excerpt": "목록 메타데이터만 확보됨. 본문 미확보로 검토메모 근거 생성 불가."
     }
-  ]
+  ],
+  "scope": {
+    "mode": "demo",
+    "note": "hero-sample 데모"
+  }
 }
