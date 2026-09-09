@@ -4,24 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>감사 선례 대시보드 (초안)</title>
+<link rel="stylesheet" href="./styles.css" />
 <style>
+/* dashboard-specific — sage matte (shared :root from styles.css); no blue / vivid categorical */
 :root{
-  --page:#eef1f6; --paper:#fff; --ink:#17212f; --ink2:#45566a; --faint:#8393a6;
-  --line:#d9e1ec; --wash:#eaf3fb; --accent:#1c5a94; --accent2:#2f7dc4;
+  /* chart extras + aliases (styles.css already sets primary palette) */
+  --grid:#E0E3E2; --axis:#C5CBC8;
+  --paper:#ffffff; --ink2:#45566a; --faint:var(--muted);
+  --line:var(--border); --wash:var(--sage-soft);
+  --accent:var(--primary); --accent2:var(--primary-soft);
   --ok:#357a51; --ok-bg:#e4f1e9; --no:#b0432c; --no-bg:#f7e7e2;
   --mid:#b9821a; --mid-bg:#f6eed8;
-  --grid:#e4e9f1; --axis:#c3cbd8;
-  /* categorical (dataviz 검증 팔레트) — org_type 계열 식별용 */
-  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#4a3aa7;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --page:#0f141b; --paper:#161d27; --ink:#e6ecf4; --ink2:#a7b4c5; --faint:#75839a;
-    --line:#26313f; --wash:#182634; --accent:#6fb0e6; --accent2:#4a92d4;
-    --ok:#5fb280; --ok-bg:#16281d; --no:#d98066; --no-bg:#2a1a15;
-    --mid:#d6a94a; --mid-bg:#2a2314; --grid:#222c39; --axis:#3a4657;
-    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#9085e9;
-  }
+  /* sage luminance scale for bars/stacks (deep → soft) */
+  --s1:#3F5D50; --s2:#4E6E62; --s3:#5B7C73; --s4:#6F9085; --s5:#8DA399; --s6:#A8B9B0;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--page);color:var(--ink);
@@ -30,11 +25,13 @@ body{margin:0;background:var(--page);color:var(--ink);
 a{color:var(--accent)}
 .app-head{background:var(--paper);border-bottom:1px solid var(--line);padding:20px 0}
 .app-head h1{margin:0;font-size:22px;letter-spacing:-.02em}
-.app-head .tag{font-size:11px;font-weight:800;color:#fff;background:var(--accent2);border-radius:20px;padding:2px 9px;vertical-align:3px;margin-left:6px}
+.app-head .tag{font-size:11px;font-weight:800;color:#fff;background:var(--deep);border-radius:20px;padding:2px 9px;vertical-align:3px;margin-left:6px}
 .app-head .sub{margin:6px 0 0;color:var(--ink2);font-size:13px}
 .nav{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
 .nav a{font-size:12.5px;text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:4px 12px;color:var(--ink2);background:var(--paper)}
 .notice{margin:12px 0 0;font-size:12.5px;color:var(--mid);background:var(--mid-bg);border-radius:6px;padding:8px 12px}
+.notice.legacy{color:var(--deep);background:var(--tip);border:1px solid var(--border)}
+.notice.legacy a{font-weight:700;color:var(--primary)}
 
 /* AXIS 탭 */
 .axis-tabs{display:flex;gap:8px;margin:18px 0 6px;flex-wrap:wrap}
@@ -112,7 +109,7 @@ svg text{font-family:inherit}
   <div class="wrap">
     <h1>감사 선례 대시보드<span class="tag">초안 · HITL-B</span></h1>
     <p class="sub">감사원·국회결산·자체감사·공공기관 지적사례 통합 — 상황을 선례에 매핑해 결재 전에 확인하고, 반복 패턴에서 제도개선을 발굴합니다.</p>
-<p class="notice" id="status-legacy-note">레거시 HITL 대시보드입니다. 새 <a href="./status.html">감사 결과 현황</a>(공직자·발굴자 렌즈)을 사용하세요.</p>
+<p class="notice legacy" id="status-legacy-note">레거시 HITL 대시보드입니다. 선호 화면은 <a href="./status.html">「현황」 status.html</a>(공직자·발굴자 렌즈)입니다.</p>
     <nav class="nav">
       <a href="index.html">유사검색(F1)</a>
       <a href="sources.html">데이터 출처</a>
